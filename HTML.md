@@ -11,9 +11,9 @@
 <!DOCTYPE html>
 ```
 
-> Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
-> --
-> ![Cookies, LocalStorage & SesstionStorage](https://github.com/peterkwkwan/FE_interview-questions/blob/assets/storage.png?raw=true)
+> ## Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
+>
+> ![Cookies, LocalStorage & SesstionStorage](./assets/storage.png?raw=true)
 
 > Describe the difference between `<script>`, `<script async>` and `<script defer>`.
 > Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
