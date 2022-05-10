@@ -1,4 +1,4 @@
-### title: HTML Questions
+### HTML Questions
 
 * What does a `doctype` do?
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
