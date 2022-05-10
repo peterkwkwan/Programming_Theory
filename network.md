@@ -15,3 +15,4 @@
 * What is a CDN and what is the benefit of using one?
 * Difference between http1 and http2
 * Difference between http & https
+* What is CORS?
