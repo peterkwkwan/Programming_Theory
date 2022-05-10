@@ -11,3 +11,4 @@
 * What is the difference between `canvas` and `svg`?
 * What are empty elements in HTML ?
 * SSR & CSR
+* Explain the difference between layout, painting and compositing.
