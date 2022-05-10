@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 ```
 
-> ## Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
+> Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
 >
 > ![Cookies, LocalStorage & SesstionStorage](./assets/storage.png?raw=true)
 
