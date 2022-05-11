@@ -77,12 +77,51 @@ Each comma-seprated item has imageUrl along with the width of the image in pixel
 
 ### What are HTML templating languages?
 
-Different ways to split HTML code into reusable components. Many have built-in JS functionality in inject JS logic into the document.
+Solves some of the fundamental limitations of HTML as a markup language. Some limitations include:
+
+- Difficult to add dynamic data into the document
+- No programming logic (loops, conditionals)
+- Verbose and takes long to write
+
+Many have built-in JS functionality in inject JS logic into the document.
+
+Some different templating languages:
+
+- EJS
+- Handlebars
+- Mustache
+- JSX
 
 ### What is the difference between `canvas` and `svg`?
 
+`<svg>`
+
+- Vector based (composed of shapes)
+- Better scalability
+- Multiple graphical elements, which become the part of the page’s DOM tree.
+
+`<canvas>`
+
+- Raster based (composed of pixels)
+- Poor scalability, not suitable for printing on high resolutions
+- Single element similar to `<img>` in behavior. Canvas diagram can be saved to PNG or JPG format.
+
+_Note:_ HTML5 specifications recommends to avoid canvas if there are other alternatives
+
 ### What are empty elements in HTML ?
 
+An element that _cannot_ have any child nodes
+Using a closing tag on an empty element is usually invalid. (E.g. `<input type="text"></input>`)
+A few examples of empty elements
+
+- <area>
+- <br>
+- <hr>
+- <link>
+- <source>
+
 ### SSR & CSR
+
+-
 
 ### Explain the difference between layout, painting and compositing.
