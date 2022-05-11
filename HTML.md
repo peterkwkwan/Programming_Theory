@@ -122,6 +122,32 @@ A few examples of empty elements
 
 ### SSR & CSR
 
--
+Server-side Rendering
+
+- user makes request to webpage, the server sends the required HTML and data from the database and sends it to the user's machine
+- page is rendered and prepared on the server
+- page is fully rendered when it arrives to the user
+- when navigating to a different route, the server needs to do all the work again, hence the full page refresh
+
+Client-side Rendering
+
+- user makes request to webpage, the server will send a single page skeleton instead, along with the javascript file.
+- page is rendered on the client browser
+- when navgiating to a different route, the server will not send another page, instead, the client will re-render the page according to the specified route
+- SPA = no refresh needed
+
+SSR advantages
+
+- SEO is a priority - this is because the webpage is more friendly to se tarch engine bots that can effectively crawl the page
+- website needs a faster initial load
+- better experience for users that have poor internet connection
+- ideal for static sites (not much user interactivty)
+
+CSR advantages
+
+- SEO is not a priority
+- site has lots of user interaction or site re-routes (better seamless user experience)
+- better performance after initial load
+- ideal for web apps
 
 ### Explain the difference between layout, painting and compositing.
