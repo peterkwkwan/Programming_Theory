@@ -1,37 +1,37 @@
-## React
+# react
 
-### React DOM vs Virtual DOM
+## React DOM vs Virtual DOM
 
-### What is JSX?
+## What is JSX?
 
-### Why can't browsers read JSX?
+## Why can't browsers read JSX?
 
-### React vs Angular vs Vue?
+## React vs Angular vs Vue?
 
-### One-way data binding vs two-way data binding
+## One-way data binding vs two-way data binding
 
-### What are props? What is state?
+## What are props? What is state?
 
-### Stateful vs stateless components?
+## Stateful vs stateless components?
 
-### Describe the React lifecycle
+## Describe the React lifecycle
 
-### What are refs? What are some scenarios where you will use refs?
+## What are refs? What are some scenarios where you will use refs?
 
-### Controlled vs Uncontrolled components?
+## Controlled vs Uncontrolled components?
 
-### What is an HOC?
+## What is an HOC?
 
-### What are pure components?
+## What are pure components?
 
-### What are keys and their importance in React?
+## What are keys and their importance in React?
 
-### What is a reducer?
+## What is a reducer?
 
-### What is React Redux? What problems does it solve? Limitations?
+## What is React Redux? What problems does it solve? Limitations?
 
-### What is React Router?
+## What is React Router?
 
-### What is the `<Switch>` tag used for?
+## What is the `<Switch>` tag used for?
 
-### Conventional routing vs React Router?
+## Conventional routing vs React Router?

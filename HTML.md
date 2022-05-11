@@ -1,4 +1,4 @@
-# HTML Questions
+# html
 
 ## What does a `doctype` do?
 
@@ -149,5 +149,3 @@ CSR advantages
 - site has lots of user interaction or site re-routes (better seamless user experience)
 - better performance after initial load
 - ideal for web apps
-
-### Explain the difference between layout, painting and compositing.
