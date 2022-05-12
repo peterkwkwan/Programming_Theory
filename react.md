@@ -37,7 +37,7 @@ JSX was not intended to be understood by browsers, but rather intended to be use
 
 ## React vs Angular vs Vue?
 
-Angular
+#### Angular
 
 **Advantages**
 
@@ -54,7 +54,7 @@ Angular
 - Slower than React (uses watchers and traditional DOM updates)
 - More breaking changes
 
-React
+#### React
 
 **Advantages**
 
@@ -68,7 +68,7 @@ React
 
 - Since it is just a light-weight library, may need to do more initial configuration and external package installations to meet project requirements
 
-Vue
+#### Vue
 
 **Advantages**
 
@@ -85,9 +85,33 @@ Vue
 
 Data binding is the method to which we connect ('bind') data to the UI to make it dynamic or 'Reactive' to changes.
 
-One
+**One-way binding**
+
+- Data flows in a single direction so whenever data changes in the component, it is reflected in the UI
+- A single 'watcher' monitoring for data changes from component
+- Since data flows in a single direction to the UI, finding bugs/inefficiencies is more straighforward
+- UI can never update the model/data. View can only dispatch events/actions (intention to update), but lets the component/controller handle the update
+
+**Two-way binding**
+
+- Data flows in two directions. Any data changes in the component is reflected in UI, and any changes in UI is reflected in component.
+- Two watchers for every state. One monitors the UI, one monitors the data.
+- Maybe difficult to trace source of data problems, as you can't control the change detection mechanisms (observables, event chains, etc.)
+- Provides illusion of one piece of state, but in fact there are two. Overcomplicates the data update process.
 
 ## What are props? What is state?
+
+Props
+
+- used to pass data around in React components
+- read-only
+
+State
+
+- data that parent components use to manage and maintain a single-source-of-truth.
+- affects the performance of the app, as every state update (and subsequent props passed to children) will re-render the component. State should not be used carelessly
+
+Data flow is unilateral (from parent --> child only)
 
 ## Stateful vs stateless components?
 
