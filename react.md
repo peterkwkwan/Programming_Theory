@@ -126,32 +126,20 @@ A.K.A - Smart vs Dumb components
 
 ## Describe the React lifecycle
 
-![React Lifecycle](./assets/lifecycle.png?raw=true)
+![React Lifecycle](./assets/lifecycle.PNG?raw=true)
 
 1.  ComponentDidMount
-    > ```useEffect(() => {
-    >
-    > ```
-        . . .
-    }, [])```
+    > `useEffect(() => {. . .}, [])`
 
 - on first load
 
 2.  ComponentDidUpdate
-    > ```useEffect(() => {
-    >
-    > ```
-        . . .
-    }, [dependency])```
+    > `useEffect(() => {. . . }, [dependency])`
 
 - on first load AND when dependency changes
 
 3.  ComponentWillUnmount
-    > ```useEffect(() => {
-    >
-    > ```
-        return () => { . . .}
-    }, [])```
+    > `useEffect(() => { return () => { . . .} }, [])`
 
 - on component unmounting, right before it re-renders. Used for cleanup function
 - useful for remove eventListeners, invalidating timers, canceling network requests, remove subscriptions
