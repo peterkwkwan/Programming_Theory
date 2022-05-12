@@ -149,3 +149,39 @@ CSR advantages
 - site has lots of user interaction or site re-routes (better seamless user experience)
 - better performance after initial load
 - ideal for web apps
+
+## Dynamic vs SPA vs Static sites
+
+3 main ways to render websites
+
+1. Dynamic pages
+
+- generated dynamically on the server, with help of server-side language (e.g. Node.js) and templating engine
+- old methdology that was widely used 10+ years ago
+- **Advantages**:
+  -- client receives the finished website along with all the data
+  -- important if the client is not a user but a web crawler (good for SEO)
+  -- logic happens on the server, not performance intensive for client browser
+- **Disadvantages**:
+  -- EVERY page needs to be generated on the server, even if just one detail/data changes on the page, a new page has to be requested and sent back to client
+
+2. SPA
+
+- server generates a single, pre-generated HTML page which contains JS code. The bundled JS code changes the page dynamically WITHIN the browser (Client-side rendering)
+- **Advantages**:
+  -- Amazing performance and responsive for UX
+- **Disadvantages**:
+  -- Slow initial load, esp with poor internet connection
+  -- not great for SEO (but there are solutions to this, such as SSR SPA tools)
+
+3. Static pages
+
+- HTML pages are pre-generated on the server using a static site generation tool. The pre-generated pages are then stored on the server
+- oldest technique used
+- if we want to create a static page using dynamically changing content, we can do so by using static site generating tools like Gatsby.js
+- Gatsby uses a React app that builds locally and then it 'visits' every page that would exist on the SPA. Snapshots would get stored as HTML files, which is then sent to the server.
+- **Advantages**:
+  -- No initial JS load, fast start time
+  -- By using static site generators, we essentially get the benefits of SPA (fast updates, instant changes)
+- **Disadvantages**:
+  -- Not great for sites that have lots of user interactivity, as each update would require the site to be re-generated and re-deployed
