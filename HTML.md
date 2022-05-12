@@ -128,7 +128,9 @@ Server-side Rendering
 - page is rendered and prepared on the server
 - page is fully rendered when it arrives to the user
 - when navigating to a different route, the server needs to do all the work again, hence the full page refresh
+
   **Advantages**:
+
 - SEO is a priority - this is because the webpage is more friendly to se tarch engine bots that can effectively crawl the page
 - website needs a faster initial load
 - better experience for users that have poor internet connection
@@ -140,7 +142,9 @@ Client-side Rendering
 - page is rendered on the client browser
 - when navgiating to a different route, the server will not send another page, instead, the client will re-render the page according to the specified route
 - SPA = no refresh needed
+
   **Advantages**:
+
 - SEO is not a priority
 - site has lots of user interaction or site re-routes (better seamless user experience)
 - better performance after initial load
@@ -160,7 +164,9 @@ Client-side Rendering
   - client receives the finished website along with all the data
   - important if the client is not a user but a web crawler (good for SEO)
   - logic happens on the server, not performance intensive for client browser
+
     **Disadvantages**:
+
   - EVERY page needs to be generated on the server, even if just one detail/data changes on the page, a new page has to be requested and sent back to client
 
 2. SPA
@@ -170,7 +176,9 @@ Client-side Rendering
   **Advantages**:
 
   - Amazing performance and responsive for UX
-    **Disadvantages**:
+
+  **Disadvantages**:
+
   - Slow initial load, esp with poor internet connection
   - not great for SEO (but there are solutions to this, such as SSR SPA tools)
 
@@ -185,5 +193,7 @@ Client-side Rendering
 
   - No initial JS load, fast start time
   - By using static site generators, we essentially get the benefits of SPA (fast updates, instant changes)
+
     **Disadvantages**:
+
   - Not great for sites that have lots of user interactivity, as each update would require the site to be re-generated and re-deployed
