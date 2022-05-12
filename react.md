@@ -38,7 +38,8 @@ JSX was not intended to be understood by browsers, but rather intended to be use
 ## React vs Angular vs Vue?
 
 Angular
-_Advantages_
+
+**Advantages**
 
 - Many built-in tools
   - internationalization (i18n)
@@ -46,33 +47,45 @@ _Advantages_
   - Angular CLI
 - Better for heavy, complex apps that are enterprise-ready
 - Two-way data binding
-  _Disadvantages_
+
+**Disadvantages**
+
 - Steeper learning curve (developer experience not as good)
 - Slower than React (uses watchers and traditional DOM updates)
 - More breaking changes
 
 React
-_Advantages_
+
+**Advantages**
 
 - Lightweight and uses JSX for intuitive JS in HTML
 - Faster (uses virtual DOM)
 - Easier to learn, better dev experience
 - Less breaking changes (FB/Meta uses React internally so they understand pain of version updates)
 - Faster development time
-  _Disadvantages_
+
+**Disadvantages**
+
 - Since it is just a light-weight library, may need to do more initial configuration and external package installations to meet project requirements
 
 Vue
-_Advantages_
+
+**Advantages**
 
 - Better suited for smaller, less complex apps
 - Easiest to learn of the 3
 - Supports 1 and 2-way data binding
 - Uses HTML templates as well as JSX
-  _Disadvantages_
+
+**Disadvantages**
+
 - Not as widely adopted in the job market
 
 ## One-way data binding vs two-way data binding
+
+Data binding is the method to which we connect ('bind') data to the UI to make it dynamic or 'Reactive' to changes.
+
+One
 
 ## What are props? What is state?
 
