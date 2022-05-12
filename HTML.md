@@ -165,7 +165,7 @@ Client-side Rendering
   - important if the client is not a user but a web crawler (good for SEO)
   - logic happens on the server, not performance intensive for client browser
 
-    **Disadvantages**:
+  **Disadvantages**:
 
   - EVERY page needs to be generated on the server, even if just one detail/data changes on the page, a new page has to be requested and sent back to client
 
@@ -194,6 +194,6 @@ Client-side Rendering
   - No initial JS load, fast start time
   - By using static site generators, we essentially get the benefits of SPA (fast updates, instant changes)
 
-    **Disadvantages**:
+  **Disadvantages**:
 
   - Not great for sites that have lots of user interactivity, as each update would require the site to be re-generated and re-deployed
