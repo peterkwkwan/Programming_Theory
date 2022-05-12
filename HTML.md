@@ -131,10 +131,10 @@ Server-side Rendering
 
   **Advantages**:
 
-- SEO is a priority - this is because the webpage is more friendly to se tarch engine bots that can effectively crawl the page
-- website needs a faster initial load
-- better experience for users that have poor internet connection
-- ideal for static sites (not much user interactivty)
+  - SEO is a priority - this is because the webpage is more friendly to se tarch engine bots that can effectively crawl the page
+  - website needs a faster initial load
+  - better experience for users that have poor internet connection
+  - ideal for static sites (not much user interactivty)
 
 Client-side Rendering
 
@@ -145,10 +145,10 @@ Client-side Rendering
 
   **Advantages**:
 
-- SEO is not a priority
-- site has lots of user interaction or site re-routes (better seamless user experience)
-- better performance after initial load
-- ideal for web apps
+  - SEO is not a priority
+  - site has lots of user interaction or site re-routes (better seamless user experience)
+  - better performance after initial load
+  - ideal for web apps
 
 ## Dynamic vs SPA vs Static sites
 
