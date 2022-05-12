@@ -156,21 +156,23 @@ Client-side Rendering
 - old methdology that was widely used 10+ years ago
 
   **Advantages**:
-  -- client receives the finished website along with all the data
-  -- important if the client is not a user but a web crawler (good for SEO)
-  -- logic happens on the server, not performance intensive for client browser
-  **Disadvantages**:
-  -- EVERY page needs to be generated on the server, even if just one detail/data changes on the page, a new page has to be requested and sent back to client
+
+  - client receives the finished website along with all the data
+  - important if the client is not a user but a web crawler (good for SEO)
+  - logic happens on the server, not performance intensive for client browser
+    **Disadvantages**:
+  - EVERY page needs to be generated on the server, even if just one detail/data changes on the page, a new page has to be requested and sent back to client
 
 2. SPA
 
 - server generates a single, pre-generated HTML page which contains JS code. The bundled JS code changes the page dynamically WITHIN the browser (Client-side rendering)
 
   **Advantages**:
-  -- Amazing performance and responsive for UX
-  **Disadvantages**:
-  -- Slow initial load, esp with poor internet connection
-  -- not great for SEO (but there are solutions to this, such as SSR SPA tools)
+
+  - Amazing performance and responsive for UX
+    **Disadvantages**:
+  - Slow initial load, esp with poor internet connection
+  - not great for SEO (but there are solutions to this, such as SSR SPA tools)
 
 3. Static pages
 
@@ -180,7 +182,8 @@ Client-side Rendering
 - Gatsby uses a React app that builds locally and then it 'visits' every page that would exist on the SPA. Snapshots would get stored as HTML files, which is then sent to the server.
 
   **Advantages**:
-  -- No initial JS load, fast start time
-  -- By using static site generators, we essentially get the benefits of SPA (fast updates, instant changes)
-  **Disadvantages**:
-  -- Not great for sites that have lots of user interactivity, as each update would require the site to be re-generated and re-deployed
+
+  - No initial JS load, fast start time
+  - By using static site generators, we essentially get the benefits of SPA (fast updates, instant changes)
+    **Disadvantages**:
+  - Not great for sites that have lots of user interactivity, as each update would require the site to be re-generated and re-deployed
