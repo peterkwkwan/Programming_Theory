@@ -28,7 +28,7 @@
   -- Should always try to use local or sessionStorage as cookies are sent to the server along with ANY requests
   -- If too many cookies, this will slow down the requests and create overhead
 
-![Cookies, LocalStorage & SesstionStorage](./assets/storage.png?raw=true)
+![Cookies, LocalStorage & SessionStorage](./assets/storage.png?raw=true)
 
 ## Describe the difference between `<script>`, `<script async>` and `<script defer>`.
 

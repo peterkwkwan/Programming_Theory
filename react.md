@@ -115,7 +115,47 @@ Data flow is unilateral (from parent --> child only)
 
 ## Stateful vs stateless components?
 
+A.K.A - Smart vs Dumb components
+
+- difference is that one has state and one does not
+
+- stateful components keep track of the state
+- stateful components also have a life-cycle (mount, update, unmount)
+- avoid creating stateful components unless necesssary
+- stateful component encapsulates all of the interaction logic, while the stateless components take care of rendering data/UI
+
 ## Describe the React lifecycle
+
+![React Lifecycle](./assets/lifecycle.png?raw=true)
+
+1.  ComponentDidMount
+    > ```useEffect(() => {
+    >
+    > ```
+        . . .
+    }, [])```
+
+- on first load
+
+2.  ComponentDidUpdate
+    > ```useEffect(() => {
+    >
+    > ```
+        . . .
+    }, [dependency])```
+
+- on first load AND when dependency changes
+
+3.  ComponentWillUnmount
+    > ```useEffect(() => {
+    >
+    > ```
+        return () => { . . .}
+    }, [])```
+
+- on component unmounting, right before it re-renders. Used for cleanup function
+- useful for remove eventListeners, invalidating timers, canceling network requests, remove subscriptions
+- takes callback on the return in useEffect hook
 
 ## What are refs? What are some scenarios where you will use refs?
 
