@@ -213,4 +213,4 @@ Gatsby build process uses Node.js and ReactDOMServer to create 2 different versi
 
 When visitor first enters your site, the response contains static HTML along with JS and assets. React takes over and then _hydrates_ the HTML (add event listeners to DOM). Subsequent page requests are DOM updates managed by React.
 
-Essentially you get "best" of both worlds - better SEO due to SSR initial load, and better UX due to CSR's app-like interaction.
+Essentially you get "best" of both worlds - better SEO due to SSR static HTML on initial load, and better UX/performance.
