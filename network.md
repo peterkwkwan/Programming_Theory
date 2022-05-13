@@ -29,6 +29,13 @@ HyperText Transfer Protocol (Secure)
 
 ## What is CORS?
 
+- Cross-Origin Resource Sharing
+- Browsers have a security policy known as Same-Origin Policy (SOP)
+
+## What is Cross-Site Request Forgery (CSRF / XSRF)?
+
+- Method by which malicious scripts try to impersonate a user by exploiting a browser's trusted connection with a site
+
 ## Traditionally, why has it been better to serve site assets from multiple domains?
 
 ## Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
