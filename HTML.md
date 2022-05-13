@@ -433,4 +433,5 @@ When visitor first enters your site, the response contains static HTML along wit
 Essentially you get "best" of both worlds - better SEO due to SSR static HTML on initial load, and better UX/performance.
 
 [Hydration - Gatsby Docs](https://www.gatsbyjs.com/docs/glossary/hydration/)
+
 [Drawbacks / Challenges of Hydration](https://dev.to/this-is-learning/why-efficient-hydration-in-javascript-frameworks-is-so-challenging-1ca3)
