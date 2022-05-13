@@ -30,7 +30,23 @@ HyperText Transfer Protocol (Secure)
 ## What is CORS?
 
 - Cross-Origin Resource Sharing
+- Allows us to relax SOP
+
 - Browsers have a security policy known as Same-Origin Policy (SOP)
+
+  - essentially a way for browsers to prevent any requests or perform operations outside its origin
+  - origin is the source of the request (who is making the request?)
+  - origin is a combination of the:
+    - http/https
+    - domain
+    - port
+  - if any of the above are diff, we are not on the same origin
+
+- one way to relax CORS is for our BE APIs to allow external entities diff from its origin to make requests
+- this is achieved through http headers in the response
+  - **Access-Control-Allow-Origin** header
+  - configured to specify which origins are allowed to talk to your api
+  - Can use \* asterisk to allow anyone to talk to your api
 
 ## What is Cross-Site Request Forgery (CSRF / XSRF)?
 
