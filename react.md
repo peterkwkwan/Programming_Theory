@@ -37,7 +37,7 @@ JSX was not intended to be understood by browsers, but rather intended to be use
 
 ## React vs Angular vs Vue?
 
-#### Angular
+### <ins>Angular</ins>
 
 **Advantages**
 
@@ -54,7 +54,7 @@ JSX was not intended to be understood by browsers, but rather intended to be use
 - Slower than React (uses watchers and traditional DOM updates)
 - More breaking changes
 
-#### React
+### <ins>React</ins>
 
 **Advantages**
 
@@ -68,7 +68,7 @@ JSX was not intended to be understood by browsers, but rather intended to be use
 
 - Since it is just a light-weight library, may need to do more initial configuration and external package installations to meet project requirements
 
-#### Vue
+### <ins>Vue</ins>
 
 **Advantages**
 
