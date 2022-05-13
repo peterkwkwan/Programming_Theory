@@ -122,7 +122,7 @@ A few examples of empty elements
 
 ## SSR & CSR
 
-Server-side Rendering
+<ins>Server-side Rendering</ins>
 
 - user makes request to webpage, the server sends the required HTML and data from the database and sends it to the user's machine
 - page is rendered and prepared on the server
@@ -136,7 +136,7 @@ Server-side Rendering
   - better experience for users that have poor internet connection
   - ideal for static sites (not much user interaction)
 
-Client-side Rendering
+<ins>Client-side Rendering</ins>
 
 - user makes request to webpage, the server will send a single page skeleton instead, along with the javascript file.
 - page is rendered on the client browser
@@ -154,7 +154,7 @@ Client-side Rendering
 
 3 main ways to render websites
 
-1. Dynamic pages
+1. <ins>Dynamic pages</ins>
 
 - generated dynamically on the server, with help of server-side language (e.g. Node.js) and templating engine
 - old methodology that was widely used 10+ years ago
@@ -169,7 +169,7 @@ Client-side Rendering
 
   - EVERY page needs to be generated on the server, even if just one detail/data changes on the page, a new page has to be requested and sent back to client
 
-2. SPA
+2. <ins>SPA</ins>
 
 - server generates a single, pre-generated HTML page which contains JS code. The bundled JS code changes the page dynamically WITHIN the browser (Client-side rendering)
 
@@ -182,7 +182,7 @@ Client-side Rendering
   - Slow initial load, esp with poor internet connection
   - not great for SEO (but there are solutions to this, such as SSR SPA tools)
 
-3. Static pages
+3. <ins>Static pages</ins>
 
 - HTML pages are pre-generated on the server using a static site generation tool. The pre-generated pages are then stored on the server
 - oldest technique used
