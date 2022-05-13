@@ -131,16 +131,16 @@ Server-side Rendering
 
   **Advantages**:
 
-  - SEO is a priority - this is because the webpage is more friendly to se tarch engine bots that can effectively crawl the page
-  - website needs a faster initial load
+  - SEO is a priority - this is because the webpage is more friendly to search engine bots that can effectively crawl the page
+  - website has a faster initial load - eliminates blank page problem of CSR
   - better experience for users that have poor internet connection
-  - ideal for static sites (not much user interactivty)
+  - ideal for static sites (not much user interaction)
 
 Client-side Rendering
 
 - user makes request to webpage, the server will send a single page skeleton instead, along with the javascript file.
 - page is rendered on the client browser
-- when navgiating to a different route, the server will not send another page, instead, the client will re-render the page according to the specified route
+- when navigating to a different route, the server will not send another page, instead, the client will re-render the page according to the specified route
 - SPA = no refresh needed
 
   **Advantages**:
@@ -157,7 +157,7 @@ Client-side Rendering
 1. Dynamic pages
 
 - generated dynamically on the server, with help of server-side language (e.g. Node.js) and templating engine
-- old methdology that was widely used 10+ years ago
+- old methodology that was widely used 10+ years ago
 
   **Advantages**:
 
@@ -197,3 +197,20 @@ Client-side Rendering
   **Disadvantages**:
 
   - Not great for sites that have lots of user interactivity, as each update would require the site to be re-generated and re-deployed
+
+## What is Hydration?
+
+Hydration is the process of using client-side JS to add app-like state and interaction to the server-rendered HTML.
+Tools like Gatsby use hydration to transform the static HTMl created at build time into a React app.
+
+In typical React app, the app relies on CSR. Instead of parsing HTMl to create the DOM, CSR uses JS to create it. Typical navigation links builds the requested page on the client instead of requesting it from the server. Because they make fewer network requests, CSR is extremely fast.
+
+SSR makes HTML available to the client BEFORE the JS loads. Users can view and read content before it is fully interactive. SSR eliminates the blank page problem. However, SSR makes more network requests - every URL request needs a round trip to the server.
+
+Hydration takes a hybrid approach.
+
+Gatsby build process uses Node.js and ReactDOMServer to create 2 different versions of your site. Each URL is available both as a static HTML page and as a JS component.
+
+When visitor first enters your site, the response contains static HTML along with JS and assets. React takes over and then _hydrates_ the HTML (add event listeners to DOM). Subsequent page requests are DOM updates managed by React.
+
+Essentially you get "best" of both worlds - better SEO due to SSR initial load, and better UX due to CSR's app-like interaction.
