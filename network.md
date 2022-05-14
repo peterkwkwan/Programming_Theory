@@ -135,36 +135,52 @@ Because browsers usually have limits on the number of concurrent downloads from 
 
 ## What are HTTP methods? List all HTTP methods that you know, and explain them.
 
-- GET
+GET
+
 - read / retrieve resource
-- POST
+
+POST
+
 - add / create
-- PUT
+
+PUT
+
 - updates the entire resource
 - can create a new resource if it does not exist
 - need to send all the resource attributes
 - e.g. if updating an object, need to send all properties
-- PATCH
+
+PATCH
+
 - only partial update
 - only required to send the data you want to update
 - e.g. if updating an object, only send the property you want to update
-- DELETE
-- OPTIONS
+
+DELETE
 
 ## What is RESTful api?
 
-- Representational State Transfer
+Representational State Transfer
+
 - A set of architectural constraints when building APIs
-- STATELESS
+
+STATELESS
+
 - a client request should contain all the information necessary to respond to the request
 - no client information is stored between requests
 - each request is separate and unconnected
 - i.e. should be possible to make 2 or more http requests in any order and same response should be received
-- LAYERED
+
+LAYERED
+
 - the client does not need to know whether its communicating with the server, proxy or intermediary
-- HTTP
+
+HTTP
+
 - requests managed through HTTP
-- CACHE
+
+CACHE
+
 - data should be cache-able to streamline client/server interaction
 
 ## What is domain pre-fetching and how does it help with performance?
@@ -184,20 +200,20 @@ Content Delivery Network (CND)
   - these are then ready to be sent to end users / client
     Benefits of CDN
 
-1. better performance
+1. Better Performance
 
 - client requests data from CDN --> uses the closest server to speed up delivery
 
-2. increased reliability
+2. Increased Reliability
 
 - uninterrupted service; even if one server goes down there are alternatives
 - load balancing in case one server is overwhelmed with requests; can spread out workload
 
-3. cost savings
+3. Cost Savings
 
 - less bandwidth cost because of the temporary storage/cache
 
-4. better security
+4. Better Security
 
 - defend against DoS or DDoS
 - attackers cannot send high volume of junk requests to overwhelm a single server
