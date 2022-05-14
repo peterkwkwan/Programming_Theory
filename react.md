@@ -151,9 +151,12 @@ Refs are an attribute provided by React to access DOM elements.
 
 Use cases:
 
-1. change the value of a child component without props
+1. Change the value of a child component without props
 2. Managing focus, text-selection
 3. Integrating with 3rd party DOM libraries
+4. Store a value/state that needs to persist between renders without causing re-renders itself when it changes
+   - great for storing prevState values
+5. Access DOM elements (similar to `document.querySelector`)
 
 `React.createRef()` used to create the ref
 
@@ -162,9 +165,15 @@ const someRef = React.createRef();
 <div ref={someRef} />
 ```
 
-**Ref.current properties**
+Notes:
 
-The ref value differs depending on where it is used:
+- _Refs will persist between renders of your component_
+- does NOT cause re-renders of your components when they change
+- ref is an OBJECT that contains a `current` property
+
+**Ref.current**
+
+The current value differs depending on where it is used:
 
 - when used in HTML element, `React.createRef()` receives the underlying DOM element as its **current** property
 - if used on class component, receives the **mounted** instance of the component as its **current** property
@@ -172,11 +181,65 @@ The ref value differs depending on where it is used:
 
 ## How often do React components re-render?
 
+1. When `setState()` is called
+2. When `props` change
+3. When `forceUpdate()` is called
+
 ## Controlled vs Uncontrolled components?
 
-## What is an HOC?
+This relates to the stateful-ness of DOM form elements.
+
+<ins>Controlled</ins>
+
+- under control of the React component's state
+- does not have its own internal state
+- React recommends to use Controlled components whenever possible
+
+<ins>Uncontrolled</ins>
+
+- not controlled by React state and handled by DOM instead
+- maintains its own internal state (i.e. keeps source of truth in the DOM)
+- uses refs to access values
+- b/c they are uncontrolled, lifecycle methods will not affect them, which may produce unexpected results
+
+## What is a HOC?
+
+It is a function that takes a component and returns a new component.
+
+Technique used to reuse logic in React components.
+
+You may have a poor use-case for HOCs if:
+
+- The behavior requires adding a bunch of props to a component.
+- The behavior is only used in one component.
+- The behavior must be customized for each component which uses it.
+
+You may have a good use-case for HOCs if:
+
+- The behavior is not specific to any single component, but rather applies to many or all components in the app, and
+- The behavior doesn’t need to provide a bunch of props to the components that use it.
+- Components can be used stand-alone without the behavior from the HOC.
+- No custom logic needs to be added to a component being wrapped by the HOC.
 
 ## What are pure components?
+
+A function is said to be pure if the return value is determined by its input values only and the return value is always the same for the same input values. It does not rely on data outside of the function or perform side effects.
+
+A React component is said to be pure if it renders the same output for the same state and props.
+
+Features of Pure Components
+
+- prevents re-rendering of the component if props / state is the same
+- state and props are shallow compared
+- better performance since no unnecessary re-rendering
+
+React Components re-renders in the following scenarios:
+
+1. `setState` is called in Component
+2. `props` values are updated
+3. `this.forceUpdate()` is called
+
+In the case of Pure Components, the React components do not re-render blindly without considering the updated values of React `props` and `state`. If updated values are the same as previous values, render is not triggered.
 
 ## What are keys and their importance in React?
 
