@@ -147,6 +147,29 @@ A.K.A - Smart vs Dumb components
 
 ## What are refs? What are some scenarios where you will use refs?
 
+Refs are an attribute provided by React to access DOM elements.
+
+Use cases:
+
+1. change the value of a child component without props
+2. Managing focus, text-selection
+3. Integrating with 3rd party DOM libraries
+
+`React.createRef()` used to create the ref
+
+```
+const someRef = React.createRef();
+<div ref={someRef} />
+```
+
+**Ref.current properties**
+
+The ref value differs depending on where it is used:
+
+- when used in HTML element, `React.createRef()` receives the underlying DOM element as its **current** property
+- if used on class component, receives the **mounted** instance of the component as its **current** property
+- cannot be used on function components because they don't have an instance
+
 ## How often do React components re-render?
 
 ## Controlled vs Uncontrolled components?
