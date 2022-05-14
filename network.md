@@ -52,14 +52,153 @@ HyperText Transfer Protocol (Secure)
 
 - Method by which malicious scripts try to impersonate a user by exploiting a browser's trusted connection with a site
 
+## Describe the process from the time you type in a website's URL to it finishing loading on your screen.
+
+1. your browser performs IP Address lookup - tries to find site in sequence below
+
+- Browser cache
+- Operating system
+- DNS lookup request to ISP
+
+2. depends if http or https
+
+- if https, then client/server need to establish a secure connection first using SSL certificate
+
+3. Resource is requested from the domain's server
+
+- depends if SSR or CSR
+- site is loaded
+
+## What are the differences between Polling, WebSockets and Server-Sent Events?
+
+Various ways to enable real-time web application. Two general approaches: client pull or server push
+
+![Polling, WebSockets & SSE](./assets/client-pull-server-push.png?raw=true)
+
+<ins>Polling (client pull)</ins>
+
+1. Short polling
+
+- asks server at regular intervals using an AJAX-based timer
+- - does not block server side resources, as a response is sent back immediately
+- - downside is that it creates a lot of traffic/requests
+
+```
+00:00:00 C-> Is the cake ready?
+ 00:00:01 S-> No, wait.
+ 00:00:01 C-> Is the cake ready?
+ 00:00:02 S-> No, wait.
+ 00:00:02 C-> Is the cake ready?
+ 00:00:03 S-> Yes. Have some lad.
+ 00:00:03 C-> Is the other cake ready?
+```
+
+2. Long polling
+
+- client will be notified by server when the resource is ready
+- - less traffic
+- - server resource is blocked until response is sent back
+- however, with Node, you can save a lot more resources as it will not spawn an instance for each request
+
+```
+00:00:00 C-> Is the cake ready?
+00:00:03 S-> Yes.Have some lad.
+00:00:03 C-> Is the cake ready?
+```
+
+<ins>WebSockets (server push)</ins>
+
+- persistent connection between client & server, 2-way communication channel, using a single TCP connection
+- send messages to server and receive event-driven responses without having to poll
+
+<ins>Server-Sent Events (server push)</ins>
+
+- unlike WebSockets (bilateral), Server-Sent Events are unilateral
+- client receives data from server
+- good for server push functionalities
+
+## What is AJAX?
+
+Asynchronous Javascript And XML
+
+- uses browser built-in XMLHttpRequest: used to request data from server
+- Javascript and HTML DOM: to display or use the data
+
+- allows web pages to be updated asynchronously by exchanging data with a server behind the scenes
+  - means we are able to update parts of the page without reloading the whole page
+
+![AJAX](./assets/AJAX.png?raw=true)
+
 ## Traditionally, why has it been better to serve site assets from multiple domains?
 
-## Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
-
-## What are the differences between Long-Polling, Websockets and Server-Sent Events?
+Because browsers usually have limits on the number of concurrent downloads from a domain at a moment. So, serving assets from multiple domains can increase the concurrent level.
 
 ## What are HTTP methods? List all HTTP methods that you know, and explain them.
 
+- GET
+- read / retrieve resource
+- POST
+- add / create
+- PUT
+- updates the entire resource
+- can create a new resource if it does not exist
+- need to send all the resource attributes
+- e.g. if updating an object, need to send all properties
+- PATCH
+- only partial update
+- only required to send the data you want to update
+- e.g. if updating an object, only send the property you want to update
+- DELETE
+- OPTIONS
+
+## What is RESTful api?
+
+- Representational State Transfer
+- A set of architectural constraints when building APIs
+- STATELESS
+- a client request should contain all the information necessary to respond to the request
+- no client information is stored between requests
+- each request is separate and unconnected
+- i.e. should be possible to make 2 or more http requests in any order and same response should be received
+- LAYERED
+- the client does not need to know whether its communicating with the server, proxy or intermediary
+- HTTP
+- requests managed through HTTP
+- CACHE
+- data should be cache-able to streamline client/server interaction
+
 ## What is domain pre-fetching and how does it help with performance?
 
+DNS Prefetch is a resource hint to make a DNS lookup for a domain the browser has not yet determined needs to be made. This can improve performance because when the browser does need to make a request for a resource, the DNS lookup for that domain has already occurred.
+
+We can optimize this by adding a DNS prefetch resource hint in the <head> of the HTML file, as shown below:
+
+`<link rel="dns-prefetch" href="https://stats.example.com/">`
+
 ## What is a CDN and what is the benefit of using one?
+
+Content Delivery Network (CND)
+
+- a group of servers spread out over a region that work together to speed up content delivery
+- CDN temporarily stores or cache content like HTML, images, JS and video
+  - these are then ready to be sent to end users / client
+    Benefits of CDN
+
+1. better performance
+
+- client requests data from CDN --> uses the closest server to speed up delivery
+
+2. increased reliability
+
+- uninterrupted service; even if one server goes down there are alternatives
+- load balancing in case one server is overwhelmed with requests; can spread out workload
+
+3. cost savings
+
+- less bandwidth cost because of the temporary storage/cache
+
+4. better security
+
+- defend against DoS or DDoS
+- attackers cannot send high volume of junk requests to overwhelm a single server
+- since there are many servers, CDNs are better adapted to handle such events/traffic
