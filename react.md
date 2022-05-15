@@ -243,12 +243,60 @@ In the case of Pure Components, the React components do not re-render blindly wi
 
 ## What are keys and their importance in React?
 
-## What is a reducer?
+Keys are a special attribute needed when creating a list of elements.
+
+Why keys are important - it helps React **identify which items have changed, are added or removed**
+
+Caveat when using keys:
+
+- don't use index if order of items may change. If order changes and we are using index for keys, the unique ID of each element will change according to the change in index order.
+  - This will negatively impact performance and cause issues with component state
 
 ## What is React Redux? What problems does it solve? Limitations?
 
+Redux is a state management library, making use of a global store to update/change state. It utilizes events called 'actions' to determine the change/event type.
+
+Redux dispatches actions to reducers to update the state.
+
+Problems that Redux solves:
+
+1. eliminate prop drilling in deeply nested components
+2. have a centralized store from which to update and share state
+3. Redux DevTools are a good way to debug or test your application state
+4. state changes are always predictable --> reducers are pure functions
+
+Cons:
+
+1. Increases complexity of your application by introducing an extra overhead layer
+2. More boilerplate code
+
+## What is a reducer?
+
+Are a function that takes the current state and action as arguments, then returns a new state
+
+i.e. `(state, action) => newState`
+
+Each action contains a type (also known as an identifier) and a payload. Next, a reducer accepts the action and changes the state based on the received action type and payload.
+
+Notes about reducers:
+
+- they are pure functions (should return the same result every time, given the same params)
+- the only way to change state in Redux
+
 ## What is React Router?
 
-## What is the `<Switch>` tag used for?
+Provides client-side routing for React apps.
+v6 provides Ranked Routes; essentially React Router will search for the best match (no need to mess with `exact` props or `<Switch>`)
+
+e.g. If you are visiting `https://myapp.com/teams/new`, React Router will render `<NewTeam />` because it's more specific than the `:teamId` parameter.
+
+```
+<Routes>
+    <Route path="teams/:teamId" element={<Team />} />
+    <Route path="teams/new" element={<NewTeam />} />
+</Routes>
+```
 
 ## Conventional routing vs React Router?
+
+[Medium - React Routing vs Conventional Routing](https://medium.com/nerd-for-tech/what-is-the-difference-between-react-router-and-conventional-routing-9b11159d92a4)
