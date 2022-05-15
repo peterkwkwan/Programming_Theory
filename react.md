@@ -286,6 +286,7 @@ Notes about reducers:
 ## What is React Router?
 
 Provides client-side routing for React apps.
+
 v6 provides Ranked Routes; essentially React Router will search for the best match (no need to mess with `exact` props or `<Switch>`)
 
 e.g. If you are visiting `https://myapp.com/teams/new`, React Router will render `<NewTeam />` because it's more specific than the `:teamId` parameter.
@@ -298,5 +299,28 @@ e.g. If you are visiting `https://myapp.com/teams/new`, React Router will render
 ```
 
 ## Conventional routing vs React Router?
+
+Conventional routing steps:
+
+1. User requests for route or URL changes
+2. Browser to issue a request to the server of the application for new page
+3. Server checks for the pathname in the URL and responds with a new HTML page
+
+- Based on client -- server interaction
+- causes whole site to refresh because server responds with new page
+
+![Conventional routing](./assets/conventional-routing.png?raw=true)
+
+React Router (client-side routing) steps:
+
+1. User requests for route or URL change
+2. Change is detected by JS
+3. Browser displays different component(s) based on new route
+
+- no request is sent to server
+- JS in browser handles the routing process (SPA)
+- browser history stack can be manipulated by client-side routing
+
+![CLient-side routing](./assets/react-routing.png?raw=true)
 
 [Medium - React Routing vs Conventional Routing](https://medium.com/nerd-for-tech/what-is-the-difference-between-react-router-and-conventional-routing-9b11159d92a4)
