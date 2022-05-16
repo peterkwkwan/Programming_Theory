@@ -145,6 +145,22 @@ A.K.A - Smart vs Dumb components
 - useful for remove eventListeners, invalidating timers, canceling network requests, remove subscriptions
 - takes callback on the return in useEffect hook
 
+## useEffect vs useLayoutEffect ?
+
+Both very identical, the only key difference being `useLayoutEffect` runs before the browser paints the screen.
+
+- `useLayoutEffect` runs before painting
+- `useEffect` runs after painting is completed
+
+Good use case for `useLayoutEffect`
+
+- a DOM mutation that must be visible to the user before the next paint
+- sometimes you may find `useLayoutEffect` produces animations that look cleaner and faster than `useEffect`
+
+Most of the time we should be using `useEffect` instead because of faster performance. If the DOM manipulation is expensive, `useLayoutEffect` will halt the browser's painting process.
+
+[useEffect vs useLayoutEffect](https://blog.logrocket.com/useeffect-vs-uselayouteffect-examples/)
+
 ## What are refs? What are some scenarios where you will use refs?
 
 Refs are an attribute provided by React to access DOM elements.
