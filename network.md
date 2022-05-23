@@ -193,7 +193,7 @@ We can optimize this by adding a DNS prefetch resource hint in the <head> of the
 
 ## What is a CDN and what is the benefit of using one?
 
-Content Delivery Network (CND)
+Content Delivery Network (CDN)
 
 - a group of servers spread out over a region that work together to speed up content delivery
 - CDN temporarily stores or cache content like HTML, images, JS and video
