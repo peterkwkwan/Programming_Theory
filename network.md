@@ -218,3 +218,18 @@ Content Delivery Network (CDN)
 - defend against DoS or DDoS
 - attackers cannot send high volume of junk requests to overwhelm a single server
 - since there are many servers, CDNs are better adapted to handle such events/traffic
+
+
+## What are PWA (Progessive Web Apps)?
+
+- PWAs are web apps that use service workers along with progressive enhancement to give users an experience on par with native apps
+
+Advantages:
+- network independent
+  - can work offline
+- progressively enhanced
+  - still usable on older browsers, but enhanced with more features on modern browsers
+- installable
+  - available on the device's home screen or app launcher
+- decreased loading times
+  - uses caching with service workers to save time and bandwidth on 2nd+ visit
