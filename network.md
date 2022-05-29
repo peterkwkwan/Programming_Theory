@@ -106,17 +106,54 @@ Various ways to enable real-time web application. Two general approaches: client
 00:00:03 C-> Is the cake ready?
 ```
 
+Pros of Polling: 
+- implemented using XMLHttpRequest which is widely supported
+
+Cons of Polling: 
+- more server intensive
+- possible for multiple HTTP requests from the same client to be in flight simultaneously (two browser tabs open); creates problem of duplicate data
+
 <ins>WebSockets (server push)</ins>
+Websockets are best for instantaneous data without the browser refresh
+- does your app involve multiple users communicating with each other?
+- does your server-side data constantly change?
+If yes to either question, websockets would be an ideal choice.
 
 - persistent connection between client & server, 2-way communication channel, using a single TCP connection
 - send messages to server and receive event-driven responses without having to poll
+
+Use cases:
+- social feeds
+- multiplayer games
+- collaborative editing
+- financial tickers (websockets can stream the latest prices)
+
+Pros of WebSockets: 
+- WebSockets keeps a unique connection open
+- do not use XMLHttpRequest, as such, headers are not sent each time we need info from server. This reduces expensive data loads being sent to the server
+
+Cons of WebSockets: 
+- WebSockets don’t automatically recover when connections are terminated. Need to implement yourself. There are many client-side libraries in existence to solve this.
+- Browsers older than 2011 aren’t able to support WebSocket connections
 
 <ins>Server-Sent Events (server push)</ins>
 
 - unlike WebSockets (bilateral), Server-Sent Events are unilateral
 - client receives data from server
-- good for server push functionalities
+- uses one long-lived HTTP connection
+ 
+ Pros of SSE: 
+- SSEs come with automatic reconnection
+- simpler and faster solution than WebSockets
 
+Cons of SSE: 
+- More browsers support WebSockets as opposed to SSE
+- Suffer from a limitation to the maximum number of open connections, which can be especially painful when opening various tabs, as the limit is per browser is six.
+
+Use cases:
+- apps that do not require data being sent from client
+- push notifications
+- newsletters & feeds
 ## What is AJAX?
 
 Asynchronous Javascript And XML
