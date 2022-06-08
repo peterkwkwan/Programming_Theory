@@ -1,3 +1,23 @@
+## Is JS single-threaded?
+
+Javascript is a synchronous, blocking, single threaded language.
+
+This means only 1 operation can be in progress at any given time. Only 1 function can be run at any given time, which blocks other functions from running until the running function has returned.
+
+## How does Async JS work if JS is single-threaded?
+
+Asynchronous means that multiple operations can be happening at the same time.
+
+There are 3 common ways to achieve asynchronous code in JS.
+
+1. callbacks
+2. promises
+3. async / await
+
+## How does the JS runtime and event loop work?
+
+![Runtime](./assets/JS-runtime.png?raw=true)
+
 ## What are closures?
 
 ```
