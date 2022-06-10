@@ -4,6 +4,25 @@ Javascript is a synchronous, blocking, single threaded language.
 
 This means only 1 operation can be in progress at any given time. Only 1 function can be run at any given time, which blocks other functions from running until the running function has returned.
 
+## What is Execution Context (EC)?
+
+An environment where Javascript code is evaluated and executed. Any code run in JS is inside an EC.
+
+2 main types of Execution Context:
+
+1. Global EC
+
+- default or base EC
+- performs 2 tasks: creates a global object (window object) and sets the value of `this` equal to global object
+
+2. Functional EC
+
+- everytime a function is invoked, a brand new EC is created for that function
+
+Execution context has two main parts: Variable Environment & Thread of Execution
+
+![Execution Context](./assets/execution-context.png?raw=true)
+
 ## How does the JS runtime and event loop work?
 
 The Call Stack
