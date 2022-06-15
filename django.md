@@ -2,7 +2,9 @@
 
 #### creating a virtual environment
 
-`python3 -m venv <path>` - create a new virtual environment
+`mkdir <name>` - create a new folder
+
+`python3 -m venv <name>` - create a new virtual environment
 
 `source env/bin/activate` - actives virtual environment
 
