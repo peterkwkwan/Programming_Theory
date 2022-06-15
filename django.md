@@ -1,5 +1,14 @@
 ## Useful commands
 
+`python3 -m venv <path>` - create a new virtual environment
+`source env/bin/activate` - actives virtual environment
+`deactivate` - quits virtual environment
+
+`pip3 install django` - installs django
+
+`django-admin startproject <name_of_project>` - creates a new project
+`python3 manage.py startapp <name_of_app>` - creates a new app
+
 `python3 manage.py runserver` - starts server
 
 `python3 manage.py makemigrations` - creates SQL model in migrations folder (step 1)
