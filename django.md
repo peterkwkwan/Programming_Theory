@@ -10,7 +10,7 @@
 
 `deactivate` - quits virtual environment
 
-#### install django
+#### install django (using pip3)
 
 `pip3 install django` - installs django
 
