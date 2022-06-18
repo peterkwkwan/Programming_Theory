@@ -32,6 +32,10 @@
 
 `python3 manage.py shell` - activates python shell
 
+`from <app>.models import <Class>` - import class object
+
+`<Class>.objects.get(id=1)` - gets the class object of id = 1
+
 `quit()` - quits python shell
 
 `python3 manage.py createsuperuser` - creates django admin account
