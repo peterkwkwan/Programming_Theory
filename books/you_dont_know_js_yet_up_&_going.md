@@ -19,3 +19,7 @@
 - `typeof`
   - returns the type of the value
   - interesting note: `typeof null` will return 'object'
+
+## Comparing values
+
+-
