@@ -33,9 +33,9 @@
 
 - Implicit is when type conversion happens as a nonobvious side effect
 
-```
-var a = "42"
-var b = a * 1
-console.log(a) // "42"
-console.log(b) // 42
-```
+  ```
+  var a = "42"
+  var b = a * 1
+  console.log(a) // "42"
+  console.log(b) // 42
+  ```
