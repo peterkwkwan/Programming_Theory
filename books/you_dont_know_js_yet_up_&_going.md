@@ -24,8 +24,18 @@
 
 - Type <strong>coercion</strong> is the automatic or implicit conversion of values from one data type to another.
 - Explicit coercion is when you can see the conversion happening in code
-  e.g.
-  ` var a = "42" var b = Number(a) console.log(typeof b) // number `
+
+  ```
+  var a = "42"
+  var b = Number(a)
+  console.log(typeof b) // number
+  ```
+
 - Implicit is when type conversion happens as a nonobvious side effect
-  e.g.
-  ` var a = "42" var b = a * 1 console.log(a) // "42" console.log(b) // 42 `
+
+```
+var a = "42"
+var b = a * 1
+console.log(a) // "42"
+console.log(b) // 42
+```
