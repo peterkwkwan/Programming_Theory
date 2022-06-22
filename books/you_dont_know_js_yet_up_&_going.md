@@ -39,3 +39,11 @@
   console.log(a) // "42"
   console.log(b) // 42
   ```
+
+## Falsy values in JS
+
+- "" (empty string)
+- 0, -0, NaN
+- null
+- undefined
+- false
