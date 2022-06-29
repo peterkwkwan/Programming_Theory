@@ -39,3 +39,21 @@
 `quit()` - quits python shell
 
 `python3 manage.py createsuperuser` - creates django admin account
+
+#### Django templating language
+
+{{ variable_here }} - using the passed variable inside the HTML
+
+`href="{% static 'path_here_.css' %}"` - path to css file in link tag
+
+```
+{% for athlete in athlete_list %}
+    <li>{{ athlete.name }}</li>
+{% endfor %}
+```
+
+```
+{% if CONDITION %}
+
+{% endif%}
+```
