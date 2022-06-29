@@ -44,7 +44,7 @@
 
 `{{ variable_here }}` - using the passed variable inside the HTML
 
-`href="{% static 'path_here_.css' %}"` - path to css file in <Link> tag
+`href="{% static 'path_here_.css' %}"` - path to css file in `<Link>` tag
 
 ```
 {% for athlete in athlete_list %}
