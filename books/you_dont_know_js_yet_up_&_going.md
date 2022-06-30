@@ -73,3 +73,11 @@ add10(2)
 add2(2)
 // 4
 ```
+
+## Module Pattern
+
+- common usage of closure in JS is the module pattern
+- modules allow us to define private implementation details (variables / functions) that are hidden from the outside world (abstration)
+- modules allow us to expose a publicly accessible API that uses the private details
+
+## `this` keyword
