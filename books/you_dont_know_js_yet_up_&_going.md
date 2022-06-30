@@ -81,3 +81,37 @@ add2(2)
 - modules allow us to expose a publicly accessible API that uses the private details
 
 ## `this` keyword
+
+- `this` points to an object, but it depends on <strong>how</strong> the function was called
+- `this` does NOT point to the function itself, as it is the most common misconception
+
+```
+function foo() {
+  console.log(this.bar)
+}
+
+const bar = "global"
+
+
+let obj1 = {
+  bar: "obj1",
+  foo:foo
+}
+
+let obj2 = {
+  bar: "obj2",
+}
+
+---
+
+foo(); // "global"
+obj1.foo(); // "obj1"
+foo.call(obj2); // "obj2"
+new foo(); // undefined
+
+```
+
+1. `this` is set to the global object
+2. `this` is set to the obj1 object
+3. `this` is set to the obj2 object
+4. `this` is set to a brand new empty object
