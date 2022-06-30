@@ -47,3 +47,29 @@
 - null
 - undefined
 - false
+
+## Closures
+
+- a way to "remember" and continue to access a function's scope (variables) even after the function has returned & finished execution
+- essentially, the arguments and variables of the outer function's scope can still be accessed within the inner function scope
+
+```
+function makeAdder(x){
+
+  function add(y){
+    return y + x
+  }
+
+  return add;
+}
+
+const add10 = makeAdder(10)
+
+const add2 = makeAdder(2)
+
+add10(2)
+// 12
+
+add2(2)
+// 4
+```
