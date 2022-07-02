@@ -125,3 +125,20 @@ new foo(); // undefined
 - Prototype chain
   - Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
   - By definition, <strong>null has no prototype</strong>, and acts as the final link in this prototype chain.
+
+## Polyfill
+
+- taking the definition of a newer feature and producing a piece of code that is equivalent in an older JS version
+
+## Transpiling
+
+- converting code to another version/type equivalent
+  - transpile from ES6 to ES5
+  - transpile from TS to JS
+- some transpiling tools include Babel (formerly called 6to5)
+
+## DOM API
+
+- `document` variable exists as a global variable when code is running in the browser
+- not provided by JS engine
+- `alert(...)` & `console.log(...)` are also other APIs provided by browser
