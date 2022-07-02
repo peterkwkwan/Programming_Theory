@@ -118,3 +118,10 @@ new foo(); // undefined
 2. `this` is set to the obj1 object
 3. `this` is set to the obj2 object
 4. `this` is set to a brand new empty object
+
+## Prototype
+
+- when referencing a non-existent property on an object, Javascript will automatically use that object's internal prototype link to find that property (its 'parent')
+- Prototype chain
+  - Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
+  - By definition, <strong>null has no prototype</strong>, and acts as the final link in this prototype chain.
