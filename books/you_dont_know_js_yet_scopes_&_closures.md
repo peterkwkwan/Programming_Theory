@@ -48,3 +48,5 @@
 - Compiler then asks Scope if variable `a` already exists for that particular scope collection. If so, Compiler will ignore this declaration and move on. Otherwise, the Compiler will ask Scope to declare a new variable called `a` for that scope collection
 
 - Then Engine will later execute this `a = 2` assignment. The code Engine runs will first ask Scope if there is a variable called `a` in the current scope collection. If so, Engine will use the variable. If not, Engine looks elsewhere (nested scope). If it still cannot be found, Engine will raise an error!
+
+## Nested Scope
