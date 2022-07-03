@@ -23,3 +23,15 @@
 - to ensure fast performance, JS engines use tricks like JIT (just-in-time) to speed up compilation
 
 ## Understanding Scope
+
+- We first need to understand who is in charge of determining scope
+
+<strong>The Cast</strong>
+
+1. Engine
+   - responsible for start-to-finish compilation and execution of our JS program
+2. Compiler
+   - one of engine's friends; handles the dirty work of parsing and code-generation
+3. Scope
+   - another of engine's friends; collects and maintains a look-up list of all the declared identifiers (variables)
+   - enforces a strict set of rules as to how these variables are accessible to the currently executing code
