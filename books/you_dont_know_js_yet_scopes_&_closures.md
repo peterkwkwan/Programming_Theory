@@ -35,3 +35,16 @@
 3. Scope
    - another of engine's friends; collects and maintains a look-up list of all the declared identifiers (variables)
    - enforces a strict set of rules as to how these variables are accessible to the currently executing code
+
+> `let a = 2`
+
+- When we encounter something like the above, we think of it as one statement. However that is not how the Engine sees it.
+- Engine sees it as 2 separate statements
+
+  - 1 that Compiler will handle during compilation
+  - 1 that the Engine will handle during execution
+
+- The first thing that happens is the Compiler will break it into tokens, which then parses it into an AST
+- Compiler then asks Scope if variable `a` already exists for that particular scope collection. If so, Compiler will ignore this declaration and move on. Otherwise, the Compiler will ask Scope to declare a new variable called `a` for that scope collection
+
+- Then Engine will later execute this `a = 2` assignment. The code Engine runs will first ask Scope if there is a variable called `a` in the current scope collection. If so, Engine will use the variable. If not, Engine looks elsewhere (nested scope). If it still cannot be found, Engine will raise an error!
