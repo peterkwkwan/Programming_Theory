@@ -1,3 +1,5 @@
+# Chapter 1
+
 ## What is Scope?
 
 - all programming languages require some way to store values in variables. How does our program find them?
@@ -59,3 +61,7 @@
 - if the variable lookup was not successful, this results in a `ReferenceError` being thrown by the Engine
 - if the program is NOT running in `Strict Mode`, then the global scope will create a new variable of that name <italic>in the global scope</italic>
   - `Strict Mode` disables this automatic/implicit creation of global variables on error
+
+# Chapter 2
+
+## Lexical Scope
