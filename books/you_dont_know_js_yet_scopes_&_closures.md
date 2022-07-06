@@ -50,3 +50,12 @@
 - Then Engine will later execute this `a = 2` assignment. The code Engine runs will first ask Scope if there is a variable called `a` in the current scope collection. If so, Engine will use the variable. If not, Engine looks elsewhere (nested scope). If it still cannot be found, Engine will raise an error!
 
 ## Nested Scope
+
+- usually we have more than one scope to consider. Scopes can be nested inside other scopes
+- if variable cannot be found in the current scope, engine consults the next outer scope, continuing until variable is found or the global scope is reached
+
+## Errors
+
+- if the variable lookup was not successful, this results in a `ReferenceError` being thrown by the Engine
+- if the program is NOT running in `Strict Mode`, then the global scope will create a new variable of that name <italic>in the global scope</italic>
+  - `Strict Mode` disables this automatic/implicit creation of global variables on error
