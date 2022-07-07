@@ -68,5 +68,6 @@
 
 - To recap, the 1st phase of language compiling is `lexing` (tokenizing)
   - lexing examines a string of source code characters and assigns semantic meaning to the tokens
-- lexical scope is scope that is defined at lexing time
+- lexical scope is the scope that is defined at lexing time
   - based on where variables and blocks of scope are written
+- no matter where a function is invoked from, its lexical scope is ONLY defined by where the function was declared
