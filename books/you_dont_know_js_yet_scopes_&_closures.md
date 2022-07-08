@@ -71,3 +71,26 @@
 - lexical scope is the scope that is defined at lexing time
   - based on where variables and blocks of scope are written
 - no matter where a function is invoked from, its lexical scope is ONLY defined by where the function was declared
+  - as such, scope is an `author-time` decision
+
+# Chapter 3
+
+## Function vs Block Scope
+
+- JavaScript has function-based scope
+  - each function we declare creates its own scope bubbles
+- block scope is anything within curly braces `{ }`
+- using `let` allows us to use block scope for variable declaration
+
+## Expression vs Declaration
+
+- Easiest way to distinguish declaration vs expression is the position of the word `function` in the statement
+- if `function` is the first thing in the statement, then it is a declaration. Otherwise its an expression
+
+## Anonymous vs Named
+
+Anonymous functions have a few downsides
+
+1. no meaningful name to display on stack traces, which can make debugging difficult
+2. no descriptive name which may make code less readable
+3. if it needs to reference itself (e.g. recursion, unbinding), it is difficult
