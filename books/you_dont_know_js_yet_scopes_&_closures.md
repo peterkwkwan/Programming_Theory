@@ -94,3 +94,7 @@ Anonymous functions have a few downsides
 1. no meaningful name to display on stack traces, which can make debugging difficult
 2. no descriptive name which may make code less readable
 3. if it needs to reference itself (e.g. recursion, unbinding), it is difficult
+
+# Chapter 4
+
+## Hoisting
