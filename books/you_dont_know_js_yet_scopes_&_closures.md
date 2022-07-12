@@ -98,3 +98,28 @@ Anonymous functions have a few downsides
 # Chapter 4
 
 ## Hoisting
+
+Consider this code:
+
+```
+a = 2;
+var a;
+
+console.log(a) // '2' is printed
+```
+
+Why? Due to the compiler.
+
+- The engine will compile your JS code BEFORE it interprets it
+  - All DECLARATIONS are processes first, before any code is executed
+
+In the above example, `a = 2`, the compiler thinks of it as 2 statements: `var a` and `a = 2`
+
+1. `var a` is processed first
+2. Then, `a = 2` is left in place for the execution phase
+
+This process is called `hoisting`, where variable and function declarations are moved to the top of the code
+
+**NOTE** hoisting is done `per-scope`
+
+## Functions First
