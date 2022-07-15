@@ -120,6 +120,6 @@ In the above example, `a = 2`, the compiler thinks of it as 2 statements: `var a
 
 This process is called `hoisting`, where variable and function declarations are moved to the top of the code
 
-**NOTE** hoisting is done `per-scope`
+- Functions are hoisted FIRST, then variables SECOND
 
-## Functions First
+**NOTE** hoisting is done `per-scope`
