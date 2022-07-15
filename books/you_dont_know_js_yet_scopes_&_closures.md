@@ -123,3 +123,9 @@ This process is called `hoisting`, where variable and function declarations are 
 - Functions are hoisted FIRST, then variables SECOND
 
 **NOTE** hoisting is done `per-scope`
+
+# Chapter 5
+
+## Scope Closure
+
+- Closure is when a function is able to remember and access its lexical scope even when the function has finished executing or is executing outside its lexical scope
