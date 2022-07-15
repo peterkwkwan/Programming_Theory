@@ -64,6 +64,12 @@ There are 3 common ways to achieve asynchronous code in JS.
 
 Essentially, these callback functions make use of JS runtime's message/callback queue. Anytime callbacks are added to the message queue, JS executes the remaining callstack stack frames first, before processing the items in the message queue.
 
+## ES6 Job Queue/ Micro-Task queue
+
+- ES6 introduced the concept of job queue/micro-task queue which is used by Promises in JavaScript.
+  - the difference between the message queue and the job queue is that the job queue has a higher priority than the message queue
+  - this means that promise jobs inside the job queue/ micro-task queue will be executed before the callbacks inside the message queue
+
 ## What are closures?
 
 ```
