@@ -129,3 +129,20 @@ This process is called `hoisting`, where variable and function declarations are 
 ## Scope Closure
 
 - Closure is when a function is able to remember and access its lexical scope even when the function has finished executing or is executing outside its lexical scope
+  - Closures allow functions to continue to access the lexical scope it was defined at author time
+  - Whenever we transport an inner function outside of its lexical scope, it will MAINTAIN a scope reference to where it was originally declared
+
+```
+function foo() {
+  const a = 2;
+
+  function bar(){
+    console.log(a)
+  }
+
+  return bar;
+}
+
+const baz = foo();
+baz(); // 2
+```
