@@ -146,3 +146,40 @@ function foo() {
 const baz = foo();
 baz(); // 2
 ```
+
+## Loops and Closure
+
+```
+for (var i = 0; i < 3; i++){
+  setTimeout(function timer() {
+    var j = i
+    console.log(j)
+  }, 0)
+}
+
+// '3' is printed 3 times
+```
+
+Although the 3 `timer()`s are defined separately in each iteration, they are closed over the same shared global scope, which has one <strong>one `i`</strong> in it
+
+- therefore, all 3 delcarations of `timer()` reference the same `i`
+
+In order for our code to print `0, 1, 2`, we need it to persist the `i` variable somehow in each iteration
+
+- we can do this by using `let` instead of `var` to change the declaration from a functional global scope to a block scope
+- `let` essentially turns a block into a scope that we can close over
+
+```
+for (var i = 0; i < 3; i++){
+  setTimeout(function timer() {
+    var j = i
+    console.log(j)
+  }, 0)
+}
+
+// 0
+// 1
+// 2
+```
+
+## Modules
