@@ -70,6 +70,36 @@ Essentially, these callback functions make use of JS runtime's message/callback 
   - the difference between the message queue and the job queue is that the job queue has a higher priority than the message queue
   - this means that promise jobs inside the job queue/ micro-task queue will be executed before the callbacks inside the message queue
 
+```
+console.log('Script start');
+setTimeout(() => {
+  console.log('setTimeout');
+}, 0);
+new Promise((resolve, reject) => {
+    resolve('Promise 1 resolved');
+  }).then(res => console.log(res));
+new Promise((resolve, reject) => {
+  resolve('Promise 2 resolved');
+  }).then(res => {
+       console.log(res);
+       return new Promise((resolve, reject) => {
+         resolve('Promise 3 resolved');
+       })
+     }).then(res => console.log(res));
+console.log('Script End');
+```
+
+This prints:
+
+```
+Script start
+Script End
+Promise 1 resolved
+Promise 2 resolved
+Promise 3 resolved
+setTimeout
+```
+
 ## What are closures?
 
 ```
