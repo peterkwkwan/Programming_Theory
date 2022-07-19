@@ -185,3 +185,38 @@ for (var i = 0; i < 3; i++){
 ## Modules
 
 - Modules leverage the use of closure to encapsulate logic and only expose what is necessary via abstraction
+
+```
+function CoolModule () {
+  const something = 'cool';
+  const another = [1, 2, 3];
+
+  function doSomething () {
+    console.log(something);
+  }
+
+  function doAnother () {
+    console.log(another.join('!'));
+  }
+
+  return {
+    doSomething: doSomething,
+    doAnother: doAnother
+  }
+}
+
+const foo = CoolModule();
+foo.doSomething(); // 'cool'
+foo.doAnother(); // '1 ! 2 ! 3'
+```
+
+Above example is a common way of implementing the module pattern
+
+- this is called the `revealing module` pattern
+- the return value (`doSomething, doAnother`) is essentially a public API for our module
+- `doSomething` and `doAnother` functions have closure over the inner scope of the module instance (arrived by invoking `CoolModule()`)
+
+For this module pattern to work, there must be 2 conditions met:
+
+1. there must be an outer enclosing function, and must be invoked at least once (each time creates a new instance)
+2. the enclosing function must return back at least one inner function, so that the inner function has closure over the private scope
