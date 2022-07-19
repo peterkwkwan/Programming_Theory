@@ -67,29 +67,29 @@ What is a Virtual Environment?
 
 #### Setting up our Venv
 
-> python -m venv <name>
+`python -m venv <name>`
 
 > E.g. `python -m venv env`
 
 - creates virtual environment INSIDE your project folder
 
-> source env/bin/activate
+`source env/bin/activate`
 
 - activate virtual environment
 
 #### Install Django
 
-> pip3 install django
+`pip3 install django`
 
 - installs Django
 
-> python3 -m django --version
+`python3 -m django --version`
 
 - check version to make sure we have installed django correctly
 
 #### Starting our Django project
 
-> django-admin startproject <name_of_project>
+`django-admin startproject <name_of_project>`
 
 > E.g. `django-admin startproject first_project`
 
@@ -101,11 +101,11 @@ Open Visual Studio Code!
 
 Test if our project works!
 
-> python3 manage.py runserver
+`python3 manage.py runserver`
 
 - starts server
 
-> python3 manage.py startapp <name_of_project>
+`python3 manage.py startapp <name_of_project>`
 
 > E.g. `python3 manage.py startapp first_app`
 
