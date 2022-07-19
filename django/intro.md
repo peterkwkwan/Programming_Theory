@@ -68,6 +68,7 @@ What is a Virtual Environment?
 #### Setting up our Venv
 
 > python -m venv <name>
+
 > E.g. `python -m venv env`
 
 - creates virtual environment INSIDE your project folder
@@ -89,6 +90,7 @@ What is a Virtual Environment?
 #### Starting our Django project
 
 > django-admin startproject <name_of_project>
+
 > E.g. `django-admin startproject first_project`
 
 - creates a new project
@@ -104,6 +106,7 @@ Test if our project works!
 - starts server
 
 > python3 manage.py startapp <name_of_project>
+
 > E.g. `python3 manage.py startapp first_app`
 
 - creates a new app
