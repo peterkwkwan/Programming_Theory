@@ -23,6 +23,6 @@ Advantages of web apps:
 
 <img src="../assets/lego_man.png" alt="app" width="200px">
 
-<img src="../assets/lego_project.png"alt="project" width="200px">
+<img src="../assets/lego_project.png" alt="project" width="200px">
 
-<img src="../assets/lego_framework.png"alt="framework" width="200px">
+<img src="../assets/lego_framework.png" alt="framework" width="200px">
