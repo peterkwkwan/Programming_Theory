@@ -112,3 +112,51 @@ h2 {
 ```
 
 ## OOP
+
+- Classes are like blueprints for objects
+- Objects have characteristics and behaviors
+
+```
+Class dog:
+
+    def __init__(self, name, color): // constructor
+        self.type = 'animal' // instance variables
+        self.name = name
+        self.color = color
+
+    def sound(self): // instance method
+        print("woof woof!")
+
+...
+
+dogs = Dog('Fido', 'brown') // instantiating an object
+
+```
+
+## Database
+
+- allows us to store data and persist/save it
+- data input, organization and retrieval
+- traditional databases use tables to store, sort and filter the data
+
+#### SQL
+
+- Structured Query Language
+- Language used by databases for performing CRUD operations
+  - Create, Read, Update, Destroy
+
+Consists of a table - thinkg MS Excel
+
+- requires a data type when creating a table
+  - we use SCHEMAs to structure our tables and relationships
+- 3 main data types
+
+  1. String (e.g. CharField)
+  2. Number (e.g. IntegerField)
+  3. Date/Time (e.g. DateField)
+
+- PRIMARY KEY (PK)
+  - unique identifier for each row
+- FOREIGN KEY (FK)
+  - shows how our current table rows relates to another table's PKs
+  - FKs creates the relationship between tables
