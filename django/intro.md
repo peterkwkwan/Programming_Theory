@@ -22,10 +22,7 @@ Advantages of web apps:
 > Show Google Apps
 
 <img src="../assets/lego_man.png" alt="app" width="200px">
-<span>App</span>
 
 <img src="../assets/lego_project.png"alt="project" width="200px">
-<span>Project</span>
 
 <img src="../assets/lego_framework.png"alt="framework" width="200px">
-<span>Framework</span>
