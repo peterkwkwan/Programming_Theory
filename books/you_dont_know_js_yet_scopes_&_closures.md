@@ -183,3 +183,5 @@ for (var i = 0; i < 3; i++){
 ```
 
 ## Modules
+
+- Modules leverage the use of closure to encapsulate logic and only expose what is necessary via abstraction
