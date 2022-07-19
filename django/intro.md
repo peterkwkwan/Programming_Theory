@@ -65,11 +65,45 @@ What is a Virtual Environment?
 - an isolated environment where we can install and separate our package & library dependencies in our projects
 - can also send our app / project to other computers / users and simplifies the process of sharing (don't need to care about versions)
 
+#### Setting up our Venv
+
 > python -m venv <name>
-> `python -m venv env`
+> E.g. `python -m venv env`
 
 - creates virtual environment INSIDE your project folder
 
 > source env/bin/activate
 
 - activate virtual environment
+
+#### Install Django
+
+> pip3 install django
+
+- installs Django
+
+> python3 -m django --version
+
+- check version to make sure we have installed django correctly
+
+#### Starting our Django project
+
+> django-admin startproject <name_of_project>
+> E.g. `django-admin startproject first_project`
+
+- creates a new project
+
+#### Working with our project
+
+Open Visual Studio Code!
+
+Test if our project works!
+
+> python3 manage.py runserver
+
+- starts server
+
+> python3 manage.py startapp <name_of_project>
+> E.g. `python3 manage.py startapp first_app`
+
+- creates a new app
