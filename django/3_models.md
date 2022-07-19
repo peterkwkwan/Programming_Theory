@@ -160,3 +160,15 @@ Consists of a table - thinkg MS Excel
 - FOREIGN KEY (FK)
   - shows how our current table rows relates to another table's PKs
   - FKs creates the relationship between tables
+
+## Models in Django
+
+- Django allows us to create databases with extreme convenience thanks to its built-in functionality
+
+1. Creating our own Model
+
+`first_app/modules`
+
+```
+
+```
