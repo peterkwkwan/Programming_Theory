@@ -31,11 +31,11 @@ def help(request):
 
 #### Tags vs Variables
 
-1. `{{ variable_name }}
+1. `{{ variable_name }}`
 
 - allows us to use variables in HTML
 
-2. {% logic_here %}
+2. `{% logic_here %}`
 
 - allows us to use logic within HTML
 
