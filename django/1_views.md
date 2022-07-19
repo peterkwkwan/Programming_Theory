@@ -1,4 +1,4 @@
-## Models, Views, Templates
+## Views
 
 Web Basics
 
@@ -13,7 +13,9 @@ In Django, whenever we have a REQUEST, we need to handle it and send back a RESP
 2. Map app to project URL (urls.py)
 3. Tie app to project (settings.py)
 
-4. `appFolder/views.py`
+#### Creating our first VIEW
+
+1. `appFolder/views.py`
 
 ```
 def index(request):
@@ -43,4 +45,29 @@ INSTALLED_APPS =[
 ]
 ```
 
-> show index page
+> Show index page
+
+#### INCLUDES in url
+
+1. Create new `urls.py` file in `first_app`
+
+```
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('index/', views.index, name='index')
+]
+```
+
+2. `include` keyword in first_project urls.py
+
+```
+from django.urls import path, include
+...
+
+urlpatterns = [
+    ...
+    path('first_app', include('first_app.urls')
+]
+```
