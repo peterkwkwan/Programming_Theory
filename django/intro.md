@@ -97,9 +97,9 @@ What is a Virtual Environment?
 
 #### Working with our project
 
-Open Visual Studio Code!
+1. Open Visual Studio Code!
 
-Test if our project works!
+2. Test if our project works!
 
 `python3 manage.py runserver`
 
