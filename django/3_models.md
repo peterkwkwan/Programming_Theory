@@ -117,7 +117,7 @@ h2 {
 - Objects have characteristics and behaviors
 
 ```
-Class dog:
+class dog:
 
     def __init__(self, name, color): // constructor
         self.type = 'animal' // instance variables
@@ -170,5 +170,12 @@ Consists of a table - thinkg MS Excel
 `first_app/modules`
 
 ```
+from django.db import models
 
+class Student(models.Model): // importing models which is part of the convenience package from Django
+    name = models.CharField(max_length=256)
+    age = models.IntegerField()
+
+    def __str__(self):
+        return self.name
 ```
