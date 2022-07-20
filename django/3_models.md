@@ -164,6 +164,10 @@ Consists of a table - thinkg MS Excel
 ## Models in Django
 
 - Django allows us to create databases with extreme convenience thanks to its built-in functionality
+  - no need to create primary keys
+- Models are the source of our data
+- Contains values and behaviors about our data
+- Each model maps to a single table
 
 1. Creating our own Model
 
@@ -178,4 +182,12 @@ class Student(models.Model): // importing models which is part of the convenienc
 
     def __str__(self):
         return self.name
+
+class Class (models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=256)
+    start_date = models.DateField()
+
+    def __str__(self):
+        return self.subject
 ```
