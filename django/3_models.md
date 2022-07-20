@@ -219,7 +219,7 @@ class Class (models.Model):
 
 - We always need to type `python3` before we run any command
 
-`first_project` folder
+`root` folder
 
 > `python3 manage.py shell`
 
@@ -253,3 +253,24 @@ print(Student.objects.all()) // <QuerySet [<Student: Peter Kwan>]>
 > `quit()`
 
 #### Using Admin to create data
+
+1. Before we can access `/admin` route, we need to create an admin account
+
+> `python3 manage.py createsuperuser`
+
+- creates django admin account
+- login to admin account
+
+2. Register our models in our `admin.py` file
+
+`first_app/admin.py`
+
+```
+from django.contrib import admin
+from .models import Student, Class
+
+admin.site.register(Student)
+admin.site.register(Class)
+```
+
+3. Go to Admin panel and add a Class/Student
