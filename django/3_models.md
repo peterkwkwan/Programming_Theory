@@ -169,9 +169,11 @@ Consists of a table - thinkg MS Excel
 - Contains values and behaviors about our data
 - Each model maps to a single table
 
+#### Creating a Model
+
 1. Creating our own Model
 
-`first_app/modules`
+`first_app/models.py`
 
 ```
 from django.db import models
@@ -191,3 +193,63 @@ class Class (models.Model):
     def __str__(self):
         return self.subject
 ```
+
+2. Confirm our change and notify Django (migration)
+
+> `python3 manage.py makemigrations`
+
+- creates SQL model in migrations folder (step 1)
+
+> `python3 manage.py migrate`
+
+- double confirm the migration (step 2)
+
+* Can show the migrations folder to see the changes
+
+3. Test our Model is working
+
+- We will need to work with the Python shell
+  - shell is the outermost layer of the operating system, which allows us to communicate with our OS
+  - Our MacOS or Windows OS has a default shell
+    - e.g. Windows = cmd.exe
+    - e.g. MacOS = terminal
+- We will need to put on the Python shell to test our model in Django database
+
+1. Activate Python shell
+
+- We always need to type `python3` before we run any command
+
+`first_project` folder
+
+> `python3 manage.py shell`
+
+2. Test if Python shell works
+
+```
+name = "Peter"
+
+print(name) // "Peter"
+```
+
+3. Import our class in our model using relative import
+
+> `from first_app.models import Student`
+
+4. We can use Python queries to test if import worked
+
+> `print(Student.objects.all()) // <QuerySet []>`
+
+5. Create a Student, save it, then test it
+
+```
+student1 = Student(name="Peter", age="30")
+student1.save()
+
+print(Student.objects.all()) // <QuerySet [<Student: Peter Kwan>]>
+```
+
+6. Quit Python shell
+
+> `quit()`
+
+#### Using Admin to create data
