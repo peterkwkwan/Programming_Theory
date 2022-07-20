@@ -67,9 +67,9 @@ What is a Virtual Environment?
 
 #### Setting up our Venv
 
-`python -m venv <name>`
+`python3 -m venv <name>`
 
-> E.g. `python -m venv env`
+> E.g. `python3 -m venv env`
 
 - creates virtual environment INSIDE your project folder
 
