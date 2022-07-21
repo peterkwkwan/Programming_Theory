@@ -51,12 +51,12 @@
 
 - Then Engine will later execute this `a = 2` assignment. The code Engine runs will first ask Scope if there is a variable called `a` in the current scope collection. If so, Engine will use the variable. If not, Engine looks elsewhere (nested scope). If it still cannot be found, Engine will raise an error!
 
-## Nested Scope
+### Nested Scope
 
 - usually we have more than one scope to consider. Scopes can be nested inside other scopes
 - if variable cannot be found in the current scope, engine consults the next outer scope, continuing until variable is found or the global scope is reached
 
-## Errors
+### Errors
 
 - if the variable lookup was not successful, this results in a `ReferenceError` being thrown by the Engine
 - if the program is NOT running in `Strict Mode`, then the global scope will create a new variable of that name <italic>in the global scope</italic>
@@ -75,19 +75,19 @@
 
 # Chapter 3
 
-## Function vs Block Scope
+### Function vs Block Scope
 
 - JavaScript has function-based scope
   - each function we declare creates its own scope bubbles
 - block scope is anything within curly braces `{ }`
 - using `let` allows us to use block scope for variable declaration
 
-## Expression vs Declaration
+### Expression vs Declaration
 
 - Easiest way to distinguish declaration vs expression is the position of the word `function` in the statement
 - if `function` is the first thing in the statement, then it is a declaration. Otherwise its an expression
 
-## Anonymous vs Named
+### Anonymous vs Named
 
 Anonymous functions have a few downsides
 
@@ -147,7 +147,7 @@ const baz = foo();
 baz(); // 2
 ```
 
-## Loops and Closure
+### Loops and Closure
 
 ```
 for (var i = 0; i < 3; i++){
@@ -182,7 +182,7 @@ for (var i = 0; i < 3; i++){
 // 2
 ```
 
-## Modules
+### Modules
 
 - Modules leverage the use of closure to encapsulate logic and only expose what is necessary via abstraction
 
