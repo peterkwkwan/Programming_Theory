@@ -1,1 +1,70 @@
 # Chapter 1
+
+#### Confusions around using `this`
+
+1. Itself
+
+The first common temptation is to assume this refers to the function itself. That's a reasonable grammatical inference, at least.
+
+Consider the following code, where we attempt to track how many times a function (foo) was called:
+
+```
+function foo(num) {
+	console.log( "foo: " + num );
+
+	// keep track of how many times `foo` is called
+	this.count++;
+}
+
+foo.count = 0;
+
+var i;
+
+for (i=0; i<10; i++) {
+	if (i > 5) {
+		foo( i );
+	}
+}
+// foo: 6
+// foo: 7
+// foo: 8
+// foo: 9
+
+// how many times was `foo` called?
+console.log( foo.count ); // 0 -- WTF?
+```
+
+- When the code executes foo.count = 0, indeed it's adding a property count to the function object foo. 
+- But for the this.count reference inside of the function, this is not in fact pointing at all to that function object, and so even though the property names are the same, the root objects are different, and confusion ensues.
+
+To fix this 'bug', we need to properly call `foo` with a reference of `this` to itself
+
+```
+for (i=0; i<10; i++) {
+	if (i > 5) {
+		// using `call(..)`, we ensure the `this`
+		// points at the function object (`foo`) itself
+		foo.call( foo, i );
+	}
+}
+
+console.log( foo.count ); // 4
+```
+
+#### Function.prototype.call()
+The call() method calls the function with a given this value and arguments provided individually.
+
+```
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function Food(name, price) {
+  Product.call(this, name, price);
+  this.category = 'food';
+}
+
+console.log(new Food('cheese', 5).name);
+// expected output: "cheese"
+```
