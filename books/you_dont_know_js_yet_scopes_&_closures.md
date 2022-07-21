@@ -1,6 +1,6 @@
 # Chapter 1
 
-## What is Scope?
+### What is Scope?
 
 - all programming languages require some way to store values in variables. How does our program find them?
 - there are rules / restrictions for storing these variables in some location
