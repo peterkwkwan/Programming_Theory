@@ -1,6 +1,6 @@
 # Chapter 1
 
-#### Confusions around using `this`
+### Confusions around using `this`
 
 1. Itself
 
