@@ -2,7 +2,7 @@
 
 ### Confusions around using `this`
 
-1. Itself
+1. NOT the function itself
 
 The first common temptation is to assume this refers to the function itself. That's a reasonable grammatical inference, at least.
 
@@ -70,4 +70,31 @@ console.log(new Food('cheese', 5).name);
 // expected output: "cheese"
 ```
 
-2. Its scope
+2. NOT a function's lexical scope
+
+Another common misconception is that `this` somehow refers to the function's scope.
+
+- scope is not accessible to Javascript code
+  - scope is part of the engine's implementation
+
+```
+function foo() {
+	var a = 2;
+	bar();
+}
+
+function bar() {
+	console.log( this.a );
+}
+
+foo(); // ReferenceError: a is not defined
+```
+
+- THe above code is attempting to use this to create a bridge between the lexical scopes of foo() and bar(), so that bar() has access to the variable a in the inner scope of foo(). No such bridge is possible.
+- You cannot use a this reference to look something up in a lexical scope. It is not possible.
+
+## What's `this`?
+
+- `this` is NOT an author-time binding but a RUNTIME binding.
+- It is contextual based on the conditions of the function's invocation. `this` binding has nothing to do with where a function is declared, but has instead everything to do with the <strong>manner in which the function is called.</strong>
+- When function is invoked, an `execution context` (EC) with the `this` property created to be used within that EC
