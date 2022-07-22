@@ -34,7 +34,7 @@ for (i=0; i<10; i++) {
 console.log( foo.count ); // 0 -- WTF?
 ```
 
-- When the code executes foo.count = 0, indeed it's adding a property count to the function object foo. 
+- When the code executes foo.count = 0, indeed it's adding a property count to the function object foo.
 - But for the this.count reference inside of the function, this is not in fact pointing at all to that function object, and so even though the property names are the same, the root objects are different, and confusion ensues.
 
 To fix this 'bug', we need to properly call `foo` with a reference of `this` to itself
@@ -52,6 +52,7 @@ console.log( foo.count ); // 4
 ```
 
 #### Function.prototype.call()
+
 The call() method calls the function with a given this value and arguments provided individually.
 
 ```
@@ -68,3 +69,5 @@ function Food(name, price) {
 console.log(new Food('cheese', 5).name);
 // expected output: "cheese"
 ```
+
+2. Its scope
