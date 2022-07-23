@@ -98,3 +98,15 @@ foo(); // ReferenceError: a is not defined
 - `this` is NOT an author-time binding but a RUNTIME binding.
 - It is contextual based on the conditions of the function's invocation. `this` binding has nothing to do with where a function is declared, but has instead everything to do with the <strong>manner in which the function is called.</strong>
 - When function is invoked, an `execution context` (EC) with the `this` property created to be used within that EC
+
+# Chapter 2
+
+## `this` all makes sense now!
+
+#### The `call-site`
+
+Call-site is the location in code where a function is called (<strong>not where its delcared</strong>).
+
+- depending on the call-site, it will help us identify what `this` is referring to
+
+Call-stack is also important for us to consider as it determines which function is currently executing.
