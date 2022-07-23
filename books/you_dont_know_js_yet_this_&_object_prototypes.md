@@ -140,6 +140,11 @@ function foo() {
 baz(); // <-- call-site for `baz`
 ```
 
-#### Default Binding
+## Call-site rules
 
-By understanding the call-site and call-stack, we can determine where `this` will point to during the execution of a function
+By understanding the call-site and call-stack, we can determine where `this` will point to during the execution of a function.
+
+- we must inspect the call-site and determine which of the following 4 rules applies
+- there COULD be multiple rules applying to a single call-site
+
+#### 1. Default Binding
