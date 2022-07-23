@@ -139,3 +139,7 @@ function foo() {
 
 baz(); // <-- call-site for `baz`
 ```
+
+#### Default Binding
+
+By understanding the call-site and call-stack, we can determine where `this` will point to during the execution of a function
