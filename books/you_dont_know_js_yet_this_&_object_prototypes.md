@@ -105,11 +105,13 @@ foo(); // ReferenceError: a is not defined
 
 #### The `call-site`
 
-Call-site is the location in code where a function is called (<strong>not where its delcared</strong>).
+Call-site is the location in code where a function is called FROM (<strong>not where its delcared</strong>).
 
 - depending on the call-site, it will help us identify what `this` is referring to
 
 Call-stack is also important for us to consider as it determines which function is currently executing.
+
+- The call-site we care about is in the invocation before the currently executing function.
 
 ```
 function baz() {
