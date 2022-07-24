@@ -160,6 +160,6 @@ var a = 2;
 foo(); // 2
 ```
 
-When foo() is called, `this.a` resolves to our global variable a. 
+When foo() is called, `this.a` resolves to our global variable `a`
 - Why? Because in this case, the default binding for this applies to the function call, and so points this at the global object.
 - How do we know that the default binding rule applies here? We examine the call-site to see how foo() is called. In our snippet, foo() is called with a plain, un-decorated function reference. None of the other rules we will demonstrate will apply here, so the default binding applies instead.
