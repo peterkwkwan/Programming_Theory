@@ -185,4 +185,9 @@ obj.foo(); // 2
 
 The call-site uses the `obj` context to reference the function, so you could say that the `obj` object "owns" or "contains" the function reference at the time the function is called.
 
-- at the point that `foo()` is called, it's preceded by an object reference to `obj`
+- At the point that `foo()` is called, it's preceded by an object reference to `obj`
+- Because `obj` is the `this` for the `foo()` call, `this.a` is synonymous with `obj.a`
+
+When there is a context object for a function reference, the implicit binding rule says that it's <strong>that</strong> object which should be used for the function call's `this` binding.
+
+##### Implicitly Lost
