@@ -191,3 +191,51 @@ The call-site uses the `obj` context to reference the function, so you could say
 When there is a context object for a function reference, the implicit binding rule says that it's <strong>that</strong> object which should be used for the function call's `this` binding.
 
 ##### Implicitly Lost
+
+One of the most common frustrations that `this` binding creates is when an implicitly bound function loses that binding, which usually means it falls back to the default binding.
+
+```
+function foo() {
+	console.log( this.a );
+}
+
+var obj = {
+	a: 2,
+	foo: foo
+};
+
+var bar = obj.foo; // function reference/alias!
+
+var a = "oops, global"; // `a` also property on global object
+
+bar(); // "oops, global"
+```
+
+Even though `bar` appears to be a reference to `obj.foo`, in fact, it's really <strong>just another reference</strong> to `foo` itself. Moreover, the call-site is what matters, and the call-site is `bar()`, which is a plain, un-decorated call and thus the default binding applies.
+
+The more subtle, more common, and more unexpected way this occurs is when we consider passing a callback function:
+
+```
+function foo() {
+	console.log( this.a );
+}
+
+function doFoo(fn) {
+	// `fn` is just another reference to `foo`
+
+	fn(); // <-- call-site!
+}
+
+var obj = {
+	a: 2,
+	foo: foo
+};
+
+var a = "oops, global"; // `a` also property on global object
+
+doFoo( obj.foo ); // "oops, global"
+```
+
+Parameter passing is just an implicit assignment, and since we're passing a function, it's an implicit reference assignment, so the end result is the same as the previous snippet.
+
+#### 3. Explicit Binding
