@@ -148,6 +148,7 @@ By understanding the call-site and call-stack, we can determine where `this` wil
 - there COULD be multiple rules applying to a single call-site
 
 #### 1. Default Binding
+
 - the default rule that applies when no other rules apply
 
 ```
@@ -161,7 +162,27 @@ foo(); // 2
 ```
 
 When foo() is called, `this.a` resolves to our global variable `a`
+
 - Why? Because in this case, the default binding for this applies to the function call, and so points this at the global object.
 - How do we know that the default binding rule applies here? We examine the call-site to see how `foo()` is called. In our snippet, `foo()` is called with a plain, un-decorated function reference. None of the other rules we will demonstrate will apply here, so the default binding applies instead.
 
 #### 2. Implicit Binding
+
+- does the call-site have a context object? A.K.A. owning or containing object
+
+```
+function foo() {
+	console.log( this.a );
+}
+
+var obj = {
+	a: 2,
+	foo: foo
+};
+
+obj.foo(); // 2
+```
+
+The call-site uses the `obj` context to reference the function, so you could say that the `obj` object "owns" or "contains" the function reference at the time the function is called.
+
+- at the point that `foo()` is called, it's preceded by an object reference to `obj`
