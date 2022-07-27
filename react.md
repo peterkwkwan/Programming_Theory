@@ -2,7 +2,7 @@
 
 ## Describe React Virtual DOM
 
-Virtual DOM is a React concept where a 'virtual' representation of the DOM is kept in memory. This Virtual DOM is synced with the real DOM in a process called reconciliation.
+Virtual DOM is a React concept where a virtual representation of the DOM is kept in memory. This Virtual DOM is synced with the real DOM in a process called reconciliation.
 
 In React, you tell the Virtual DOM what state the UI should be in, and it makes sure the DOM matches that state. Using reconcilitation, only the components/elements that have changed will be updated.
 
