@@ -33,7 +33,6 @@ hello world
 print("hello")
 type("hello")
 type(123)
-type(10/2) // float
 ```
 
 
@@ -50,3 +49,30 @@ type(10/2) // float
 "hello world".upper()
 "hello world".title()
 123.upper() // invalid syntax
+123 + 10
+123 - 10
+10 / 2
+type(10/2)
+'canada'.count() // TypeError: count() takes at least 1 argument (0 given)
+'canada'.count('a')
+'canada'.count(1) // TypeError: must be str, not int
+```
+
+```
+'hong kong is very humid'.upper().count('H')
+```
+> What is the result?
+
+```
+x = 'hong kong is very humid'.upper().count('H')
+print(x)
+```
+#### Variables
+- container --> a way of storing data
+
+
+#### 4 steps of programming
+
+1. data types --> str/int
+2. methods / functions --> upper(), lower(), count()
+3. logic (sentence structure)
