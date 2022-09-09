@@ -126,8 +126,8 @@ int(input('enter your age')) # type casting
 - we can invoke a function by just its name
 
 4. libraries
-  - analogy: _smartphone_
-  - comes pre-packaged with many features
+    - analogy: _smartphone_
+    - comes pre-packaged with many features
   - however, we have some specific tasks that does not come with the phone
   - download apps / import libraries
 
