@@ -76,3 +76,36 @@ print(x)
 1. data types --> str/int
 2. methods / functions --> .upper(), .lower(), .count(), print()
 3. logic (sentence structure)
+
+
+```
+x > 2
+x == 2
+x is 2
+x is not 2
+```
+
+```
+if x > 3:
+  print ('yay!')
+else :
+  print ('x is not greater than 3')
+```
+
+#### Assignment time
+```
+age = 18
+
+if age > 18:
+  print('enjoy your beer!')
+if age == 18:
+  print('drink responsibly!')
+else:
+  print("sorry you're not allowed alcohol")
+```
+
+`int(age) > 18` vs. `age = int(input('enter your age'))`
+
+```
+int(input('enter your age')) # type casting
+```
