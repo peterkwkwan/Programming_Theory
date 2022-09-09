@@ -118,18 +118,20 @@ int(input('enter your age')) # type casting
 2. methods / functions --> .upper(), .lower() / print(), type()
 3. logic --> if else
 
-- methods are type specific
-- methods are 'called' on an object/value/variable
-- we cannot invoke a method just by its name
+    Methods
+    - methods are type specific
+    - methods are 'called' on an object/value/variable
+    - we cannot invoke a method just by its name
 
-- functions are not associated with any object
-- we can invoke a function by just its name
+    Functions
+    - functions are not associated with any object
+    - function can be invoked by just its name
 
 4. libraries
     - analogy: _smartphone_
     - comes pre-packaged with many features
-  - however, we have some specific tasks that does not come with the phone
-  - download apps / import libraries
+    - however, we have some specific tasks that does not come with the phone
+    - download apps / import libraries
 
 #### Assignment
 - random lottery generator
