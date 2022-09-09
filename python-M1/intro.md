@@ -24,3 +24,19 @@
 - Easy to learn
 
 ![image](https://user-images.githubusercontent.com/37263010/189384839-93333316-421b-4d9e-9b9c-b24db1b274b8.png)
+
+```
+- print("hello")
+- type("hello")
+- type(123)
+- type(10/2) // float
+```
+
+
+#### 4 steps of programming
+
+1. noun/verb/adj
+2. rules for that word
+
+1. type of data --> str/int
+2. rules for that data type --> methods / functions
