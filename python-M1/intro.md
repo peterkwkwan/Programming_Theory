@@ -74,5 +74,5 @@ print(x)
 #### 4 steps of programming
 
 1. data types --> str/int
-2. methods / functions --> upper(), lower(), count()
+2. methods / functions --> .upper(), .lower(), .count(), print()
 3. logic (sentence structure)
