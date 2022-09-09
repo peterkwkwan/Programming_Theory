@@ -92,7 +92,9 @@ else :
   print ('x is not greater than 3')
 ```
 
-#### Assignment time
+#### Assignment
+- age checker
+
 ```
 age = 18
 
@@ -104,8 +106,41 @@ else:
   print("sorry you're not allowed alcohol")
 ```
 
-`int(age) > 18` vs. `age = int(input('enter your age'))`
+`int(age) > 18` _vs._ `age = int(input('enter your age'))`
 
 ```
 int(input('enter your age')) # type casting
+```
+
+#### 4 steps of programming
+
+1. data types --> str/int
+2. methods / functions --> .upper(), .lower() / print(), type()
+3. logic --> if else
+
+- methods are type specific
+- methods are 'called' on an object/value/variable
+- we cannot invoke a method just by its name
+
+- functions are not associated with any object
+- we can invoke a function by just its name
+
+4. libraries
+- analogy: _smartphone_
+- comes pre-packaged with many features
+- however, we have some specific tasks that does not come with the phone
+- download apps / import libraries
+
+#### Assignment
+- random lottery generator
+
+```
+numbers = list(range(1,50))
+print(numbers)
+
+---- 
+import random
+
+result = random.sample(numbers, 1)
+print(result)
 ```
