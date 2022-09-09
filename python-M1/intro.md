@@ -26,10 +26,10 @@
 ![image](https://user-images.githubusercontent.com/37263010/189384839-93333316-421b-4d9e-9b9c-b24db1b274b8.png)
 
 ```
-- print("hello")
-- type("hello")
-- type(123)
-- type(10/2) // float
+print("hello")
+type("hello")
+type(123)
+type(10/2) // float
 ```
 
 
