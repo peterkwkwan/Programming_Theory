@@ -23,6 +23,10 @@
 - Google docs-like
 - Easy to learn
 
+```
+hello world
+```
+
 ![image](https://user-images.githubusercontent.com/37263010/189384839-93333316-421b-4d9e-9b9c-b24db1b274b8.png)
 
 ```
@@ -40,3 +44,9 @@ type(10/2) // float
 
 1. type of data --> str/int
 2. rules for that data type --> methods / functions
+
+```
+"hello world".capitalize()
+"hello world".upper()
+"hello world".title()
+123.upper() // invalid syntax
