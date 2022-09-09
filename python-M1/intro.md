@@ -17,7 +17,10 @@
 - In Python
 
 
-Good 
+Good way to run Python code
 - [colab.research.google](https://colab.research.google.com/)
+- Web based
+- Google docs-like
+- Easy to learn
 
 ![image](https://user-images.githubusercontent.com/37263010/189384839-93333316-421b-4d9e-9b9c-b24db1b274b8.png)
