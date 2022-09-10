@@ -12,11 +12,22 @@
 import requests
 import json
 ```
-- https://pokeapi.co/
-- https://pokeapi.co/api/v2/pokemon/charizard
+- [Dad Jokes](https://dadjokes.io/)
+- https://dad-jokes.p.rapidapi.com/random/joke
 
 ```
-response = requests.get('https://pokeapi.co/api/v2/pokemon/charizard')
+response = requests.get('https://dad-jokes.p.rapidapi.com/random/joke')
 print(response)
-print(response.content)
+content = response.content
+print(content)
 ```
+
+- Whats the data type?
+
+```
+type(content) // bytes
+```
+
+- JSON --> Javascript Object Notation
+- `import json` --> translator! (translation library)
+- transforms byte data into python readable data
