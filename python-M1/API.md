@@ -97,3 +97,32 @@ finland_dict['name']['nativeName'].get('swe')['official']
 ```
 
 ## XML Web Scraping
+
+- Extensible Markup Language
+- Web scraping is the process of using bots to extract content and data from a website.
+
+- [Google News](news.google.com)
+- https://news.google.com/rss
+
+
+```
+news_url = 'https://news.google.com/rss'
+
+import requests
+
+requests.get(news_url)
+```
+
+- Beautiful Soup: make XML pretty (library)
+
+```
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+
+xml_page = urlopen(news_url).read()
+
+type(xml_page)
+```
+soup_page = BeautifulSoup(xml_page, 'xml')
+
+- find the news title, news website, news publication page
