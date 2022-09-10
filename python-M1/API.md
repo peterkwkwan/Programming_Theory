@@ -136,7 +136,7 @@ news_list
 
 ```
 
-- loop through all the items and get only the titles
+- loop through all the items
 
 ```
 for item in news_list:
