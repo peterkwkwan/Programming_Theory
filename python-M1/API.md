@@ -31,3 +31,9 @@ type(content) // bytes
 - JSON --> Javascript Object Notation
 - `import json` --> translator! (translation library)
 - transforms byte data into python readable data
+
+```
+JSON_content = json.loads(content)
+JSON_content
+type(JSON_content)
+```
