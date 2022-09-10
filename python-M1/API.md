@@ -12,11 +12,11 @@
 import requests
 import json
 ```
-- [Dad Jokes](https://dadjokes.io/)
-- https://dad-jokes.p.rapidapi.com/random/joke
+- [Game of Thrones API](https://thronesapi.com/)
+- https://thronesapi.com/api/v2/Characters
 
 ```
-response = requests.get('https://dad-jokes.p.rapidapi.com/random/joke')
+response = requests.get('https://thronesapi.com/api/v2/Characters')
 print(response)
 content = response.content
 print(content)
