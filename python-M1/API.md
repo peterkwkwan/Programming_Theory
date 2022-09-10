@@ -91,3 +91,9 @@ for border in borders:
 
 #### How to access nested object?
 - `'swe': {'official': 'Republiken Finland', 'common': 'Finland'}}},`
+
+```
+finland_dict['name']['nativeName'].get('swe')['official']
+```
+
+## XML Web Scraping
