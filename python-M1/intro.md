@@ -85,6 +85,12 @@ x is 2
 x is not 2
 ```
 
+- variable assignment vs comparison operator
+```
+a = 'hello world' # variable assignment
+a == b # comparison operator
+```
+
 ```
 if x > 3:
   print ('yay!')
