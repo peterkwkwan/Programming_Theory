@@ -90,4 +90,4 @@ for border in borders:
 ```
 
 #### How to access nested object?
-- `'car': {'signs': ['FIN'], 'side': 'right'},`
+- `'swe': {'official': 'Republiken Finland', 'common': 'Finland'}}},`
