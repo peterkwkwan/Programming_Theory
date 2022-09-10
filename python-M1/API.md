@@ -123,6 +123,30 @@ xml_page = urlopen(news_url).read()
 
 type(xml_page)
 ```
+
+```
 soup_page = BeautifulSoup(xml_page, 'xml')
+```
 
 - find the news title, news website, news publication page
+
+```
+news_list = soup_page.findAll('item')
+news_list
+
+```
+
+- loop through all the items and get only the titles
+
+```
+for item in news_list:
+  print(item.title.text)
+  print(item.pubDate.text)
+  
+# accessing individual items
+news_list[0].title.text
+
+# check data type
+type(news_list[0].title.text)
+```
+
