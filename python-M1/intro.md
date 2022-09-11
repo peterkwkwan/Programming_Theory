@@ -38,11 +38,15 @@ type(123)
 
 #### 4 steps of programming
 
-1. noun/verb/adj
-2. rules for that word
+1. noun/adj --> data
+2. rules for that noun --> methods / functions
 
-1. type of data --> str/int
-2. rules for that data type --> methods / functions
+#### Data types
+1. String (str)
+2. Integer (int)
+3. Floating point (float)
+4. List ([])
+5. Dictionary (dict)
 
 ```
 "hello world".capitalize()
