@@ -34,6 +34,8 @@ pd.read_csv('/pokemon.csv')
 ```
 import pandas as pd
 ecom = pd.read_csv('/content/M1L5/Ecommerce Purchases.dms')
+
+type(ecom)
 ```
 
 #### Crucial functions for pandas
