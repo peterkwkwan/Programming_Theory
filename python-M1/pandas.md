@@ -165,7 +165,7 @@ ecom["Job"].value_counts().head()
 > How many people made purchases during morning (AM)? How many purchased in afternoon/evening (PM)?
 
 ```
-ecom.info()
+ecom.columns
 
 AM_purchases = ecom[ecom.get("AM or PM") == "AM"]
 PM_purchases = ecom[ecom.get("AM or PM") == "PM"]
@@ -173,4 +173,8 @@ PM_purchases = ecom[ecom.get("AM or PM") == "PM"]
 len(AM_purchases)
 len(PM_purchases)
 ```
+
+> Someone made a purchase that came from Lot: "90 WT". What was the Purchase Price for this transaction?
+> What is the email of the person with the following Credit Card Number: 4926535242672853
+> 
 
