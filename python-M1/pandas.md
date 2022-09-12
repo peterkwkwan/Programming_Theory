@@ -38,7 +38,7 @@ ecom = pd.read_csv('/content/M1L5/Ecommerce Purchases.dms')
 type(ecom)
 ```
 
-#### Crucial functions for pandas
+#### Basic functions for pandas
 
 ```
 .read_csv() # reads a CSV into DataFrame
@@ -49,7 +49,6 @@ type(ecom)
 
 .info() # print out summary of the data plus data types
 
-.describe() #
 ```
 
 > How do we read a particular column of data?
@@ -58,20 +57,48 @@ type(ecom)
 ```
 ecom["Purchase Price"]
 
-ecom["Purchase Price"].mean()
+ecom["Purchase Price"].max()
 ```
+
+> How to get the average?
 
 - Reading error messages --> typo when trying to acccess a column
 
 ![image](https://user-images.githubusercontent.com/37263010/189654167-9dcc3b9c-7ec9-46a2-b9dc-efb05c56f839.png)
 
+
+#### Shortcut for getting all key info at once
+
+```
+ecom["Purchase Price"].describe() # get a particular column
+
+ecom.describe() # get all columns with numerical values
+```
+
 #### pandas `series`
 
 ```
-type(ecom["Purchase Price"])
+type(ecom["Purchase Price"]) # pandas.core.series.Series
 ```
+
+- a column of data
+- similar to arrays / list
+
 
 #### 2 primary data structures of pandas
 1. `Series` : 1-dimensional
 2. `DataFrame` : 2-dimensional
 
+#### Applying what we learned to your job
+
+- Using the data, how can we leverage it in a business situation?
+- Perhaps we wanted to run some analysis on the highest spenders and create a loyalty program. 
+- Demographics, age, address, can all play a part in how we create this program.
+
+> How to retrive the people that paid greater than 80 dollars?
+
+```
+ecom["Purchase Price"] > 80 # returns the entire DataFrame with people that have greater than 80 dollars spending
+
+ecom[ecom["Purchase Price"] > 80] # wrapping the "ecom" DataFrame with the above filter
+```
