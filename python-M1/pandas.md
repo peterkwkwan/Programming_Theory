@@ -48,7 +48,24 @@ type(ecom)
 .tail() # return the last n rows (default 5)
 
 .info() # print out summary of the data plus data types
+
+.describe() #
 ```
+
+> How do we read a particular column of data?
+> Follow up: In dictionaries, how did we access a particular [key:value] pair?
+
+```
+ecom["Purchase Price"]
+
+ecom["Purchase Price"].mean()
+```
+
+- Reading error messages --> typo when trying to acccess a column
+
+![image](https://user-images.githubusercontent.com/37263010/189654167-9dcc3b9c-7ec9-46a2-b9dc-efb05c56f839.png)
+
+
 
 #### 2 primary data structures of pandas
 1. `Series` : 1-dimensional
