@@ -174,7 +174,22 @@ len(AM_purchases)
 len(PM_purchases)
 ```
 
-> Someone made a purchase that came from Lot: "90 WT". What was the Purchase Price for this transaction?
 > What is the email of the person with the following Credit Card Number: 4926535242672853
-> 
 
+
+```
+target_person = ecom[ecom.get("Credit Card") == 4926535242672853]
+target_person["Email"]
+```
+> Someone made a purchase that came from Lot: "90 WT". What was the Purchase Price for this transaction?
+
+> How many people have American Express as their Credit Card Provider and made a purchase above $95?
+```
+ecom["CC Provider"].unique()
+
+ecom[ecom["CC Provider"] == "American Express"]
+
+amex = ecom[ecom["CC Provider"] == "American Express"]
+
+amex[amex["Purchase Price"] > 95]
+```
