@@ -88,6 +88,7 @@ type(ecom["Purchase Price"]) # pandas.core.series.Series
 #### 2 primary data structures of pandas
 1. `Series` : 1-dimensional
 2. `DataFrame` : 2-dimensional
+  - As long as there is more than 1 column
 
 #### Applying what we learned to your job
 
@@ -181,15 +182,22 @@ len(PM_purchases)
 target_person = ecom[ecom.get("Credit Card") == 4926535242672853]
 target_person["Email"]
 ```
-> Someone made a purchase that came from Lot: "90 WT". What was the Purchase Price for this transaction?
-
 > How many people have American Express as their Credit Card Provider and made a purchase above $95?
 ```
 ecom["CC Provider"].unique()
 
 ecom[ecom["CC Provider"] == "American Express"]
 
-amex = ecom[ecom["CC Provider"] == "American Express"]
+
+# need to store amex as a variable or else indexing error
+# when applying additional filtering, we change the index
+amex = ecom[ecom["CC Provider"] == "American Express"] 
 
 amex[amex["Purchase Price"] > 95]
 ```
+
+#### More exercises
+
+> Someone made a purchase that came from Lot: "90 WT". What was the Purchase Price for this transaction?
+
+> How many people have a credit card that expires in 2025?
