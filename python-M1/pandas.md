@@ -41,10 +41,13 @@ type(ecom)
 #### Crucial functions for pandas
 
 ```
-.read_csv() // reads a CSV into DataFrame
-.head() // return the first n rows (default 5)
-.tail() // return the last n rows (default 5)
-.info() // print out summary of the data plus data types
+.read_csv() # reads a CSV into DataFrame
+
+.head() # return the first n rows (default 5)
+
+.tail() # return the last n rows (default 5)
+
+.info() # print out summary of the data plus data types
 ```
 
 #### 2 primary data structures of pandas
