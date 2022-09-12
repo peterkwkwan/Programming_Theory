@@ -65,7 +65,11 @@ ecom["Purchase Price"].mean()
 
 ![image](https://user-images.githubusercontent.com/37263010/189654167-9dcc3b9c-7ec9-46a2-b9dc-efb05c56f839.png)
 
+#### pandas `series`
 
+```
+type(ecom["Purchase Price"])
+```
 
 #### 2 primary data structures of pandas
 1. `Series` : 1-dimensional
