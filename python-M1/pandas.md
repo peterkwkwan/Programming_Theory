@@ -236,9 +236,6 @@ add20(20)
 
 #### Applying lambda to our data set
 
-> How many people have a credit card that expires in 2025?
-
-
 ```
 # 'apply' a function on an entire series
 
@@ -252,4 +249,16 @@ ecom["Purchase Price"].apply(lambda x:x+50)
 - `apply` function --> apply your lambda function over the entire series
 - lambda function -->  make the changes for an entire column much easier
 
+> How many people have a credit card that expires in 2025?
 
+```
+ecom["CC Exp Date"]
+```
+
+- Google: "How to separate string in python"
+
+```
+ecom["CC Exp Date"].apply(lambda x:x.split('/'))
+
+ecom[ecom["CC Exp Date"].apply(lambda x:x.split('/')[1])=='25'] # use int first (25) to get students to troubleshoot
+```
