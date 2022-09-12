@@ -262,3 +262,7 @@ ecom["CC Exp Date"].apply(lambda x:x.split('/'))
 
 ecom[ecom["CC Exp Date"].apply(lambda x:x.split('/')[1])=='25'] # use int first (25) to get students to troubleshoot
 ```
+
+#### When to use apply + lambda?
+
+- When we need to find and manipulate _specific_ information inside each row in a column
