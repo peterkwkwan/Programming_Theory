@@ -118,3 +118,59 @@ vip["CC Provider"].unique()
 
 vip["CC Provider"].value_counts() # google 'python pandas unique count values
 ```
+
+#### Sharing data with colleagues
+
+```
+vip.to_csv("some_name")
+```
+
+#### Additional assignments
+
+> How many people have the job title of "Lawyer"?
+
+```
+ecom.info()
+
+ecom["Job"] == "Lawyer"
+
+lawyers = ecom[ecom["Job"] == "Lawyer"]
+
+lawyers.shape
+len(lawyers)
+```
+
+> How many different jobs are there in the data set?
+
+```
+ecom["Job"].unique()
+
+len(ecom["Job"].unique())
+# OR
+ecom["Job"].nunique()
+```
+
+> How to find the number of each unique job?
+
+```
+ecom["Job"].value_counts()
+```
+
+> What are the 5 most common Job Titles?
+
+```
+ecom["Job"].value_counts().head()
+```
+
+> How many people made purchases during morning (AM)? How many purchased in afternoon/evening (PM)?
+
+```
+ecom.info()
+
+AM_purchases = ecom[ecom.get("AM or PM") == "AM"]
+PM_purchases = ecom[ecom.get("AM or PM") == "PM"]
+
+len(AM_purchases)
+len(PM_purchases)
+```
+
