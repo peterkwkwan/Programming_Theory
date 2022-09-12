@@ -6,11 +6,35 @@
 - [Meet the man behind the most important tool in data science](https://qz.com/1126615/the-story-of-the-most-important-tool-in-data-science/)
 - [pandas documentation](https://pandas.pydata.org/)
 
+#### Problems that pandas solves
+- Python has limitations & constraints
+- What pandas brings to the table
+  1. Importing CSV files
+  2. Dealing with tabular/spreadsheet-like data
+  3. Makes analyzing data much simpler
+
+#### Fetching data and playing with pandas
+
+```
+!git clone https://github.com/PrefaceCoding/M1L5
+```
+
+![image](https://user-images.githubusercontent.com/37263010/189575531-b2eb7576-5a78-4728-a7a2-43fe1f20d4c7.png)
+
+> How do we import Python packages?
+```
+import pandas as pd
+ecom = pd.read_csv('/content/M1L5/Ecommerce Purchases.dms')
+```
+
+- We can also import our own custom `.csv` files
+- [Pokemon CSV](https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6)
+
+```
+pd.read_csv('/pokemon.csv')
+```
+
 #### 2 primary data structures of pandas
 1. `Series` : 1-dimensional
 2. `DataFrame` : 2-dimensional
 
-
-> How do we import Python packages?
-
-`import pandas as pd`
