@@ -195,9 +195,61 @@ amex = ecom[ecom["CC Provider"] == "American Express"]
 
 amex[amex["Purchase Price"] > 95]
 ```
+- What if we have many filter criteria? Then we have to write lots of variables / lines of code
+- `&` symbol comes into play
+
+```
+amex_filter = ecom["CC Provider"] == "American Express"
+purchase_filter = ecom["Purchase Price"]>95
+
+ecom[(amex_filter) & (purchase_filter)]
+```
 
 #### More exercises
 
+> How many people have English ('en') as their Language of choice on the website?
+
+> How many people have an IP Address that has more than 9 digits?
+
 > Someone made a purchase that came from Lot: "90 WT". What was the Purchase Price for this transaction?
 
+## Lambda
+
+- recap of functions
+
+```
+# functions
+def add10(x):
+  return x + 10
+
+
+add10(50) # 60
+```
+
+- a lambda is a function that youcan write with one line of code
+
+```
+add20 = lambda x:x+20
+
+add20(20)
+```
+
+#### Applying lambda to our data set
+
 > How many people have a credit card that expires in 2025?
+
+
+```
+# 'apply' a function on an entire series
+
+ecom["Job"].apply(len) 
+
+ecom["Purchase Price"].apply(add10)
+
+ecom["Purchase Price"].apply(lambda x:x+50)
+```
+
+- `apply` function --> apply your lambda function over the entire series
+- lambda function -->  make the changes for an entire column much easier
+
+
