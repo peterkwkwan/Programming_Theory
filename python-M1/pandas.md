@@ -102,3 +102,19 @@ ecom["Purchase Price"] > 80 # returns the entire DataFrame with people that have
 
 ecom[ecom["Purchase Price"] > 80] # wrapping the "ecom" DataFrame with the above filter
 ```
+
+- exacting additional info from this filter using what we learned previously
+
+```
+vip = ecom[ecom["Purchase Price"] > 80]
+
+vip.shape
+
+vip.min()
+
+vip["CC Provider"]
+
+vip["CC Provider"].unique()
+
+vip["CC Provider"].value_counts() # google 'python pandas unique count values
+```
