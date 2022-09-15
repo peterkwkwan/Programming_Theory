@@ -45,8 +45,9 @@ type(123)
 1. String (str)
 2. Integer (int)
 3. Floating point (float)
-4. List ([])
-5. Dictionary (dict)
+4. Boolean (bool)
+5. List ([])
+6. Dictionary (dict)
 
 ```
 "hello world".capitalize()
