@@ -96,6 +96,14 @@ for border in borders:
 finland_dict['name']['nativeName'].get('swe')['official']
 ```
 
+
+```
+for country in countries:
+  if country.get('borders') != None:
+    print(country['borders'])
+```
+
+
 ## XML Web Scraping
 
 - Extensible Markup Language
@@ -149,4 +157,3 @@ news_list[0].title.text
 # check data type
 type(news_list[0].title.text)
 ```
-
