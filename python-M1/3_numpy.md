@@ -1,6 +1,7 @@
 # Numpy
 
 - Linear algebra library for Python
+- A.K.A Numberical Python
 
 #### Why use it?
 
