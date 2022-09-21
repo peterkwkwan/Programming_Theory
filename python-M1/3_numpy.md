@@ -32,5 +32,8 @@ import numpy as np
 - Matrices: 2-d arrays
 
 #### N-dimensional array
+- One way to create an array is using the `arange`
 
-
+```
+np.arange(8)
+```
