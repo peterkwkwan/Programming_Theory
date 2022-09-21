@@ -1,7 +1,11 @@
 # Numpy
 
-- Linear algebra library for Python
+- Popular Python library that deals with numbers
 - A.K.A Numberical Python
+- Uses a special data type called `Numpy Arrays`
+- Arrays:
+  - a collection of items of the same type
+  - different from `lists` - lists store different data types
 
 #### Why use it?
 
