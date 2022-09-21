@@ -9,15 +9,28 @@
 
 #### Why use it?
 
-- Many built-in functions and capabilities
+- Many built-in functions and capabilities array/number manipulation
 - Import aspects of Numpy
   - arrays
   - vectors
   - matrices
   - number generation
 
+#### Installation & use
+```
+pip install numpy
+
+-----
+
+import numpy as np
+
+```
 #### Numpy arrays
 
 - Numpy arrays come in 2 flavors: vectors & matrices
-- Vectors: 1-d arrays
+- Vectors: 1-d arrays (`N-dimensional array`)
 - Matrices: 2-d arrays
+
+#### N-dimensional array
+
+
