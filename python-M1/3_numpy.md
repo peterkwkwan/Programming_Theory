@@ -133,3 +133,41 @@ print("2D shape: ", array_2d.shape)
 
 ```
 - shape values refer to the _rows_ (if 2-d) and _columns_
+
+> What if we don't like the shape anymore? We wanted to reshape it? 
+
+```
+array_2d = array_2d.reshape((4, 2))
+print("2D shape:", array_2d.shape) 
+
+// [[0 2]
+// [4 6]
+// [1 3]
+// [5 7]]
+// 2D shape: (4, 2)
+```
+
+- we are not limited to the dimension of the original array
+- can also 'flatten' the array and turn it 1-D
+
+```
+array_1d = array_2d.reshape((8))
+print(array_1d)
+print("1D shape:", array_1d.shape) 
+
+[0 2 4 6 1 3 5 7]
+1D shape: (8,)
+```
+
+- we can also do 3-D array!
+
+```
+array_3d = array_2d.reshape((2,2,2))
+print(array_3d)
+print("3D shape:", array_3d.shape) 
+```
+
+- Note: our dimension shapes are limited to the total length of original array
+  - in our case, this is 8
+  - therefore, our shape has to be divisible by `8` 
+  - _4 x 2_ (2-d array) or _2 x 2 x 2_(3-d array)
