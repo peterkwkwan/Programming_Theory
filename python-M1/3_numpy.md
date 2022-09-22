@@ -88,7 +88,8 @@ type(my_list[0]) // numpy.int64
 - do we really need 64 bits to convey _1,2,3_?
 - Decimal to binrary (https://www.rapidtables.com/convert/number/decimal-to-binary.html)
 
-Decimal | Binary | 
-1 | 1 |
+Decimal | Binary 
+--- | --- 
+1 | 1
 2 | 10
 3 | 11
