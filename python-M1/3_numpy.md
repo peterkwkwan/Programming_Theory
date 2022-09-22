@@ -201,6 +201,9 @@ print(random_array)
 
 ### np.eye
 
+- used to create an identity matrix
+- generates a matrix with 1s on the diagonal and 0s everywhere else
+
 ```
 eye_array = np.eye(3)
 print(eye_array)
@@ -245,6 +248,7 @@ print(eye_array)
  [9. 9. 9.]]
 ```
 
+### Manipulating arrays
 > What if we wanted to change the entire row or column?
 
 ```
@@ -328,3 +332,32 @@ print(eye_array, '\n', '----', '\n', sorted_array) # --> '\n' is end of line cha
  [0. 1. 4.]]
 
 ```
+
+- we are not limited to sorting by rows, but can also sort columns
+- use the `axis` argument to specifiy row or column
+
+```
+sorted_array = np.sort(eye_array, axis=0) # --> default is -1 (rows)
+print(eye_array, '\n', '----', '\n', sorted_array)
+
+[[9. 9. 4.]
+ [1. 0. 4.]
+ [0. 1. 4.]] 
+ ---- 
+ [[0. 0. 4.]
+ [1. 1. 4.]
+ [9. 9. 4.]]
+```
+
+> What if we wanted to change our sorting algorithm? Default is `quicksort`
+
+```
+sorted_array = np.sort(eye_array, axis=0, kind="mergesort")
+print(eye_array, '\n', '----', '\n', sorted_array)
+```
+- difference is negligible in our small data sample, but different algorithms would result in different calculation times depending on the size of the data
+- quicksort, mergesort, heapsort
+- https://algodaily.com/lessons/merge-sort-vs-quick-sort-heap-sort
+ 
+### Sorting arrays
+
