@@ -121,3 +121,14 @@ print(array_2d)
 // [[0 2 4 6]
 //  [1 3 5 7]]
 ```
+
+- we can verify it is a 2-D array by printing its `shape`
+
+```
+print("1D shape: ", from_list.shape)
+print("2D shape: ", array_2d.shape) 
+
+// 1D shape:  (3,)
+// 2D shape:  (2, 4)
+
+```
