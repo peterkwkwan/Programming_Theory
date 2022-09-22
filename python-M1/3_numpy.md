@@ -315,6 +315,29 @@ print(eye_array)
  [1. 0. 4.]
  [0. 1. 4.]]
 ```
+
+> Assignment: Create a `5 x 5` 2-D array with 1s on the border and 0s inside
+
+```
+result = np.ones((5, 5))
+result[1:-1, 1:-1] = 0
+print(result)
+
+# OR
+
+result = np.zeros((5, 5))
+result[[0,-1]] = 1
+result[:, [0, -1]] = 1
+print(result)
+
+
+[[1. 1. 1. 1. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 1.]
+ [1. 1. 1. 1. 1.]]
+
+```
 ### Sorting arrays
  
 - we can use the `.sort` method
