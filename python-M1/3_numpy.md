@@ -300,5 +300,31 @@ print(eye_array)
  [0. 0. 4.]]
 ```
  
+```
+eye_array = np.eye(3, k=-1)
+eye_array[0] = 9
+eye_array[:, -1] = 4 # --> selecting the last column
+print(eye_array)
+
+
+[[9. 9. 4.]
+ [1. 0. 4.]
+ [0. 1. 4.]]
+```
 ### Sorting arrays
  
+- we can use the `.sort` method
+
+```
+sorted_array = np.sort(eye_array)
+print(eye_array, '\n', '----', '\n', sorted_array) # --> '\n' is end of line character which starts a new line
+
+[[9. 9. 4.]
+ [1. 0. 4.]
+ [0. 1. 4.]] 
+ ---- 
+ [[4. 9. 9.]
+ [0. 1. 4.]
+ [0. 1. 4.]]
+
+```
