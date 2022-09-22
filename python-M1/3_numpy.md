@@ -132,3 +132,4 @@ print("2D shape: ", array_2d.shape)
 // 2D shape:  (2, 4)
 
 ```
+- shape values refer to the _rows_ (if 2-d) and _columns_
