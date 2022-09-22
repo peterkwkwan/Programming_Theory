@@ -189,3 +189,116 @@ print(empty_array)
 empty_ones_array = np.ones(2)
 print(empty_ones_array)
 ```
+
+- there is also a method that returns random numbers
+- however, since it generates random values, it can be unpredictable
+- can be useful for random number generators
+
+```
+random_array = np.empty(10)
+print(random_array)
+```
+
+#### np.eye
+
+```
+eye_array = np.eye(3)
+print(eye_array)
+
+// [[1. 0. 0.]
+//  [0. 1. 0.]
+//  [0. 0. 1.]]
+```
+
+- we can also specify a `k` value 
+
+```
+eye_array = np.eye(3, k=1)
+print(eye_array)
+
+// [[0. 1. 0.]
+//  [0. 0. 1.]
+//  [0. 0. 0.]]
+
+```
+> What if we wanted to change all the zeroes to another value?
+
+```
+eye_array = np.eye(3, k=1)
+eye_array[eye_array == 0] = 2
+print(eye_array)
+
+[[2. 1. 2.]
+ [2. 2. 1.]
+ [2. 2. 2.]]
+```
+
+- we can also use other operators
+
+```
+eye_array = np.eye(3, k=1)
+eye_array[eye_array < 1] = 9
+print(eye_array)
+
+[[9. 1. 9.]
+ [9. 9. 1.]
+ [9. 9. 9.]]
+```
+
+> What if we wanted to change the entire row or column?
+
+```
+eye_array = np.eye(3, k=1)
+eye_array[0] = 3 # --> `0` is selecting the first row
+print(eye_array)
+
+[[3. 3. 3.]
+ [0. 0. 1.]
+ [0. 0. 0.]]
+```
+
+```
+eye_array = np.eye(3, k=1)
+eye_array[:2] = 9 # --> colon `:` is selecting the first 'n' rows
+print(eye_array)
+
+[[9. 9. 9.]
+ [9. 9. 9.]
+ [0. 0. 0.]]
+ ```
+ 
+ ```
+eye_array = np.eye(3, k=1)
+eye_array[1:] = 9 # --> colon `:` after a number skips the 'n' row number and assigns value until the last rows
+print(eye_array)
+
+[[0. 1. 0.]
+ [9. 9. 9.]
+ [9. 9. 9.]]
+ ```
+ 
+ - Note: colon `:` can be thought of as a '_select all_' function
+
+> What if we want to select columns? Let's say our first column to all be '4's
+
+ ```
+eye_array = np.eye(3, k=1)
+eye_array[:, 0] = 4 # --> colon `:` selects ALL rows, then comma to separate the filter arguments, then `0` to select the first column 
+print(eye_array)
+
+[[4. 1. 0.]
+ [4. 0. 1.]
+ [4. 0. 0.]]
+```
+```
+eye_array = np.eye(3, k=1)
+eye_array[:, -1] = 4 # --> selecting the last column
+print(eye_array)
+
+[[0. 1. 4.]
+ [0. 0. 4.]
+ [0. 0. 4.]]
+```
+ 
+
+ 
