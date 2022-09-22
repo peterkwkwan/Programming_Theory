@@ -69,8 +69,8 @@ np.arange(-1, 8.5, 0.5) // array([-1. , -0.5,  0. ,  0.5,  1. ,  1.5,  2. ,  2.5
 - We can also create arrays using lists
 
 ```
-my_list = np.array([1,2,3])
-print(my_list)
+from_list = np.array([1,2,3])
+print(from_list)
 ```
 
 - why would we want to change from list to array? Whats the point? Aren't they similar?
@@ -82,8 +82,8 @@ print(my_list)
 - let's check the memory usage of our list
 
 ```
-my_list = np.array([1,2,3])
-type(my_list[0]) // numpy.int64
+from_list = np.array([1,2,3])
+type(from_list[0]) // numpy.int64
 ```
 - do we really need 64 bits to convey _1,2,3_?
 - Decimal to binrary (https://www.rapidtables.com/convert/number/decimal-to-binary.html)
@@ -93,3 +93,31 @@ Decimal | Binary
 1 | 1
 2 | 10
 3 | 11
+
+- our biggest number `3` only takes 2 bits! We don't need 64 bits!
+- we can convert the data type from int64 to something more memory efficient
+
+```
+from_list = np.array([1,2,3], dtype=np.int8)
+type(from_list[0]) // numpy.int8
+```
+- however, just because our code takes up less space, it doesn't mean it will run faster!
+- depends on your hardware, algorithms, operating system!
+
+
+#### 2-dimensional array
+
+```
+from_list_2d = np.array([[1,2,3],[4,5,6]], dtype=np.int8)
+print(from_list_2d)
+```
+
+- this is a 2-D array because we are dealing with multiple rows of data
+
+```
+array_2d = np.array((np.arange(0,8,2),np.arange(1,8,2)))
+print(array_2d)
+
+// [[0 2 4 6]
+//  [1 3 5 7]]
+```
