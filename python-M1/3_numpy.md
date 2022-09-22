@@ -170,4 +170,22 @@ print("3D shape:", array_3d.shape)
 - Note: our dimension shapes are limited to the total length of original array
   - in our case, this is 8
   - therefore, our shape has to be divisible by `8` 
-  - _4 x 2_ (2-d array) or _2 x 2 x 2_(3-d array)
+  - _4 x 2_ (2-d array) or _2 x 2 x 2_ (3-d array)
+
+#### Empty array
+- sometimes we don't know in advance which values to store in the array
+- we can fill the data as we go
+
+```
+empty_array = np.zeros(2)
+print(empty_array)
+```
+
+- all values are equal to zero
+
+> What if we want all values to be 1s?
+
+```
+empty_ones_array = np.ones(2)
+print(empty_ones_array)
+```
