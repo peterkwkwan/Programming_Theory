@@ -64,3 +64,31 @@ np.arange(1,8,0.5) // array([1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5, 5. , 5.5, 6
 ```
 np.arange(-1, 8.5, 0.5) // array([-1. , -0.5,  0. ,  0.5,  1. ,  1.5,  2. ,  2.5,  3. ,  3.5,  4. ,4.5,  5. ,  5.5,  6. ,  6.5,  7. ,  7.5,  8. ])
 ```
+
+#### Generate from a list
+- We can also create arrays using lists
+
+```
+my_list = np.array([1,2,3])
+print(my_list)
+```
+
+- why would we want to change from list to array? Whats the point? Aren't they similar?
+- main purpose is _memory efficiency_
+- `lists` can store any type of data (dict, boolean, str, etc.)
+  - this flexiblilty has a downside, it takes up a lot more space/memory
+  - _str_ for example, can be 26 lowercase, 26 uppercase, symbols, digits, etc. And this is just for 1 character!
+  - _boolean_ on the other hand, can only be 2 values - true or false
+- let's check the memory usage of our list
+
+```
+my_list = np.array([1,2,3])
+type(my_list[0]) // numpy.int64
+```
+- do we really need 64 bits to convey _1,2,3_?
+- Decimal to binrary (https://www.rapidtables.com/convert/number/decimal-to-binary.html)
+
+Decimal | Binary | 
+1 | 1 |
+2 | 10
+3 | 11
