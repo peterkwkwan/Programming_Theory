@@ -25,13 +25,13 @@ pip install numpy
 import numpy as np
 
 ```
-#### Numpy arrays
+### Numpy arrays
 
 - Numpy arrays come in 2 flavors: vectors & matrices
 - Vectors: 1-d arrays (`N-dimensional array`)
 - Matrices: 2-d arrays
 
-#### N-dimensional array
+### N-dimensional array
 - One way to create an array is using the `arange` method (arrange + range)
 
 ```
@@ -65,7 +65,7 @@ np.arange(1,8,0.5) // array([1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5, 5. , 5.5, 6
 np.arange(-1, 8.5, 0.5) // array([-1. , -0.5,  0. ,  0.5,  1. ,  1.5,  2. ,  2.5,  3. ,  3.5,  4. ,4.5,  5. ,  5.5,  6. ,  6.5,  7. ,  7.5,  8. ])
 ```
 
-#### Generate from a list
+### Generate from a list
 - We can also create arrays using lists
 
 ```
@@ -105,7 +105,7 @@ type(from_list[0]) // numpy.int8
 - depends on your hardware, algorithms, operating system!
 
 
-#### 2-dimensional array
+### 2-dimensional array
 
 ```
 from_list_2d = np.array([[1,2,3],[4,5,6]], dtype=np.int8)
@@ -172,7 +172,7 @@ print("3D shape:", array_3d.shape)
   - therefore, our shape has to be divisible by `8` 
   - _4 x 2_ (2-d array) or _2 x 2 x 2_ (3-d array)
 
-#### Empty array
+### Empty array
 - sometimes we don't know in advance which values to store in the array
 - we can fill the data as we go
 
@@ -199,7 +199,7 @@ random_array = np.empty(10)
 print(random_array)
 ```
 
-#### np.eye
+### np.eye
 
 ```
 eye_array = np.eye(3)
@@ -300,5 +300,5 @@ print(eye_array)
  [0. 0. 4.]]
 ```
  
-#### Sorting arrays
+### Sorting arrays
  
