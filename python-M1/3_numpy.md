@@ -9,8 +9,10 @@
 
 #### Why use it?
 
+- Almost all libraries in the Python ecosystem use NumPy as the building block
+- Incredibly fast
 - Many built-in functions and capabilities array/number manipulation
-- Import aspects of Numpy
+- Important aspects of Numpy
   - arrays
   - vectors
   - matrices
