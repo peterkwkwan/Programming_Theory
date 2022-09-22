@@ -203,8 +203,15 @@ print(random_array)
 
 ### np.eye
 
-- used to create an identity matrix
 - generates a matrix with 1s on the diagonal and 0s everywhere else
+- used to create an identity matrix
+
+
+#### What is an identity matrix?
+An identity matrix is a given _square matrix_ of any order which contains on its _main diagonal_ elements with value of one, while the rest of the matrix elements are equal to zero.
+
+- _square matrix_ refers to a matrix containing the same amount of rows and columns
+- a _diagonal matrix_ is that in which all of its element entries are equal to zero, except for the elements found on its _main diagonal_
 
 ```
 eye_array = np.eye(3)
@@ -250,8 +257,21 @@ print(eye_array)
  [9. 9. 9.]]
 ```
 
-### Manipulating arrays
+### Reading arrays
 > What if we wanted to change the entire row or column?
+
+- first we need to know how to read an array
+
+```
+arr = np.arange(1,11)
+arr[0] # --> 1 : getting a single value
+arr[1:5] # --> [2,2,3,4] : getting values in a range
+arr[:5] # --> [1,2,3,4,5] : getting values in a range
+
+```
+
+### Manipulating arrays
+> RE: What if we wanted to change the entire row or column?
 
 ```
 eye_array = np.eye(3, k=1)
@@ -383,6 +403,3 @@ print(eye_array, '\n', '----', '\n', sorted_array)
 - difference is negligible in our small data sample, but different algorithms would result in different calculation times depending on the size of the data
 - quicksort, mergesort, heapsort
 - https://algodaily.com/lessons/merge-sort-vs-quick-sort-heap-sort
- 
-### Sorting arrays
-
