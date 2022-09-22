@@ -28,6 +28,7 @@ x = list(range(0, 10))
 y = list(range(-10, 0))
 
 plt.plot(x, y)
+plt.show() # only for jupyter notebooks
 ```
 
 ```
@@ -100,3 +101,97 @@ pytrends.build_payload(keywords, timeframe='today 5-y')
 data = pytrends.interest_over_time()
 data
 ```
+![image](https://user-images.githubusercontent.com/37263010/191680329-a82cd486-6953-4fe0-9c5f-37bffdebf507.png)
+
+> How can we visualize this better? We can use the knowledge we got from `matplotlib`!
+
+```
+plt.plot(data)
+```
+
+![image](https://user-images.githubusercontent.com/37263010/191680883-73ecb8ba-0f74-43f2-87fb-b6143a90216b.png)
+
+- Add a legend
+
+```
+plt.plot(data)
+plt.legend(keywords, loc="upper left")
+```
+
+#### Putting it all together
+
+```
+plt.plot(data)
+plt.legend(keywords, loc="upper left")
+plt.suptitle('Programming language searches on Google')
+plt.xlabel('Years')
+plt.ylabel('Weekly searches')
+plt.savefig('data.png')
+```
+![image](https://user-images.githubusercontent.com/37263010/191722351-31f2806f-fe14-4fbe-9405-559602c7ec94.png)
+
+### Analyzing data points
+
+```
+focus = ['Python', 'Java']
+plt.plot(data[focus])
+plt.legend(focus, loc="upper left")
+```
+
+#### Country-level data about our keywords
+
+```
+# Country level data filter
+data2 = pytrends.interest_by_region(resolution='COUNTRY', inc_low_vol=True)
+
+# Filter by 'Python' keyword and get the 10 highest results
+data2 = data2['Python'].nlargest(10)
+plt.plot(data2)
+```
+![image](https://user-images.githubusercontent.com/37263010/191740337-b55f7597-a50c-49c4-8515-b2cdf78db1b2.png)
+
+- check our type
+
+```
+type(data2) # pandas.core.series.Series
+```
+- convert it to DataFrame
+- pandas is much better for bar chart instead of matplotlib 
+
+```
+import pandas as pd
+# convert to DataFrame
+if not isinstance(data2, pd.DataFrame): 
+  data2 = data2.to_frame()
+type(data2) # pandas.core.frame.DataFrame
+```
+
+```
+# use pandas for bar chart instead of matplotlib 
+data2.plot(kind="bar")
+```
+![image](https://user-images.githubusercontent.com/37263010/191740714-69cdac46-5c7c-41c8-bca5-37ab539b8fa6.png)
+
+- we can still continue to use matplotlib for additional labels
+```
+# use matplotlib to add titles
+plt.suptitle('python searches by country')
+plt.xlabel('Countries')
+plt.ylabel('Averages number of searches over 5 years')
+```
+
+### Plot a bar chart including all keywords/programming languages
+
+```
+# plot a bar chart with multiple keywords
+data3 = pytrends.interest_by_region(resolution='COUNTRY', inc_low_vol=True)
+data3 = data3[55:60]
+data3 
+```
+![image](https://user-images.githubusercontent.com/37263010/191742485-92208d86-a793-4fe2-9dbc-0e0f15a20358.png)
+
+```
+data3.plot(kind="bar")
+```
+
+![image](https://user-images.githubusercontent.com/37263010/191742673-4337b528-a39a-42e6-ae9c-61fdac87cc66.png)
