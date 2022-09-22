@@ -8,18 +8,12 @@
   - outputs in many different formats
   - customizable
   
-#### Installiation and usage
+#### Installation and usage
 ```
 pip3 install matplotlib # in terminal (for jupyter notebook)
-pip3 install pytrends # in terminal (for jupyter notebook)
-
-!pip install pytrends # in Google Colab
 
 import matplotlib.pyplot as plt
-from pytrends.request import TrendReq
 -----
-
-import matplotlib as plt
 ```
 
 - below line is needed for jupyter notebooks
@@ -79,3 +73,30 @@ plt.hist(a)
 ```
 ![image](https://user-images.githubusercontent.com/37263010/191672153-1c0710f4-e822-44f1-83cd-7d3cc19ef05a.png)
 
+### Plotting trends using PyTrends
+
+#### Installation and usage
+
+- Unofficial API for Google Trends
+- API interface for automating downloading of reports from Google Trends
+
+```
+pip3 install pytrends # in terminal (for jupyter notebook)
+
+!pip install pytrends # in Google Colab
+```
+
+```
+from pytrends.request import TrendReq
+
+# Create pytrends object and request data from Google
+pytrends = TrendReq(hl='en-US') # hl = host language
+
+# extract data about certain keywords
+keywords = ['Python', 'C++', 'Java', 'HTML', 'Javascript']
+
+# specify the words and timeframe
+pytrends.build_payload(keywords, timeframe='today 5-y')
+data = pytrends.interest_over_time()
+data
+```
