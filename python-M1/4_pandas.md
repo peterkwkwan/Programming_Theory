@@ -13,7 +13,7 @@
   2. Dealing with tabular/spreadsheet-like data
   3. Makes analyzing data much simpler
 
-#### Fetching data and playing with pandas
+### Fetching data and playing with pandas
 
 - We can import our own custom `.csv`, excel files
 - [Pokemon CSV](https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6)
@@ -38,7 +38,7 @@ ecom = pd.read_csv('/content/M1L5/Ecommerce Purchases.dms')
 type(ecom)
 ```
 
-#### Basic functions for pandas
+### Basic functions for pandas
 
 ```
 .read_csv() # reads a CSV into DataFrame
@@ -75,7 +75,7 @@ ecom["Purchase Price"].describe() # get a particular column
 ecom.describe() # get all columns with numerical values
 ```
 
-#### pandas `series`
+### pandas `series`
 
 ```
 type(ecom["Purchase Price"]) # pandas.core.series.Series
@@ -90,7 +90,7 @@ type(ecom["Purchase Price"]) # pandas.core.series.Series
 2. `DataFrame` : 2-dimensional
   - As long as there is more than 1 column
 
-#### Applying what we learned to your job
+### Applying what we learned to your job
 
 - Using the data, how can we leverage it in a business situation?
 - Perhaps we wanted to run some analysis on the highest spenders and create a loyalty program. 
@@ -126,7 +126,7 @@ vip["CC Provider"].value_counts() # google 'python pandas unique count values
 vip.to_csv("some_name")
 ```
 
-#### Additional assignments
+### Additional assignments
 
 > How many people have the job title of "Lawyer"?
 
@@ -234,7 +234,7 @@ add20 = lambda x:x+20
 add20(20)
 ```
 
-#### Applying lambda to our data set
+### Applying lambda to our data set
 
 ```
 # 'apply' a function on an entire series
