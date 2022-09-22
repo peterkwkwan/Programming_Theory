@@ -35,14 +35,15 @@ plt.plot(x, y)
 a = [0, -100, 25, 67, -345]
 b = [0, 3, 7, 3, 9] 
 plt.plot(a,b)
-
-![image](https://user-images.githubusercontent.com/37263010/191670645-f3c76669-53e3-4b18-be25-690003595121.png)
 ```
+![image](https://user-images.githubusercontent.com/37263010/191670645-f3c76669-53e3-4b18-be25-690003595121.png)
+
 
 > What if we wanted to just focus on a specific area of the chart?
 
 ```
 plt.axis([-50, 80, 3, 8])
 plt.plot(a,b)
-![image](https://user-images.githubusercontent.com/37263010/191670659-459dc9e6-1454-44ba-b067-2066dd577b06.png)
 ```
+![image](https://user-images.githubusercontent.com/37263010/191670659-459dc9e6-1454-44ba-b067-2066dd577b06.png)
+
