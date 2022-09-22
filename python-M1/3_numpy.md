@@ -35,5 +35,7 @@ import numpy as np
 - One way to create an array is using the `arange` method (arrange + range)
 
 ```
-np.arange(8)
+np.arange(8) // array([0, 1, 2, 3, 4, 5, 6, 7])
+
+type(type(np.arange(8)) // numpy.ndarray
 ```
