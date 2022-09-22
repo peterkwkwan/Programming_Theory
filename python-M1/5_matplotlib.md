@@ -40,7 +40,8 @@ plt.plot(a,b)
 
 
 > What if we wanted to just focus on a specific area of the chart?
-
+- we can set specific [start,end] points for our graph 
+- `axis([xmin, xmax, ymin, ymax])`
 ```
 plt.axis([-50, 80, 3, 8])
 plt.plot(a,b)
