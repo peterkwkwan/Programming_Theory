@@ -48,3 +48,28 @@ plt.plot(a,b)
 ```
 ![image](https://user-images.githubusercontent.com/37263010/191670659-459dc9e6-1454-44ba-b067-2066dd577b06.png)
 
+> What if we wanted to name our chart and label the axis?
+
+```
+plt.title("Triangle")
+plt.xlabel("Array A")
+plt.ylabel("Array B")
+plt.plot(a,b)
+```
+
+- We can also rename our axis 'tick' indicators
+
+```
+plt.xticks((-40, -20, 0, 20, 40, 60, 80), ('Hello', 'World', 'this', 'graph', 'is', 'totally', 'awesome'))
+```
+
+- coloring the graph
+```
+plt.plot(a,b, color='red')
+```
+
+### Histogram (bar charts)
+```
+plt.hist(a)
+```
+![image](https://user-images.githubusercontent.com/37263010/191672153-1c0710f4-e822-44f1-83cd-7d3cc19ef05a.png)
