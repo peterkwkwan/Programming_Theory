@@ -41,7 +41,7 @@ plt.plot(a,b)
 
 > What if we wanted to just focus on a specific area of the chart?
 - we can set specific [start,end] points for our graph 
-- `axis([xmin, xmax, ymin, ymax])`
+- `axis([xmin, xmax, ymin, ymax])` [reference - official docs](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axis.html)
 ```
 plt.axis([-50, 80, 3, 8])
 plt.plot(a,b)
