@@ -10,8 +10,13 @@
   
 #### Installiation and usage
 ```
-pip install matplotlib
- 
+pip3 install matplotlib # in terminal (for jupyter notebook)
+pip3 install pytrends # in terminal (for jupyter notebook)
+
+!pip install pytrends # in Google Colab
+
+import matplotlib.pyplot as plt
+from pytrends.request import TrendReq
 -----
 
 import matplotlib as plt
@@ -73,3 +78,4 @@ plt.plot(a,b, color='red')
 plt.hist(a)
 ```
 ![image](https://user-images.githubusercontent.com/37263010/191672153-1c0710f4-e822-44f1-83cd-7d3cc19ef05a.png)
+
