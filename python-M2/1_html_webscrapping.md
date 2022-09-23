@@ -54,7 +54,7 @@ for shoe in shoe_names:
   print(shoe.text)
 ```
 
-> Let's try to get the price
+> How do we get the prices?
 
 ```
 # get the prices
@@ -62,4 +62,35 @@ shoe_prices = soup_page.findAll('dd', {'id': 'oriPrice'})
 
 for price in shoe_prices:
   print(price.text)
+```
+
+- We have 2 prices though. How can we clean it up?
+> Also, how can we print out both the prices and the names at the same time?
+
+- we can use the inspect tool to see the 'box' that contains the shoe item
+
+```
+soup_page.findAll('dl', {'class': 'product_list_content'})[0]
+type(shoe_list) # bs4.element.ResultSet
+```
+
+- now, we can loop the shoes
+
+```
+for shoe in shoe_list:
+  # print(type(shoe.findAll('span', {'class', 'up'}))) # bs4.element.ResultSet
+  title = shoe.findAll('span', {'class', 'up'})[0] # we need to get the first index since `findAll` returns a ResultSet
+  print(title.text)
+```
+
+- we can also print out the prices at the same time
+
+```
+for shoe in shoe_list:
+  # print(type(shoe.findAll('span', {'class', 'up'}))) # bs4.element.ResultSet
+  title = shoe.findAll('span', {'class', 'up'})[0].text # we need to get the first index since `findAll` returns a list
+  price = shoe.findAll('dd', {'class', 'color666'})[0].text
+  print(title)
+  print(price)
+  print('-'*50)
 ```
