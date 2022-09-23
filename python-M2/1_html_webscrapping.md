@@ -38,5 +38,28 @@ soup_page
 ```
 
 - We just want the name of the product and the price of the product
+- Using dev tools, we can inspect the page
 
 ![image](https://user-images.githubusercontent.com/37263010/191875820-4339e32d-44e3-426c-82c9-99c6e1c8eb5f.png)
+
+```
+soup_page.findAll('span') # this will not work! we have too many <span> tags
+soup_page.findAll('span', {'class': 'up'}) # can specify the attribute we want!
+```
+
+> Now we need to get the name of the shoes. How can we do that?
+
+```
+for shoe in shoe_names:
+  print(shoe.text)
+```
+
+> Let's try to get the price
+
+```
+# get the prices
+shoe_prices = soup_page.findAll('dd', {'id': 'oriPrice'})
+
+for price in shoe_prices:
+  print(price.text)
+```
