@@ -69,6 +69,8 @@ for price in shoe_prices:
 
 - we can use the inspect tool to see the 'box' that contains the shoe item
 
+![image](https://user-images.githubusercontent.com/37263010/191878833-999f4411-8e3f-462c-af21-9eb60a074d2d.png)
+
 ```
 soup_page.findAll('dl', {'class': 'product_list_content'})[0]
 type(shoe_list) # bs4.element.ResultSet
