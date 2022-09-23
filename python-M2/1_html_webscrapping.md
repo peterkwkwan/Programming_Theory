@@ -17,6 +17,7 @@
 # 2) Translate the data
 ```
 
+### Getting the data
 - [Nike Website](https://www.nike.com.hk/?locale=en-gb)
 
 ```
@@ -97,6 +98,7 @@ for shoe in shoe_list:
   print('-'*50)
 ```
 
+### Translate the data
 - Let's now try to turn our data into a DataFrame for analysis
 
 ```
