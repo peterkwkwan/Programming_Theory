@@ -110,5 +110,59 @@ for shoe in shoe_list:
 - Let's check the length of our lists are the same
 
 ```
+# check if all our shoes have prices (and vice-versa)
 len(names) == len(prices)
+```
+
+- put our names and prices into a Nike `dict`
+
+```
+# for easier processing
+nike_dict = {
+    'Name': names,
+    'Price': prices
+}
+
+nike_dict
+```
+
+> Time to turn our data into a DataFrame! How can we do this? (Hint: pandas)
+
+```
+import pandas as pd
+
+nike_df = pd.DataFrame(data=nike_dict)
+nike_df
+```
+
+> However, before we can start any price analysis, what kind of problems does our data have?
+
+```
+# This gives us the wrong answer!
+nike_df["Price"].max() # our prices are in string format
+```
+
+```
+# change our values into integers / floats(prices)
+# PROBLEMS: HK, $, commas, double prices
+
+"HK$999".split('HK$') # ['', '999']
+
+"HK$2,299HK$1,839".split('HK$') # ['', '2,299', '1,839']
+
+# we can use -1 index to always get the last value!
+
+# get rid of the commas
+"HK$2,299HK$1,839".split('HK$')[-1].replace(',', '')
+```
+
+> How can we apply this function on all items in our DataFrame? (Hint: we learned it in M1)
+
+```
+nike_df["Price"].apply(lambda x: x.split('HK$')[-1].replace(',', ''))
+
+# update our existing DF 'Price' column
+nike_df["Price"] = nike_df["Price"].apply(lambda x: x.split('HK$')[-1].replace(',', ''))
+
+nike_df
 ```
