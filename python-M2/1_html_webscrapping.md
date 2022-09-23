@@ -170,3 +170,23 @@ nike_df["Price"] = nike_df["Price"].apply(lambda x: x.split('HK$')[-1].replace('
 
 nike_df
 ```
+
+- Time to plot our data!
+
+```
+type(nike_df) # pandas.core.frame.DataFrame
+nike_df.plot(kind='bar') # TypeError: no numeric data to plot
+```
+
+> We missed one important step (Hint: our data type is wrong!)
+
+```
+# convert our type to float
+nike_df["Price"] = nike_df["Price"].apply(lambda x: float(x))
+nike_df["Price"]
+```
+![image](https://user-images.githubusercontent.com/37263010/191879297-d365a983-fd69-4be2-8d2b-c4ae39bf8711.png)
+
+```
+nike_df.plot(kind="bar")
+```
