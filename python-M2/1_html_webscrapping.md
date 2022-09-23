@@ -58,7 +58,7 @@ for shoe in shoe_names:
 
 ```
 # get the prices
-shoe_prices = soup_page.findAll('dd', {'id': 'oriPrice'})
+shoe_prices = soup_page.findAll('dd', {'class': 'color666'})
 
 for price in shoe_prices:
   print(price.text)
@@ -79,7 +79,7 @@ type(shoe_list) # bs4.element.ResultSet
 ```
 for shoe in shoe_list:
   # print(type(shoe.findAll('span', {'class', 'up'}))) # bs4.element.ResultSet
-  title = shoe.findAll('span', {'class', 'up'})[0] # we need to get the first index since `findAll` returns a ResultSet
+  name = shoe.findAll('span', {'class', 'up'})[0] # we need to get the first index since `findAll` returns a ResultSet
   print(title.text)
 ```
 
@@ -88,9 +88,27 @@ for shoe in shoe_list:
 ```
 for shoe in shoe_list:
   # print(type(shoe.findAll('span', {'class', 'up'}))) # bs4.element.ResultSet
-  title = shoe.findAll('span', {'class', 'up'})[0].text # we need to get the first index since `findAll` returns a list
+  name = shoe.findAll('span', {'class', 'up'})[0].text # we need to get the first index since `findAll` returns a list
   price = shoe.findAll('dd', {'class', 'color666'})[0].text
-  print(title)
+  print(name)
   print(price)
   print('-'*50)
+```
+
+- Let's now try to turn our data into a DataFrame for analysis
+
+```
+# store our names and prices in a list
+names = []
+prices = []
+
+for shoe in shoe_list:
+  names.append(shoe.findAll('span', {'class', 'up'})[0].text)
+  prices.append(shoe.findAll('dd', {'class', 'color666'})[0].text)
+```
+
+- Let's check the length of our lists are the same
+
+```
+len(names) == len(prices)
 ```
