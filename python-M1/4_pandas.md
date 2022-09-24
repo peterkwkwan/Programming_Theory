@@ -59,6 +59,23 @@ ecom["Purchase Price"].max()
 
 > How to get the average?
 
+```
+ecom["Purchase Price"].mean()
+
+# OR if we do it manually
+
+price_list = ecom["Purchase Price"]
+
+total_price = 0
+
+for price in price_list:
+  total_price += price
+
+number_of_items = len(price_list)
+print(total_price / number_of_items)
+```
+- pandas saves us so much time and effort!
+
 - Reading error messages --> typo when trying to acccess a column
 
 ![image](https://user-images.githubusercontent.com/37263010/189654167-9dcc3b9c-7ec9-46a2-b9dc-efb05c56f839.png)
