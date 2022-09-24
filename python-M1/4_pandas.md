@@ -16,7 +16,8 @@
 ### Fetching data and playing with pandas
 
 - We can import our own custom `.csv`, excel files
-- [Pokemon CSV](https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6)
+
+- [Pokemon CSV](https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6) --> just show students that its possible to import CSV
 
 - Git clone some pre-made table data
 ```
