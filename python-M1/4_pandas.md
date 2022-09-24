@@ -76,6 +76,8 @@ print(total_price / number_of_items)
 ```
 - pandas saves us so much time and effort!
 
+> Follow up: find the max manually!
+
 - Reading error messages --> typo when trying to acccess a column
 
 ![image](https://user-images.githubusercontent.com/37263010/189654167-9dcc3b9c-7ec9-46a2-b9dc-efb05c56f839.png)
