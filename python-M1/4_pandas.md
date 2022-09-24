@@ -139,7 +139,7 @@ vip["CC Provider"].value_counts() # google 'python pandas unique count values
 #### Sharing data with colleagues
 
 ```
-vip.to_csv("some_name")
+vip.to_csv("some_name.csv")
 ```
 
 ### Additional assignments
