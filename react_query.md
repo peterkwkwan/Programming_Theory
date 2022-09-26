@@ -9,6 +9,7 @@ React Query maintains a global cache for all the GET requests. The cache is like
   - sort of like redux, where we fetch data from the server and make it available _everywhere_
 
 Once data is fetched, React Query keeps track of aspects suchs as cache time. It manages the cache internally and also updates the cache so that the data is in sync with the server's state.
+  - _stale-while-revalidate_ caching strategy
 
 React query provides a [debugging tool](https://react-query.tanstack.com/devtools) to keep track of all the queries in the application.
 
