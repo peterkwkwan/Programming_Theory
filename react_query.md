@@ -13,3 +13,6 @@ Once data is fetched, React Query keeps track of aspects suchs as cache time. It
 
 React query provides a [debugging tool](https://react-query.tanstack.com/devtools) to keep track of all the queries in the application.
 
+#### StaleTime vs CacheTime
+
+- 
