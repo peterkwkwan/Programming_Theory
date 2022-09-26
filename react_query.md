@@ -13,7 +13,7 @@ Once data is fetched, React Query keeps track of aspects suchs as cache time. It
 
 React query provides a [debugging tool](https://react-query.tanstack.com/devtools) to keep track of all the queries in the application.
 
-#### StaleTime vs CacheTime
+### StaleTime vs CacheTime
 
 StaleTime
 - duration until a query transitions from fresh to stale. If fresh, the data will always be read from the cache - no network requests happen
@@ -28,6 +28,6 @@ CacheTime
 - If you get data from useQuery, try not to put that data into local state. The main reason is that you implicitly opt out of all background updates that React Query does for you, because the state "copy" will not update with it.
 - Read more here: [Practical React Query](https://tkdodo.eu/blog/practical-react-query)
 
-#### Enabled option is very powerful
+### Enabled option is very powerful
 
 - 
