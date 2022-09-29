@@ -25,3 +25,16 @@ def wc_generator():
   plt.imshow(wc)
   plt.savefig("wordcloud.png")
 ```
+
+### Importing the `time` library
+
+```
+import time
+
+def automater(func, sec):
+  while True:
+    func()
+    time.sleep(sec)
+    
+automater(wc_generator, 5)
+```
