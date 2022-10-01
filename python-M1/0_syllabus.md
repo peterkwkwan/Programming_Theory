@@ -34,8 +34,8 @@
   - [Rock Paper Scissors](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-29/pr/6/by/4186) - Medium
 
 #### 6. Beautiful Soup
-  - Web scrapping Youtube channels
-  - Web scrapping Google news
+  - [Web scrapping Youtube channels](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-1/pr/1/by/4186) - Medium
+  - [Web scrapping Google news](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-1/pr/3/by/4186) - Medium
   
 #### 7. NumPy
   - Arrays
