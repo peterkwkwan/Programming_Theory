@@ -21,6 +21,7 @@ response.get(requests.get('https://api.hkma.gov.hk/public/bank-svf-info/register
 - [Game of Thrones API](https://thronesapi.com/)
 - https://thronesapi.com/api/v2/Characters
 
+```
 response = requests.get('https://thronesapi.com/api/v2/Characters')
 print(response)
 content = response.content
@@ -51,6 +52,7 @@ JSON_content[1]
 type(JSON_content[0]) // dictionary
 # dict --> key:value pairs
 ```
+![image](https://user-images.githubusercontent.com/37263010/193386355-afc1087c-45a3-4a5c-a32f-b4b3883eea30.png)
 
 ```
 first_item = JSON_content[0]
