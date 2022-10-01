@@ -28,6 +28,9 @@ def wc_generator():
 
 ### Importing the `time` library
 
+- we can use a `while` loop to achieve automation
+- essentially an infinite loop (be careful!)
+
 ```
 import time
 
@@ -38,3 +41,11 @@ def automater(func, sec):
     
 automater(wc_generator, 5)
 ```
+
+### PyCharm
+
+- use PyCharm IDE
+- IDEs help programmers make programs
+- PyCharm allows us to write more powerful programs
+
+
