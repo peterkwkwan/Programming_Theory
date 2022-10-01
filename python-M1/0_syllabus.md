@@ -45,7 +45,7 @@
 #### 8. Pandas
   - Series
   - DataFrames
-  - Ecom purchases
+  - [Ecom purchases](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-3/pr/2/by/4186) - Medium/Hard
   - Lambda
   
 #### 9. API / JSON
