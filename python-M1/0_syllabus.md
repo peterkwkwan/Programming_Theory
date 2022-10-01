@@ -54,6 +54,7 @@
 #### 10. Matplotlib
   - Basic commands
   - Customization
+  - Plotting trends with PyTrends
   - [Company Sales Data](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-7/pr/2/by/4186) - Medium/Hard
 
 #### 11. DateTime & DataReader
