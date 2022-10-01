@@ -2,13 +2,13 @@
 
 [Main Preface notes folder](https://portal.preface.ai/subjects/8/notes/4186)
 
-1. Main steps of programming
+#### 1. Main steps of programming
   - Data types
   - String Methods
   - Integer and Float Operators
   - Variables
   
-2. Logic
+#### 2. Logic
   - Comparison Operators
   - Boolean Operators
   - Conditional logic
