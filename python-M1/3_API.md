@@ -8,14 +8,19 @@
 
 #### Using APIs
 
+- HKMA (https://apidocs.hkma.gov.hk/)
+
 ```
 import requests
-import json
+
+response.get(requests.get('https://api.hkma.gov.hk/public/bank-svf-info/register-ais-lros?lang=en')
 ```
+
+> What do we get? What is Response 200 mean?
+
 - [Game of Thrones API](https://thronesapi.com/)
 - https://thronesapi.com/api/v2/Characters
 
-```
 response = requests.get('https://thronesapi.com/api/v2/Characters')
 print(response)
 content = response.content
@@ -33,6 +38,8 @@ type(content) // bytes
 - transforms byte data into python readable data
 
 ```
+import json
+
 JSON_content = json.loads(content)
 JSON_content
 type(JSON_content) // list
