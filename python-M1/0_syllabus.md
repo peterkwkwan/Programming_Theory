@@ -31,6 +31,7 @@
   - [Lottery](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-0/pr/2/by/4186) - Easy
   - [Number Guessing Game](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-0/pr/4/by/4186) - Easy
   - [Opening Hour](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-0/pr/5/by/4186) - Easy
+  - [Rock Paper Scissors](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-29/pr/6/by/4186) - Medium
 
 #### 6. Beautiful Soup
   - Web scrapping Youtube channels
