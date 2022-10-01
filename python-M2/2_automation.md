@@ -44,7 +44,7 @@ automater(wc_generator, 5)
 
 ### PyCharm
 
-- use PyCharm IDE
+- use PyCharm IDE - [Download](https://www.jetbrains.com/pycharm/)
 - IDEs help programmers make programs
 - PyCharm allows us to write more powerful programs
 
