@@ -67,6 +67,8 @@ type(keys) // dict_keys
 ```
 
 #### Nested dict, lists
+
+- let's try something a bit more complicated
 - https://restcountries.com/v3.1/all
 
 ```
