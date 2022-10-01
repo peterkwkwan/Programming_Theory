@@ -40,7 +40,7 @@
 #### 7. NumPy
   - Arrays
   - CRUD in NumPy
-  - NumPy tricks
+  - [NumPy tricks](https://portal.preface.ai/courses/38/view_teacher_notes/content/nomad-2/pr/1/by/4186) - Medium
   
 #### 8. Pandas
   - Series
