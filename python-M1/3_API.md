@@ -8,12 +8,12 @@
 
 #### Using APIs
 
-- HKMA (https://apidocs.hkma.gov.hk/)
+- HKMA (https://google.com)
 
 ```
 import requests
 
-response.get(requests.get('https://api.hkma.gov.hk/public/bank-svf-info/register-ais-lros?lang=en')
+response.get(requests.get('https://google.com')
 ```
 
 > What do we get? What is Response 200 mean?
@@ -33,6 +33,9 @@ print(content)
 ```
 type(content) // bytes
 ```
+
+![image](https://user-images.githubusercontent.com/37263010/193537609-5cf51511-9fca-4f5a-af2c-5d4a5b326bbe.png)
+
 
 - JSON --> Javascript Object Notation
 - `import json` --> translator! (translation library)
