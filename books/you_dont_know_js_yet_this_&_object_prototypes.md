@@ -262,3 +262,26 @@ Since we are directly stating what you want the this to be, we call it _explicit
 
 #### 4. `new` Binding
 
+In traditional class-oriented languages, "constructors" are special methods attached to classes, that when the class is instantiated with a new operator, the constructor of that class is called. This usually looks something like:
+
+`something = new MyClass(..);`
+
+JavaScript has a new operator, and the code pattern to use it looks basically identical to what we see in those class-oriented languages; most developers assume that JavaScript's mechanism is doing something similar. However, there really is no connection to class-oriented functionality implied by new usage in JS.
+
+First, let's re-define what a "constructor" in JavaScript is. In JS, constructors are __just functions__ that happen to be called with the new operator in front of them. They are not attached to classes, nor are they instantiating a class. They are not even special types of functions. They're just regular functions that are, in essence, hijacked by the use of `new` in their invocation.
+
+When a function is invoked with new in front of it, otherwise known as a constructor call, the following things are done automatically:
+
+1) a brand new object is created (aka, constructed) out of thin air
+2) the newly constructed object is `[[Prototype]]`-linked
+3) the newly constructed object is set as the `this` binding for that function call
+4) unless the function returns its own alternate object, the new-invoked function call will _automatically_ return the newly constructed object.
+
+```
+function foo(a) {
+	this.a = a;
+}
+
+var bar = new foo( 2 );
+console.log( bar.a ); // 2
+```
