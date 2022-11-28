@@ -105,7 +105,7 @@ foo(); // ReferenceError: a is not defined
 
 #### The `call-site`
 
-Call-site is the location in code where a function is called FROM (<strong>not where its delcared</strong>).
+Call-site is the location in code where a function is called FROM (<strong>not where its declared</strong>).
 
 - depending on the call-site, it will help us identify what `this` is referring to
 
