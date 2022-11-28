@@ -360,3 +360,67 @@ Now, we can summarize the rules for determining this from a function call's call
 
 4. Otherwise, default the `this` (default binding). If in strict mode, `this` will be `undefined`, otherwise `this` is the global object.
 > `var bar = foo()`
+
+
+### Lexical `this` (arrow functions)
+
+When using arrow functions, we don't follow the 4 standard `this` rules. Arrow functions adopt the enclosing scope (function or global).
+
+```
+function foo() {
+	// return an arrow function
+	return (a) => {
+		// `this` here is lexically adopted from `foo()`
+		console.log( this.a );
+	};
+}
+
+var obj1 = {
+	a: 2
+};
+
+var obj2 = {
+	a: 3
+};
+
+var bar = foo.call( obj1 );
+bar.call( obj2 ); // 2, not 3!
+```
+
+The arrow-function created in `foo()` lexically captures whatever `foo()`s this is at its _call-time_. Since `foo()` was `this`-bound to `obj1`, `bar` (a reference to the returned arrow-function) will also be `this`-bound to `obj1`. The lexical binding of an arrow-function cannot be overridden (even with new!).
+
+A common use-case will be inside callbacks:
+
+```
+function foo() {
+	setTimeout(() => {
+		// `this` here is lexically adopted from `foo()`
+		console.log( this.a );
+	},100);
+}
+
+var obj = {
+	a: 2
+};
+
+foo.call( obj ); // 2
+```
+
+While arrow-functions provide an alternative to using `bind(..)` on a function to ensure its `this`, which can seem attractive, it's important to note that they essentially are disabling the traditional `this` mechanism in favor of more widely-understood lexical scoping. Pre-ES6, we already have a fairly common pattern for doing so, which is basically almost indistinguishable from the spirit of ES6 arrow-functions:
+
+```
+function foo() {
+	var self = this; // lexical capture of `this`
+	setTimeout( function(){
+		console.log( self.a );
+	}, 100 );
+}
+
+var obj = {
+	a: 2
+};
+
+foo.call( obj ); // 2
+```
+
+Instead of the four standard binding rules, ES6 arrow-functions use lexical scoping for `this` binding, which means they adopt the `this` binding from its enclosing function call. They are essentially a syntactic replacement of `self = this` in pre-ES6 coding.
