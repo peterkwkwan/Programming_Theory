@@ -239,3 +239,23 @@ doFoo( obj.foo ); // "oops, global"
 Parameter passing is just an implicit assignment, and since we're passing a function, it's an implicit reference assignment, so the end result is the same as the previous snippet.
 
 #### 3. Explicit Binding
+
+What if we wanted to force a function to use a particular object for the `this` binding, without using a property function reference on the object?
+
+We can use the function `PROTOTYPE` utility methods such as `call` or `apply`.
+
+```
+function foo() {
+	console.log( this.a );
+}
+
+var obj = {
+	a: 2
+};
+
+foo.call( obj ); // 2
+```
+
+--> Invoking foo with explicit binding by foo.call(..) allows us to force its this to be obj.
+
+Since we are directly stating what you want the this to be, we call it _explicit binding_.
