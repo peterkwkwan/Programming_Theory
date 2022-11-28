@@ -424,3 +424,5 @@ foo.call( obj ); // 2
 ```
 
 Instead of the four standard binding rules, ES6 arrow-functions use lexical scoping for `this` binding, which means they adopt the `this` binding from its enclosing function call. They are essentially a syntactic replacement of `self = this` in pre-ES6 coding.
+
+# Chapter 3
