@@ -285,3 +285,78 @@ function foo(a) {
 var bar = new foo( 2 );
 console.log( bar.a ); // 2
 ```
+
+### Rule precedence
+
+It should be clear that the default binding is the lowest priority rule of the 4.
+
+Which is more precedent, implicit binding or explicit binding? Let's test it:
+
+```
+function foo() {
+	console.log( this.a );
+}
+
+var obj1 = {
+	a: 2,
+	foo: foo
+};
+
+var obj2 = {
+	a: 3,
+	foo: foo
+};
+
+obj1.foo(); // 2
+obj2.foo(); // 3
+
+obj1.foo.call( obj2 ); // 3
+obj2.foo.call( obj1 ); // 2
+```
+
+Explicit binding takes precedence!
+
+What about `new` binding?
+
+```
+function foo(something) {
+	this.a = something;
+}
+
+var obj1 = {
+	foo: foo
+};
+
+var obj2 = {};
+
+obj1.foo( 2 );
+console.log( obj1.a ); // 2
+
+obj1.foo.call( obj2, 3 );
+console.log( obj2.a ); // 3
+
+var bar = new obj1.foo( 4 );
+console.log( obj1.a ); // 2
+console.log( bar.a ); // 4
+```
+
+`new` binding is more precedent than implicit binding!
+
+### Determining `this`
+
+Now, we can summarize the rules for determining this from a function call's call-site, in their order of precedence. Ask these questions in this order, and stop when the first rule applies:
+
+1. Is the function called with `new` (_new binding_)? If so, `this` is the newly constructed object.
+> `var bar = new foo()`
+
+
+2. Is the function called with `call` or `apply` (_explicit binding_)? If so, `this` is the explicitly specified object.
+> `var bar = foo.call( obj2 )`
+
+
+3. Is the function called with a `context` (_implicit binding_), otherwise known as an owning or containing object? If so, this is that context object.
+> `var bar = obj1.foo()`
+
+
+4. Otherwise, default the `this` (default binding). If in strict mode, `this` will be `undefined`, otherwise `this` is the global object.
+> `var bar = foo()`
