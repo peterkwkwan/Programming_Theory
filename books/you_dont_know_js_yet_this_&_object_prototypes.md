@@ -256,6 +256,9 @@ var obj = {
 foo.call( obj ); // 2
 ```
 
---> Invoking foo with explicit binding by foo.call(..) allows us to force its this to be obj.
+> Invoking foo with explicit binding by foo.call(..) allows us to force its this to be obj.
 
 Since we are directly stating what you want the this to be, we call it _explicit binding_.
+
+#### 4. `new` Binding
+
