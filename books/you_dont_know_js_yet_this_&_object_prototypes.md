@@ -426,3 +426,9 @@ foo.call( obj ); // 2
 Instead of the four standard binding rules, ES6 arrow-functions use lexical scoping for `this` binding, which means they adopt the `this` binding from its enclosing function call. They are essentially a syntactic replacement of `self = this` in pre-ES6 coding.
 
 # Chapter 3
+
+_It's a common mis-statement that "everything in JavaScript is an object". This is clearly not true._
+
+By contrast, there are a few special object sub-types, which we can refer to as complex primitives.
+
+`function` is a sub-type of object (technically, a "callable object"). Functions in JS are said to be "first class" in that they are basically just normal objects (with callable behavior semantics bolted on), and so they can be handled like any other plain object.
