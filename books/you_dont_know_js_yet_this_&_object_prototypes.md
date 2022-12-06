@@ -432,3 +432,7 @@ _It's a common mis-statement that "everything in JavaScript is an object". This 
 By contrast, there are a few special object sub-types, which we can refer to as complex primitives.
 
 `function` is a sub-type of object (technically, a "callable object"). Functions in JS are said to be "first class" in that they are basically just normal objects (with callable behavior semantics bolted on), and so they can be handled like any other plain object.
+
+Arrays are also a form of objects, with extra behavior. The organization of contents in arrays is slightly more structured than for general objects.
+
+### Built-in Objects
