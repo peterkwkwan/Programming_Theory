@@ -24,3 +24,13 @@ However, using a bank's services has costs (both apparent & hidden)
 5. Banks work independently
 6. Human error or malicious intent
 7. Centralized vulnerability
+
+#### 2008 / 2009 Financial Crisis
+
+At the root of the crisis was the banks taking advantage and breaking its trust with the people, in an effort to make more money.
+
+#### Birth of the blockchain
+
+- A means to decentralize control and encourage a decreased reliance on the centralized institutions that we heavily trust in
+- Blockchain technology at its core attempts to cut out the middleman and intermediaries (banks, big tech, governments)
+- Save the extra costs, in time and money, we previously mentioned
