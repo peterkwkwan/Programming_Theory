@@ -16,3 +16,11 @@ Why would banks do this?
 - reinvest our money that we give them, in hopes of generating an income
 
 However, using a bank's services has costs (both apparent & hidden)
+
+1. Transaction fees
+2. Privacy issues
+3. Transaction time
+4. Eligibility proof
+5. Banks work independently
+6. Human error or malicious intent
+7. Centralized vulnerability
