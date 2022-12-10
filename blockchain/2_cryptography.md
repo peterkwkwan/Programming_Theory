@@ -23,3 +23,5 @@ If passwords were encrypted instead of hashed, the hackers would be able to reve
 
 The most well known algorithm used in blockchain is known as _SHA256_
 - designed by the United States National Security Agency
+
+The most interesting aspect of hashing is that the output has a fixed length - and every unique input gives a different output
