@@ -19,3 +19,7 @@ The process of transforming some set of data into random values that _can't be r
 
 If passwords were encrypted instead of hashed, the hackers would be able to reverse-engineer and decrypt the passwords
 
+### SHA256 algorithm
+
+The most well known algorithm used in blockchain is known as _SHA256_
+- designed by the United States National Security Agency
