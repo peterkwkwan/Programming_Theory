@@ -46,3 +46,7 @@ There are several questions we must pose in this case:
 
 To answer all these questions, we must must understand the full process of a transaction taking place.
 - these processes can be broken into 3 steps:
+
+1) Phase 1 - Block Creation
+2) Phase 2 - Block Validation
+3) Phase 3 - Block Addition
