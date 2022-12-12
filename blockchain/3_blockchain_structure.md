@@ -26,3 +26,5 @@ A blockchain will have multiple participants, known as _nodes_
 A _blockchain network_ is therefore a network of distributed, decentralized nodes who all possess the same ledger of data
 
 - the network needs a way to update all the ledgers with the latest copy, and how the nodes come to an agreement (consensus)
+
+#### Peer-to-peer
