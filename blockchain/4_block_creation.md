@@ -13,10 +13,12 @@ The first 2 criteria are easy for the node to check. We only need to check that 
 
 The 3rd criteria is much more complicated. In the blockchain network, there is no KYC process and no intermediaries. How can we prove this? This is where *digital signatures* come into play.
 
-### Digital Signatures - symmetric encryption, single key
+### Digital Signatures - Symmetric encryption, single key
 
 Encryption recap - allows us to encrypt some data (plain text) using a key, becoming cipher text, then using the same key to decipher the cipher text back into plain text.
 
 > Since we are using the same key, this is known as _symmetric encryption_
 
+The issue with using this method is that if we send the key over the internet, it can get intercepted. Then the hacker would be able to read all our data without us knowing!
 
+### Non-digital signature - Asymmetric encryption
