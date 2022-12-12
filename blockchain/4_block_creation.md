@@ -15,3 +15,8 @@ The 3rd criteria is much more complicated. In the blockchain network, there is n
 
 ### Digital Signatures - symmetric encryption, single key
 
+Encryption recap - allows us to encrypt some data (plain text) using a key, becoming cipher text, then using the same key to decipher the cipher text back into plain text.
+
+> Since we are using the same key, this is known as _symmetric encryption_
+
+
