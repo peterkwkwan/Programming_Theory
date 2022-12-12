@@ -11,3 +11,7 @@ The first 2 criteria are easy for the node to check. We only need to check that 
 
 3) If the sender, who has chosen to send the funds, is actually the real sender!
 
+The 3rd criteria is much more complicated. In the blockchain network, there is no KYC process and no intermediaries. How can we prove this? This is where *digital signatures* come into play.
+
+### Digital Signatures - symmetric encryption, single key
+
