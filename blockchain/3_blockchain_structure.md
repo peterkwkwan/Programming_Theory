@@ -41,5 +41,8 @@ Let us consider this follow transaction
 There are several questions we must pose in this case:
 
 1. Who is checking that Kevin and Simon have enough money to perform such actions (who is validating these transactions?)
-2. How does blockchain guarantee these transactions to be sure?
+2. How does blockchain guarantee these transactions happen?
 3. Is it possible to tamper with these transactions?
+
+To answer all these questions, we must must understand the full process of a transaction taking place.
+- these processes can be broken into 3 steps:
