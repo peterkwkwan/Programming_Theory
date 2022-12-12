@@ -28,3 +28,18 @@ A _blockchain network_ is therefore a network of distributed, decentralized node
 - the network needs a way to update all the ledgers with the latest copy, and how the nodes come to an agreement (consensus)
 
 #### Peer-to-peer
+
+The first practical use-case of blockchain technology was Bitcoin
+- a way for us to send money without an intermediary
+
+Let us consider this follow transaction
+
+> Kevin sends $10 to Simon
+
+> Simon sends $15 to Vivian
+
+There are several questions we must pose in this case:
+
+1. Who is checking that Kevin and Simon have enough money to perform such actions (who is validating these transactions?)
+2. How does blockchain guarantee these transactions to be sure?
+3. Is it possible to tamper with these transactions?
