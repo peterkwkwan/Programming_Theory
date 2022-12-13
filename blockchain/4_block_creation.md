@@ -29,3 +29,14 @@ The solution would be to use *asymmetric encryption*.
 
 Users create a *public key* and *private key*
 - these always come in pairs and are _mathematically linked_ with each other
+- usually in blockchain platforms, crypto wallets (like Metamask) will generate a pair of keys whenever a wallet is created
+
+#### Public key
+
+The public 'ID' of the user
+- anyone on the blockchain is able to see this
+
+#### Private key
+Only the user can see this
+- will never expose to this anyone and should keep it safe
+
