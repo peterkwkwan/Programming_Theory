@@ -75,4 +75,20 @@ Here are the steps:
 3) You also have a copy of your data on hand, but not encrypted
 - At this point, your have 2 things: a copy of your data that has been encrypted by your *private key*, and a copy of your *raw unencrypted data*
 4) You send both of these copies to the blockchain network
-5) 
+5) The blockchain finds your public key, which is exposed to everyone, to decrypt the copy of your private key encrypted data
+6) The blockchain will then compare the decrypted data and see if it matches with the raw unencrypted data you sent
+7) If the data matches, then the network can be confident that the transaction is sent by you, as only you have ownership of your private key
+
+#### Validating the transaction
+
+To recap the validation process:
+
+1) If the amount outputted does not exceed the amount inputted
+2) If the funds have not already been spent
+3) If the sender, who has chosen to send the funds, is actually the real sender!
+
+All the nodes in the network run every single transaction through these 3 steps. If any steps fail, then the network will reject the transaction. 
+
+If successful, the transaction is broadcasted to all nodes on the network to announce the validity of the transaction. It is then added into a block, ready to be *'mined'*.
+
+What we get in end is a block full of transactions that have gone through validation checks. You can imagine us filling in a cardboard box (the block) with many books (the transactions), ready to be shipped off to the next stage of the blockchain process.
