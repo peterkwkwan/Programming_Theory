@@ -19,6 +19,13 @@ Encryption recap - allows us to encrypt some data (plain text) using a key, beco
 
 > Since we are using the same key, this is known as _symmetric encryption_
 
-The issue with using this method is that if we send the key over the internet, it can get intercepted. Then the hacker would be able to read all our data without us knowing!
+The issue with using this method is that if we send the key over the internet, the key can get intercepted. Then the hacker would be able to read all our data without us knowing!
+
+The solution would be to use *asymmetric encryption*.
 
 ### Non-digital signature - Asymmetric encryption
+
+*Asymmetric encryption* uses multiple keys to transfer data.
+
+Users create a *public key* and *private key*
+- these always come in pairs and are _mathematically linked_ with each other
