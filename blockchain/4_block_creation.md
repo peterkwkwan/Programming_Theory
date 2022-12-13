@@ -64,3 +64,15 @@ Every message sent by the sender can only be read by the receiver. The middle ma
 - Services like Whatsapp and Facebook use e2ee
 
 ### Digital signature - Asymmetric encryption
+
+The other use case os asymmetric encryption is known as *digital signatures*, a method used by blockchains to validate transactions.
+
+To refresh our memory, transactions will only be valid if the network can check whether the sender of the transaction is actually the sender themselves. We prove this by creating a *digital signature*.
+
+Here are the steps:
+1) You have a transaction you want to initiate. This will be your own data
+2) You will first *encrypt the data with your private key*. This is essentially creating a *digital signature* on your data. The data is now your private key encrypted data
+3) You also have a copy of your data on hand, but not encrypted
+- At this point, your have 2 things: a copy of your data that has been encrypted by your *private key*, and a copy of your *raw unencrypted data*
+4) You send both of these copies to the blockchain network
+5) 
