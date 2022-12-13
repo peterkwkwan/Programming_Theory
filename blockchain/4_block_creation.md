@@ -31,12 +31,30 @@ Users create a *public key* and *private key*
 - these always come in pairs and are _mathematically linked_ with each other
 - usually in blockchain platforms, crypto wallets (like Metamask) will generate a pair of keys whenever a wallet is created
 
-#### Public key
+##### Public key
 
 The public 'ID' of the user
 - anyone on the blockchain is able to see this
 
-#### Private key
+##### Private key
 Only the user can see this
 - will never expose to this anyone and should keep it safe
+
+#### Benefits of using two keys?
+
+Allows us to:
+- Encrypt some data using a private key (kept to yourself) and decrypt it using the public key (exposed to public)
+- Encrypt some data using a public key (exposed to public) and decrypt it using the private key (kept to yourself)
+- However, we are unable to encrypt & decrypt with just one key
+
+Use case - Let's say you wanted to send a private message to a friend. Only your friend should be able to read it. Here are the steps:
+
+1) You will type your message and *encrypt it using your friend's public key*, which is exposed to everyone
+2) You will send the encrypted message to your friend
+3) No one will be able to decrypt the message without the paired private key, which *only your friend possesses*
+4) Your friend will receive the encrypted message and decrypt it using *their own private key*
+
+A good analogy is a mailbox. Everyone knows your address, but only you have the key to open your mailbox.
+
+However, if you lose your private key, everything in your wallet will be lost!
 
