@@ -58,3 +58,9 @@ A good analogy is a mailbox. Everyone knows your address, but only you have the 
 
 However, if you lose your private key, everything in your wallet will be lost!
 
+#### End-to-end encryption (e2ee)
+
+Every message sent by the sender can only be read by the receiver. The middle man will only be able to see the encrypted data
+- Services like Whatsapp and Facebook use e2ee
+
+### Digital signature - Asymmetric encryption
