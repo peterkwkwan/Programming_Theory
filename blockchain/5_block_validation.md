@@ -37,3 +37,7 @@ The reason for this difficulty is because of security. This entire process makes
 
 
 ### Miners
+
+What incentivizes miners? 
+- The miner who first finds the nonce that outputs the correct hash is rewarded with a block reward. 
+- For example, 
