@@ -39,5 +39,14 @@ The reason for this difficulty is because of security. This entire process makes
 ### Miners
 
 What incentivizes miners? 
-- The miner who first finds the nonce that outputs the correct hash is rewarded with a block reward. 
-- For example, 
+- The miner who first finds the nonce that outputs the correct hash is rewarded with a *block reward*. 
+- For example, in Bitcoin network, everytime a miner succeeds, they are rewarded with 6.25 BTC. That's a lot of money!
+
+When BTC was in its infancy, it was cheap to mine. You could even use your laptop!
+
+Bitcoin mining farms are now necessary for miners to make money.
+
+#### No barriers to competition
+As part of its distributed and decentralized nature, anyone can participate as a node on the network.
+
+Thus, anyone is able to audit the transactions to make sure they are legitimate.
