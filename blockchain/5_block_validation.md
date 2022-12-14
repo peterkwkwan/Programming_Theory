@@ -8,3 +8,4 @@ Once all these blocks are filled with transactions, it begs the question - which
 
 > The choosing process is called the _consensus mechanism_. It indicates _how_ the blockchain network comes to a consensus regarding which block gets added to the blockchain.
 
+### Finding the lucky number
