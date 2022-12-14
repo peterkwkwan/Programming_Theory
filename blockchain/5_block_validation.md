@@ -34,3 +34,6 @@ This entire process of validating the transactions, racing to find the nonce, an
 Mining is essentially a brute force way to the correct nonce. This requires a lot of energy!
 
 The reason for this difficulty is because of security. This entire process makes is harder for fake transactions to get added to the network. Instead, the blockchain requires the participants to go through the hard work, hence the name *Proof-of-Work*
+
+
+### Miners
