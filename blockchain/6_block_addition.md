@@ -17,3 +17,10 @@ If a fork results, the *longest chain rule* applies
 - the other _sub-chain_ will be discarded
 
 ### Suspicion on the blockchain
+
+Let's say a hacker wanted to put their own false transaction on the blockchain
+- if they find the correct nonce and appropriate hash, they will be able to add their block to the chain. They will try to broadcast it out to the network
+
+When the other nodes do their validation check on the block, they will notice there is a false transaction inside the winning block, and being their suspicions
+- When the next winning block is created, it will try to find another sub-chain to add their block to, or create their own sub-chain
+- So unless the hacker manages to repeatedly find the correct nonce and required hash (extremely unlikely!), forcing the creation of its own longest chain, all suspicious activity will be discarded as the other nodes will choose not to add onto the suspicious sub-chain
