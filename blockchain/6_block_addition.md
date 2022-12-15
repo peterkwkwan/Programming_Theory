@@ -15,3 +15,5 @@ There is a _slim_ chance that two blocks find the correct nonce that outputs the
 If a fork results, the *longest chain rule* applies
 - subsequent new winning blocks will choose the longest chain to add onto
 - the other _sub-chain_ will be discarded
+
+### Suspicion on the blockchain
