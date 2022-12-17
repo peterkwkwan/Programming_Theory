@@ -19,3 +19,10 @@ Let's say a hacker wanted to manipulate some data on the block
 
 However, due to the power of *hashing*, any data changes on the block will result in a completely different hash
 - thus the block's hash will _change_
+- the subsequent block will then realize the _previous hash_ that it stamped onto itself no longer matches the malicious block, and alerts the network
+- this fake copy is then removed from the blockchain
+
+This structure and process provides a key element of the blockchain
+1) Security
+2) Immutability
+3) Transparency
