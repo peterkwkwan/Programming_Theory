@@ -16,3 +16,5 @@ A lot of computational power is required to solve the mathematical puzzle
 ### Widespread adoption
 
 A lack of understanding is preventing a widespread consumer adoption of cryptocurrency
+- also, a lack of practical applications as many use-cases are still in at their infancy/experimental stage
+- corporations also need to be on board
