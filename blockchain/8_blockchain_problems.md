@@ -10,3 +10,4 @@ However, if someone managed to control 51% of all mining power on the network, t
 ### Energy consumption
 
 A lot of computational power is required to solve the mathematical puzzle
+- as the reward of mining increases, more and more resources will be poured into finding the correct nonce
