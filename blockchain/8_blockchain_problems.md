@@ -14,3 +14,5 @@ A lot of computational power is required to solve the mathematical puzzle
 - in 2021, the energy used to mine a single Bitcoin is equivalent to at least 13 years of a typical household electricity consumption
 
 ### Widespread adoption
+
+A lack of understanding is preventing a widespread consumer adoption of cryptocurrency
