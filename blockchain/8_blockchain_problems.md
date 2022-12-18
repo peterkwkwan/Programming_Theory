@@ -8,3 +8,5 @@ We learnt that malicious users can mine their own blocks and include invalid tra
 However, if someone managed to control 51% of all mining power on the network, they could manipulate the history and future of the ledger. Thus, they would be able to create their own tampered chain
 
 ### Energy consumption
+
+A lot of computational power is required to solve the mathematical puzzle
