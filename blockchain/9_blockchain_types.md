@@ -9,3 +9,4 @@ There are 4 main types of blockchains
 - no central authority
 - Advantages:
     - completely decentralized
+    - anonymous nature
