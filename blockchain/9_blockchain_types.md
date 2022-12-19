@@ -20,3 +20,4 @@ There are 4 main types of blockchains
 
 
 ### #2 - Private Blockchain
+- __permissioned__
