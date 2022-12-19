@@ -12,3 +12,4 @@ There are 4 main types of blockchains
     - anonymous nature
     - democratic network by public
     - immutable
+    - full transparency
