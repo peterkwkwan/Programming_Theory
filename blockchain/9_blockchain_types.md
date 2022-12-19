@@ -16,3 +16,7 @@ There are 4 main types of blockchains
 - Disadvantages:
     - potential for illegal activities
     - unregulated
+    - slow speeds
+
+
+### #2 - Private Blockchain
