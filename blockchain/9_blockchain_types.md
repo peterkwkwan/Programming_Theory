@@ -13,3 +13,6 @@ There are 4 main types of blockchains
     - democratic network by public
     - immutable
     - full transparency
+- Disadvantages:
+    - potential for illegal activities
+    - unregulated
