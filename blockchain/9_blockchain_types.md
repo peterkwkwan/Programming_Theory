@@ -10,3 +10,5 @@ There are 4 main types of blockchains
 - Advantages:
     - completely decentralized
     - anonymous nature
+    - democratic network by public
+    - immutable
