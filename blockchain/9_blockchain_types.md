@@ -21,3 +21,5 @@ There are 4 main types of blockchains
 
 ### #2 - Private Blockchain
 - __permissioned__
+    - controlled by a central authority
+    - authority determines who can become a node/participant in the network
