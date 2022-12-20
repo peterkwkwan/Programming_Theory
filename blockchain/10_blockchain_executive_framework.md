@@ -11,3 +11,5 @@ Blockchain is a ledger
 
 Blockchain is decentralized
 - does your business rely on trust and security between you and your customers?
+- is your business considered a trusted, centralized organization?
+- are there risks of fraudulent malpractices within your business?
