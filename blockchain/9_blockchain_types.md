@@ -23,3 +23,21 @@ There are 4 main types of blockchains
 - __permissioned__
     - controlled by a central authority
     - authority determines who can become a node/participant in the network
+- Advantages:
+    - speed (fewer participants, less time in consensus)
+    - privacy
+    - maintenance
+    - regulated / rules
+- Disadvantages:
+    - centralized
+    - corporate corruption
+
+
+### #3 - Consortium Blockchain
+- __permissioned__ blockchain ruled by a group of organizations
+- useful when trust and security is required in collaborative efforts
+    - slightly more decentralized than private blockchains
+    - however, it is costly and requires more logistical effort among participants
+
+
+### #4 
