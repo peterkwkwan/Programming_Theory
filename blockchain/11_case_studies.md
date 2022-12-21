@@ -19,3 +19,26 @@ Walmart Canada sought the help of DLT Labs, a 3rd party blockchain solution prov
 - the network gathers info at every step of the delivery process, from tender offer to proof of delivery to payment
 - info gathered by all parties is synced to the network directly and accessible by all participants
 - solution was a huge success and reduced the need for data reconciliation from 70% of the invoices to less than 1% today
+
+![Freight network](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ad3d2633-ade4-485b-a034-b3c2a6047847/Untitled.png)
+
+### Case Study Summary
+
+**Problem:**
+
+- Huge number of third-party freight carriers were being used
+- Large amount of complex data involved in every invoice
+- Different databases being used to gather information
+
+**Solution:**
+
+- Created a blockchain network that automatically captured relevant data points and synchronised with the blockchain network in real time, providing data access for relevant parties and reducing data discrepancies and invoice reconciliation.
+
+**Blockchain Type:**
+
+- Private blockchain
+
+**Key Results:**
+
+- Invoice reconciliation efforts reduced from 70% of all invoices to less than 1%
+- Saved time and money from reduced reconciliation, improved efficiency of supply chain
