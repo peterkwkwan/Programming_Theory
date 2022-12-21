@@ -16,5 +16,3 @@ __Blockchain is decentralized__
 
 __Blockchain enables open and trusted communication__
 - Does your business involve multiple parties that require constant communication to deliver the end product?
-
-### What are the challenges of blockchain implemention into your business?
