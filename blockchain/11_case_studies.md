@@ -43,3 +43,21 @@ Walmart Canada sought the help of DLT Labs, a 3rd party blockchain solution prov
 
 
 ## Chow Tai Fook
+
+**Problem:**
+
+- Growing counterfeit industry is putting the sales of luxury products at risk
+- Unethically sourced diamonds may deter consumers from purchasing
+
+**Solution:**
+
+- Customer accessible blockchain integrated with an app to prove quality and authenticity of diamonds sold at Chow Tai Fook
+
+**Blockchain Type:**
+
+- Hybrid - Blockchain is privately managed and only certain trusted parties can add information onto blockchain, but it is publicly accessible by customers of Chow Tai Fook
+
+**Key Results:**
+
+- Customers have increased confidence that their jewellery purchases are authentic and of high quality
+- Positions the jewellery company, which can be seen to be in a relatively traditional industry, in a more tech-savvy light, and can appeal to younger crowds
