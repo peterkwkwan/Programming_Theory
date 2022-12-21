@@ -15,3 +15,7 @@ Are essentially mini-programs implanted into the network, waiting to be activate
     1. We select our item of choice.
     2. We pay the vending machine.
     3. The vending machine returns us with the item of our choice.
+    - 
+- The vending machine is automatically programmed to carry out a set of instructions based on some inputs (your choice and your money) and returns some outputs (the item).
+- Anyone can program these smart contracts, or 'vending machines', and send them to the blockchain. They will exist on the blockchain forever and wait for some inputs of data and return users with the programmed outputs, automatically and without fail.
+- The capabilities of smart contracts can be extremely flexible. Anyone is now able to build simple or complex applications on the blockchain, with the applications now having the additional powers of blockchain trust and security.
