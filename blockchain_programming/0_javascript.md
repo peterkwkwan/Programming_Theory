@@ -10,3 +10,4 @@ __General Purpose Language__
     - mobile apps
     - web servers
     - game development
+    - blockchain
