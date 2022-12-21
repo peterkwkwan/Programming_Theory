@@ -40,3 +40,6 @@ Walmart Canada sought the help of DLT Labs, a 3rd party blockchain solution prov
 
 - Invoice reconciliation efforts reduced from 70% of all invoices to less than 1%
 - Saved time and money from reduced reconciliation, improved efficiency of supply chain
+
+
+## Chow Tai Fook
