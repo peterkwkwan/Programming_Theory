@@ -21,3 +21,7 @@ Are essentially mini-programs implanted into the network, waiting to be activate
 - The capabilities of smart contracts can be extremely flexible. Anyone is now able to build simple or complex applications on the blockchain, with the applications now having the additional powers of blockchain trust and security.
 
 ### DApp (Decentralized application) Architecture
+- DApps are just applications that run on decentralized network
+- Backend operations of a DApp are written into smart contracts, then uploaded to the blockchain and live there forever
+- Smart contracts wait for their preconditions to be met, then if activated, execute the operations autonomously
+
