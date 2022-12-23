@@ -33,4 +33,5 @@ Are essentially mini-programs implanted into the network, waiting to be activate
 4) Buyer clicks 'BUY'
 5) Frontend sends the data to a '__provider__' that allows users to access the blockchain nodes. Buyer provides the _provider_ the cryptocurrency for the purchase
 6) The _provider_ searches for the smart contract that was deployed onto the blockchain (made by the people who created the NFT site)
-7)
+7) The smart contract checks whether the predetermined conditions are met, which could be anything from: (1) Does the buyer have enough cryptocurrency to make this transaction? (2) Does the buyer agree to pay for the gas fees? (3) Does the buyer have a valid wallet address for the NFT to be sent to? (4) Has the seller listed the NFT for sale?
+8)
