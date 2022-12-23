@@ -32,4 +32,5 @@ Are essentially mini-programs implanted into the network, waiting to be activate
 3) Buyer connects their digital wallet to the website by providing their digital signature
 4) Buyer clicks 'BUY'
 5) Frontend sends the data to a '__provider__' that allows users to access the blockchain nodes. Buyer provides the _provider_ the cryptocurrency for the purchase
-6) The _provider_ searches for the smart contract
+6) The _provider_ searches for the smart contract that was deployed onto the blockchain (made by the people who created the NFT site)
+7)
