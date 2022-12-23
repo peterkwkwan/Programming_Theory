@@ -25,3 +25,11 @@ Are essentially mini-programs implanted into the network, waiting to be activate
 - Backend operations of a DApp are written into smart contracts, then uploaded to the blockchain and live there forever
 - Smart contracts wait for their preconditions to be met, then if activated, execute the operations autonomously
 
+#### Scenario: NFT Marketplace transaction (Buyer to seller)
+
+1) Buyer accesses NFT site from web browser
+2) Browser connects to frontend of the NFT site
+3) Buyer connects their digital wallet to the website by providing their digital signature
+4) Buyer clicks 'BUY'
+5) Frontend sends the data to a '__provider__' that allows users to access the blockchain nodes. Buyer provides the _provider_ the cryptocurrency for the purchase
+6) The _provider_ searches for the smart contract
