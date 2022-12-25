@@ -17,3 +17,5 @@ Why does Ethereum need its own virtual machine? That is because smart contracts 
 Also, because it is decentralized, the computer must be virtual and cannot be owned by anyone. All Ethereum nodes can access the EVM. This is why Ethereum is also known as the "World's Computer", as any node can access this computer from anywhere.
 
 ### How does the EVM work?
+
+1) Solidity code is written by a developer to create a smart contract.
