@@ -19,3 +19,4 @@ Also, because it is decentralized, the computer must be virtual and cannot be ow
 ### How does the EVM work?
 
 1) Solidity code is written by a developer to create a smart contract.
+2) The EVM cannot understand the high-level language code, so it is compiled and becomes _EVM Bytecode_
