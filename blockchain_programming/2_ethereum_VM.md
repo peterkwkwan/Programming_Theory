@@ -21,4 +21,4 @@ Also, because it is decentralized, the computer must be virtual and cannot be ow
 1) Solidity code is written by a developer to create a smart contract.
 2) The EVM cannot understand the high-level language code, so it is compiled and becomes _EVM Bytecode_
 3) The EVM takes instructions of the EVM Bytecode, creates a smart contract and adds it to the blockchain. The additional benefit of EVM Bytecode is that is it not confined to only Solidity, but also other higher-level languages (like Vyper). These other languages can also be compiled to Bytecode.
-4) 
+4) The contract stays on the blockchain and can be interacted with in the future.
