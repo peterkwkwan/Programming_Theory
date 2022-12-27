@@ -1,4 +1,3 @@
-![Preface logo_grey.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/289b9105-b0c7-4556-9675-fcceff69a43b/Preface_logo_grey.png)
 
 ### **Setting up our smart contract**
 
