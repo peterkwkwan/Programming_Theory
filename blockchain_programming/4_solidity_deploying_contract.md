@@ -23,6 +23,7 @@ The SOLIDITY COMPILER should pop up in the side panel. It may look quite complic
 - You can also use the shortcut CMND + S (Mac) / CTRL + S (Windows) to compile your contract without having to click on the button every time.
 - A green tick should appear next to the Solidity icon inside the icon panel. That means your file has been successfully compiled.
 
+![image](https://user-images.githubusercontent.com/37263010/209791017-d0fabff8-cc76-44c9-99de-a7f74a197162.png)
 
 **2) Deploying our contract**
 
@@ -33,6 +34,7 @@ Next, click on the icon that looks like the Ethereum logo with an arrow pointing
 - The **ACCOUNT** option lists the wallets that we are connected to and can use to deploy our smart contract. Remember, deploying smart contracts and interacting with the blockchain has transaction fees (gas), which is why we need to also provide Ether.
 - Right now, you can see that we have multiple accounts all with 100 ether. This is because we are connected to the fake JavaScript blockchain, and it has provided us accounts for testing. If we were connected to our Metamask wallet (in our ENVIRONMENT option), we would be able to see our actual wallet balances in our Metamask.
 
+![image](https://user-images.githubusercontent.com/37263010/209791064-1d403420-8a42-4e3d-b484-575346cd43d8.png)
 
 Click on the 'Deploy' orange button. There a few things we should pay attention to.
 
@@ -40,8 +42,10 @@ Click on the 'Deploy' orange button. There a few things we should pay attention 
 - In the side panel, scroll down and you will be able to see that there is a blue (1) icon next to **Transactions**. That is providing indication that one transaction has been made onto the blockchain, which is the deployment of the contract.
 - You will also be able to click on a drop down arrow underneath **Deployed Contracts**. This area of the Remix IDE is extremely important as it allows us to interact with our contract, to see whether it's working. Since the contract we have made doesn't actually have anything inside, there is nothing to interact with. We will revisit this in the future when we make more complex smart contracts.
 
+![image](https://user-images.githubusercontent.com/37263010/209791114-5354959b-5d78-4862-a3f6-1b959eef62b7.png)
 
 - Another very important observation is also looking at our account balance. If you recall, we started off with 100 ether, but now we have a bit less than that. Deploying the smart contract has costed us gas fees in the form of Ether. All transactions on the blockchain cost something!
 
+![image](https://user-images.githubusercontent.com/37263010/209791167-7e2a4694-220f-42ea-995c-af803b5979b0.png)
 
 Congratulations! You've deployed your first smart contract with Solidity!
