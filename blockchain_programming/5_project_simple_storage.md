@@ -161,6 +161,7 @@ contract SimpleStorage {
 
 Output:
 
+![image](https://user-images.githubusercontent.com/37263010/209898756-ad0b76a5-a3ab-4832-92a0-a893108fc2db.png)
 
 - Note that we can also try and deploy the contract without assigning a value to our variable, to see the default value that becomes assigned.
 
