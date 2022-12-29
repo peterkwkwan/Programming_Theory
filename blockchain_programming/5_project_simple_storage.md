@@ -1,4 +1,3 @@
-
 ### SimpleStorage
 
 Now that we've become more familiar with the Remix IDE, understand what a smart contract in Solidity looks like and how to compile and deploy one, it's time to move onto our first proper Solidity project.
