@@ -12,6 +12,8 @@ Three simple data storage functionalities of our smart contract, hence the name 
 
 **Start off by creating a new file in your Remix IDE.**
 
+![image](https://user-images.githubusercontent.com/37263010/209898660-e82b77ed-0ff9-4ac7-b305-0f2114adaf4a.png)
+
 Click the new file button in your side panel. Call your new Solidity file 'SimpleStorage.sol'.
 
 Add the following code in your smart contract:
