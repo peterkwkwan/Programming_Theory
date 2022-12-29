@@ -179,5 +179,6 @@ contract SimpleStorage {
 
 Output:
 
+![image](https://user-images.githubusercontent.com/37263010/209898804-187ad869-daea-48f6-a594-e4384ea8d375.png)
 
 - We should also remember that every time we deploy our contract, a small portion of our Ether gets consumed as gas fees!
