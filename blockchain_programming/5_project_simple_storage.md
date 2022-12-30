@@ -52,6 +52,8 @@ contract SimpleStorage {
 
 ### Data Types
 
+![image](https://user-images.githubusercontent.com/37263010/210059484-1dcdf12a-69cd-4c9b-bd8e-b9b12c4d0e05.png)
+
 Unfortunately, variables in Solidity are not one-size-fits-all data containers. This is why the first detail of the variable that needs specifying is what type of data our variable accepts. In programming, each language has their own data types that they use. We will explore the different types that exist in Solidity.
 
 **Boolean**
