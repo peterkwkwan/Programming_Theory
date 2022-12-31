@@ -116,8 +116,6 @@ Try to add in an integer of your choice into the input box. Afterwards, click on
 
 - Click on the myUint public variable in your contract. It should now store the value that you set using the changeValue function.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/36b9f57a-be3a-4591-b500-89385936f803/Untitled.png)
-
 ### Function #2 - retrieveValue
 
 Let's now try to add another function into our contract. This time, the function will retrieve the value stored inside the myUint variable.
