@@ -112,8 +112,6 @@ Try to add in an integer of your choice into the input box. Afterwards, click on
 
 - In your terminal, you will see a green tick, indicating that a transaction has gone through. We have sent a transaction to the blockchain to indicate that the value stored in the variable has changed.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f81c17cf-bca6-47b2-965c-61fa5886da78/Untitled.png)
-
 - Also take a look at the amount of ether in your wallet. It has decreased! Recall that changing any data or state on the blockchain requires a transaction fee.
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1ef0327b-5e96-4c98-afc1-825b8f2e046a/Untitled.png)
