@@ -108,6 +108,8 @@ Great! We have created our first function called changeValue. Let's try to deplo
 
 We should now have a new way to interact with our contract. As you can see, there is now an orange button and an input that represents the changeValue function that we previously created.
 
+![image](https://user-images.githubusercontent.com/37263010/210136861-96419b2d-3ab0-4deb-a522-8d099a225fe4.png)
+
 Just as we have coded, the changeValue will take in a piece of information, in this case the parameter **_newUint** must be a uint256.
 
 Try to add in an integer of your choice into the input box. Afterwards, click on the orange button that displays the function's name, changeValue. There are a few things to note:
