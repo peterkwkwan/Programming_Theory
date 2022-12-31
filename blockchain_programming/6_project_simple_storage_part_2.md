@@ -232,8 +232,6 @@ Our smart contract now has three ways to interact with it!
 
 Try and use the changeValue function to change the myUint value. Then click on the retrieveValue function to retrieve the updated value.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bef8e3e9-362d-4015-a6fe-645e259427f8/Untitled.png)
-
 You can also note that when using the retrieveValue function, no ether is being consumed as it is a read-only view function.
 
 **The difference between myUint & retrieveValue**
