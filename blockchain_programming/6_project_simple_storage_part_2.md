@@ -106,8 +106,6 @@ Great! We have created our first function called changeValue. Let's try to deplo
 
 We should now have a new way to interact with our contract. As you can see, there is now an orange button and an input that represents the changeValue function that we previously created.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dc19cbec-624d-4dd8-8748-37e1ae69df80/Untitled.png)
-
 Just as we have coded, the changeValue will take in a piece of information, in this case the parameter **_newUint** must be a uint256.
 
 Try to add in an integer of your choice into the input box. Afterwards, click on the orange button that displays the function's name, changeValue. There are a few things to note:
