@@ -116,6 +116,8 @@ Try to add in an integer of your choice into the input box. Afterwards, click on
 
 - In your terminal, you will see a green tick, indicating that a transaction has gone through. We have sent a transaction to the blockchain to indicate that the value stored in the variable has changed.
 
+![image](https://user-images.githubusercontent.com/37263010/210136915-e629fdbe-903a-4f75-bfe6-ea77e1cbe177.png)
+
 - Also take a look at the amount of ether in your wallet. It has decreased! Recall that changing any data or state on the blockchain requires a transaction fee.
 
 - Click on the myUint public variable in your contract. It should now store the value that you set using the changeValue function.
