@@ -242,6 +242,8 @@ Our smart contract now has three ways to interact with it!
 
 Try and use the changeValue function to change the myUint value. Then click on the retrieveValue function to retrieve the updated value.
 
+![image](https://user-images.githubusercontent.com/37263010/210136953-cdfab38f-c2f3-44ba-bb9a-fc0b5e566948.png)
+
 You can also note that when using the retrieveValue function, no ether is being consumed as it is a read-only view function.
 
 **The difference between myUint & retrieveValue**
