@@ -18,6 +18,8 @@ Functions are more complex than variables and require more syntax to create one.
 3. Return types
 4. Function logic
 
+![image](https://user-images.githubusercontent.com/37263010/210136835-47c71e78-fa52-45ac-add9-00785fe3ce8c.png)
+
 ### Function #1 - changeValue
 
 Let's add our first function into our smart contract. This function will change the stored value of our myUint.
