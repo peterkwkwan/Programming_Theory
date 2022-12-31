@@ -120,6 +120,8 @@ Try to add in an integer of your choice into the input box. Afterwards, click on
 
 - Also take a look at the amount of ether in your wallet. It has decreased! Recall that changing any data or state on the blockchain requires a transaction fee.
 
+![image](https://user-images.githubusercontent.com/37263010/210136932-be0acdac-6d18-418f-be01-fd59c8257581.png)
+
 - Click on the myUint public variable in your contract. It should now store the value that you set using the changeValue function.
 
 ### Function #2 - retrieveValue
