@@ -124,6 +124,8 @@ Try to add in an integer of your choice into the input box. Afterwards, click on
 
 - Click on the myUint public variable in your contract. It should now store the value that you set using the changeValue function.
 
+![image](https://user-images.githubusercontent.com/37263010/210136941-87b3bce1-23e1-4cac-8dd9-e8665300e4de.png)
+
 ### Function #2 - retrieveValue
 
 Let's now try to add another function into our contract. This time, the function will retrieve the value stored inside the myUint variable.
