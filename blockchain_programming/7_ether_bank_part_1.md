@@ -1,4 +1,4 @@
-### EtherWallet Project
+# EtherWallet Project
 
 It’s time for our next project, where we focus more on cryptocurrency (specifically Ether) transactions within smart contracts.
 
