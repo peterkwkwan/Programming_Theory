@@ -118,9 +118,6 @@ Compile and deploy the contract. You should now see one button that indicates th
 
 In ‘Deploy & Run Transactions’, you should be able to see an input box that allows you to indicate the amount of Ether to be included in your transaction.
 
-
-![Screenshot 2022-05-27 at 12.35.54 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/299e2903-4abc-43e6-87c9-61e7827296a8/Screenshot_2022-05-27_at_12.35.54_AM.png)
-
 Try and set the Ether amount to be 1, then click on the **sendMoney** button down below.
 
 There should be two things to notice:
