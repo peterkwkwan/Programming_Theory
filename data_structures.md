@@ -21,3 +21,4 @@
     - this operation is `O(1)` - _constant time_
  
 - Static arrays are fixed size
+- Cannot increment size because RAM may have allocated other data in the `arr.length + 1` spot
