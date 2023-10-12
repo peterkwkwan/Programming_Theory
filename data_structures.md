@@ -18,6 +18,6 @@
 
 - How can we read the first element of the array?
     - `myArray[0]`
-    - this operation is O(1), _constant time_
+    - this operation is `O(1)` - _constant time_
  
 - Static arrays are fixed size
