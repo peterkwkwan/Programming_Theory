@@ -22,3 +22,5 @@
  
 - Static arrays are fixed size
 - Cannot increment size because RAM may have allocated other data in the `arr.length + 1` spot
+
+![image](https://github.com/peterkwkwan/Programming_Theory/assets/37263010/e984655e-4e53-49a2-87c3-adca00f8dabe)
