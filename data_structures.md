@@ -13,3 +13,5 @@
   - elements in an array are always contiguous, meaning they are adjacent to each other
 
 ![image](https://github.com/peterkwkwan/Programming_Theory/assets/37263010/4496d295-a418-4b05-b822-7b5ab3670419)
+
+### Static Arrays
