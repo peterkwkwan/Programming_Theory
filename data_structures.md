@@ -10,3 +10,4 @@
     
 - How can we store arrays in memory?
   - each element in array is stored as a series of bits
+  - elements in an array are always contiguous, meaning they are adjacent to each other
