@@ -1,6 +1,6 @@
 # ARRAYS
 
-### RAM
+### RAM (Random Access Memory)
 - ram stores data in bytes
     - a byte is 8 bits
     - each bit can store a zero (0) or one (1)
@@ -15,3 +15,9 @@
 ![image](https://github.com/peterkwkwan/Programming_Theory/assets/37263010/4496d295-a418-4b05-b822-7b5ab3670419)
 
 ### Static Arrays
+
+- How can we read the first element of the array?
+    - `myArray[0]`
+    - this operation is O(1), _constant time_
+ 
+- Static arrays are fixed size
