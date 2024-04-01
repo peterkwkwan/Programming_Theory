@@ -14,3 +14,14 @@
   - Autonomy
 
 3) Prioritize Regularly
+- Prioritize ideas based on estimated returns on investment
+- Have a checklist of "to-do's"
+  - checklists reduce errors in every field
+- Focus on what directly produces *value*
+![image](https://github.com/peterkwkwan/Programming_Theory/assets/37263010/8cf9dca5-1456-48b6-b0fb-02050ad05a86)
+- Focus on the important and non-urgent
+  - Quadrant 2 items provide significant value in the long term
+  - Carve out time to invest in skill development
+- Protect your Maker's schedule
+  - getting into *flow* or *rhythm* takes around 10-15 minutes of uninterrupted concentration
+  - preserve large chunks of your schedule into "focus blocks", reducing context-switches
