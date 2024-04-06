@@ -1,9 +1,9 @@
-1) Focus on High-Leverage Activities
+## 1) Focus on High-Leverage Activities
 - Leverage = Impact / Time
   
 ![image](https://github.com/peterkwkwan/Programming_Theory/assets/37263010/2bd3718a-1539-4940-96f5-8cf22454cba3)
 
-2) Optimize for Learning
+## 2) Optimize for Learning
 - Adopt a Growth Mindset - avoid a Fixed Mindset
 - Learning is like compound investing
 - Seek out work environments conductive to Learning
@@ -13,7 +13,7 @@
   - People / Talent
   - Autonomy
 
-3) Prioritize Regularly
+## 3) Prioritize Regularly
 - Prioritize ideas based on estimated returns on investment
 - Have a checklist of "to-do's"
   - checklists reduce errors in every field
@@ -26,7 +26,7 @@
   - getting into *flow* or *rhythm* takes around 10-15 minutes of uninterrupted concentration
   - preserve large chunks of your schedule into "focus blocks", reducing context-switches
 
-4) Invest in iteration speed
+## 4) Invest in iteration speed
 - **Continuous deployment** when automated with QA testing is vital to velocity
   - CI allows for small, incremental changes rather than large, batched updates
   - Smaller iterations cause less overhead and context switching
