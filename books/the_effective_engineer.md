@@ -25,3 +25,12 @@
 - Protect your Maker's schedule
   - getting into *flow* or *rhythm* takes around 10-15 minutes of uninterrupted concentration
   - preserve large chunks of your schedule into "focus blocks", reducing context-switches
+
+4) Invest in iteration speed
+- **Continuous deployment** when automated with QA testing is vital to velocity
+  - CI allows for small, incremental changes rather than large, batched updates
+  - Smaller iterations cause less overhead and context switching
+  - Easier to debug changes as changes are minor and small
+  - Avoid 'merge hell' that is associated with infrequent, large releases
+ 
+- Move Fast to Learn Fast 
