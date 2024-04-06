@@ -35,3 +35,9 @@
  
 - Move Fast to Learn Fast
   - the faster you iterate, the faster you learn what works and what doesn't work
+
+- Invest in Time-Saving Tools
+  - tools that save time will have a force-multiplier effect
+  - empower you and your team to ship and deploy faster
+ 
+- Master Your Programming Environment
