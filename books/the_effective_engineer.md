@@ -33,4 +33,5 @@
   - Easier to debug changes as changes are minor and small
   - Avoid 'merge hell' that is associated with infrequent, large releases
  
-- Move Fast to Learn Fast 
+- Move Fast to Learn Fast
+  - the faster you iterate, the faster you learn what works and what doesn't work
