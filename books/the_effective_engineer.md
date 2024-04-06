@@ -44,7 +44,7 @@
   - Get proficient with your favorite text editor or IDE
   - Learn at least one productive, high-level programming language
   - Get familiar with UNIX (or Windows) shell commands
-    - Learn basic commands like _grep_, _sort_, _uniq_, _wc_ and _find_
+    - Learn basic commands like _grep_, _sort_, _uniq_, _wc_, _awk_, and _find_
   - Automate your manual workflows
  
 ## 5) Measure What You Want to Improve
