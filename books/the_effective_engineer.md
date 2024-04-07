@@ -49,3 +49,5 @@
  
 
 ## 5) Measure What You Want to Improve
+- Use Metrics to Drive Progress
+  - If you can’t measure it, you can’t improve it
