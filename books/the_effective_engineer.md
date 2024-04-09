@@ -51,3 +51,8 @@
 ## 5) Measure What You Want to Improve
 - Use Metrics to Drive Progress
   - If you can’t measure it, you can’t improve it
+  - When visualized over time, good metrics help guard against future regressions
+- Pick the Right Metric to Incentivize the Behavior You Want
+
+## 6) Validate Your Ideas Early and Often
+
