@@ -3,7 +3,7 @@
 - fixed size
   - cannot increase size/length of the array
 - read and write operations for arrays (e.g. `my_array[0]`)
-  - time complexity: `O(1)`
+  - time complexity: `O(1)` / _Constant Time_
   - instant Operation, _constant time_
 - inserting or removing values in the beginning or middle of array
   - time complexity: `O(n)`
@@ -21,3 +21,12 @@
   - the average time of pushing a new value to end of dynamic array is _usually_ `O(1)`, not `O(n)`, since we usually don't need to create a new array
   - a way to find a middle ground for creating a new array and not having to create it everytime we need more size
   - explained by mathematical _power series_ theory
+
+## Stack
+
+- Push, Pop, and Peek / Top (read last element)
+  - time complexity: `O(1)`
+- a dynamic array fulfills all these operations
+- a pointer that indicates the end position of the stack
+- LIFO
+  - Last-In First-Out
