@@ -55,4 +55,19 @@
 - Pick the Right Metric to Incentivize the Behavior You Want
 
 ## 6) Validate Your Ideas Early and Often
+- Both external and internal feedback is vital
+  - Iterate fast on an early PoC build and get feedback from stakeholders
+  - Feedback helps the team prioritize which features are important
+- You *can't* get everything right without validation from your end users
+- The shorter the iteration cycles, the more quickly we can learn from our mistakes
+  - The longer the cycles, the more likely the mistakes and errors will compound
+- Fake validation (a button when clicked and just says "coming soon") is a highly effective way to gather feedback and data
+- A/B is crucial to testing what works
+  - use real data to validate what words/features catch on with users
+ 
+- **Approach a problem iteratively to reduce wasted effort.**
+- **Reduce the risk of large implementations by using small validations.**
+- **Use A/B testing to continuously validate your product hypotheses.**
+
+## 7) Improve Your Project Estimation Skills
 
