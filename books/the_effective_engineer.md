@@ -70,4 +70,21 @@
 - **Use A/B testing to continuously validate your product hypotheses.**
 
 ## 7) Improve Your Project Estimation Skills
+- A study of over 50,000 software projects concluded that 44% of projects are delivered late, overbudget, or missing requirements; 24% fail to complete; and the average slipped project overruns its time budget by 79%
 
+- How to give better estimates:
+  - Decompose the project into granular tasks
+  - Think of estimates as probability distributions, not best-case scenarios
+  - Let the person doing the actual task make the estimate
+  - Budget for the unknown
+ 
+- Approach Rewrite Projects with Extreme Caution
+  - Because we tend to be familiar with the original version, we typically underestimate rewrite projects more drastically than we would an undertaking in a new area
+  - It is easy and tempting to bundle additional improvements into a rewrite. Why not refactor the code to reduce some technical debt, use a more performant algorithm, or redesign this subsystem while we’re rewriting the code?
+  - When a rewrite is ongoing, any new features or improvements must either be added to the rewritten version (in which case they won’t launch until the rewrite completes) or they must be duplicated across the existing version and the new version (in order to get the feature or improvement out sooner). The cost of either option grows with the timeline of the project.
+
+- Define measurable milestones.
+  - Clear milestones can alert you as to whether you’re on track or falling behind. Use them as opportunities to revise your estimates.
+ 
+- Do the riskiest tasks first.
+  - Reduce variance in your estimates and risk in your project by exploring the unknown early on. Don’t give yourself the illusion of progress by focusing first on what’s easy to do.
