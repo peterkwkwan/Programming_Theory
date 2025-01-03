@@ -88,3 +88,24 @@
  
 - Do the riskiest tasks first.
   - Reduce variance in your estimates and risk in your project by exploring the unknown early on. Don’t give yourself the illusion of progress by focusing first on what’s easy to do.
+ 
+## 8) Balance Quality with Pragmatism
+- Software quality comes down to tradeoff between quality and development speed
+
+- Benefits of code reviews
+  - catching bugs or design flaws early
+  - increasing accountability
+  - positive modeling of best practices
+  - knowledge sharing
+  - increase long-term robustness
+ 
+- Good abstraction qualities
+  - easy to understand
+  - easy to use
+  - hard to misuse
+  - easy to extend
+
+- Establish a culture of code reviews
+- Invest in good abstractions to solve difficult problems
+- Scale code quality with automated testing
+- Manage technical debt
