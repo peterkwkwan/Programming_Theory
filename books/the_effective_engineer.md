@@ -109,3 +109,24 @@
 - Invest in good abstractions to solve difficult problems
 - Scale code quality with automated testing
 - Manage technical debt
+
+## 9) Minimize Operational Burden
+- When a team is small, minimizing features that tax resources is critical
+- Recurring costs of operating a system or product require time and energy that could be spent on higher-leverage activities
+- Avoid re-inventing the wheel and writing unnecessary custom software
+
+- Embrace Operational Simplicity
+  - Increased complexity introduces more potential single points of failure
+  - New engineers face a steeper learning curve when learning and understanding the new systems
+ 
+- Build Systems to Fail Fast
+  - Crashing at startup time when encountering configuration errors
+  - Bubbling up an error from an external service that you don’t know how to handle, rather than swallowing it
+  - Alerting engineers about any invalid or inconsistent program state as early as possible
+  - The more complex the system, the more time that fail-fast techniques can save
+
+- Do the simple thing first
+- Fail fast to pinpoint the source of errors
+- Automate mechanics over decision-making
+  - Aggressively automate manual tasks to save yourself time
+
