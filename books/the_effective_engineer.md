@@ -130,3 +130,42 @@
 - Automate mechanics over decision-making
   - Aggressively automate manual tasks to save yourself time
 
+## 10) Invest in Your Team’s Growth
+- The people and the team that you work with have a significant impact on your own effectiveness
+- The higher you progress in your career, the more your effectiveness will be measured not by your individual contributions but by your impact on the people around you
+- "You’re a staff engineer if you’re making a whole team better than it would be otherwise"
+
+- Hiring is everyone's responsibility
+  - Take time with your team to identify which qualities in a potential teammate you care about the most: coding aptitude, mastery of
+programming languages, algorithms, data structures, product skills, debugging, communication skills, culture fit, or something else.
+  - Periodically meet to discuss how effective the current recruiting and interview processes are at finding new hires
+  - Design interview problems with multiple layers of difficulty that you can tailor to the candidate’s ability by adding or removing variables and constraints
+  - Control the interview pace to maintain a high signal-to-noise ratio. Don’t let interviewees ramble, get stumped, or get sidetracked for too long.
+  - Periodically shadow or pair with another team member during interviews.
+
+- Design a Good Onboarding Process
+  - Ramp up new engineers as quickly as possibl
+  - Expose new engineers to the breadth of fundamentals needed to succeed
+  - Mentorship program
+  - Assign appropriate starter tasks
+
+- Share Ownership of Code
+  - Avoid one-person teams
+  - Review each other’s code and software designs
+  - Rotate different types of tasks and responsibilities across the team
+  - Keep code readable and code quality high
+  - Present tech talks on software decisions and architecture
+  - Document!
+ 
+
+QUALITIES of an EFFECTIVE ENGINEER
+1. Optimize for iteration speed.
+2. Push relentlessly towards automation.
+3. Build the right software abstractions.
+4. Focus on high code quality by using code reviews.
+5. Maintain a respectful work environment.
+6. Build shared ownership of code.
+7. Invest in automated testing.
+8. Allot experimentation time, either through 20% time or hackathons.
+9. Foster a culture of learning and continuous improvement.
+10. Hire the best.
